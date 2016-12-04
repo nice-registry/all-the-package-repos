@@ -1,6 +1,8 @@
 # all-the-package-repositories
 
-All the repository URLs in the npm registry as an object whose keys are package names and values are URLs
+All the repository URLs in the npm registry as an object whose keys are package names and values are URLs.
+
+This package weighs in at about 20MB.
 
 - 362820 packages in the npm registry
 - 296959 with a repository in package.json
