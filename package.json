@@ -1,0 +1,21 @@
+{
+  "name": "all-the-package-repositories",
+  "version": "1.0.0",
+  "description": "All the repository URLs in the npm registry as an object whose keys are package names and values are URLs",
+  "main": "index.js",
+  "repository": "https://github.com/zeke/all-the-package-repos",
+  "author": "zeke",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js > index.json",
+    "test": "node test.js | tap-spec"
+  },
+  "devDependencies": {
+    "all-the-packages": "^1.1.1",
+    "github-url-to-object": "^2.2.6",
+    "object-values": "^1.0.0",
+    "standard": "^8.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}
