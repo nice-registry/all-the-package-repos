@@ -1,4 +1,4 @@
-# all-the-package-repositories
+# all-the-package-repos
 
 All the repository URLs in the npm registry as an object whose keys are package names and values are URLs.
 
@@ -11,13 +11,13 @@ This package weighs in at about 20MB.
 ## Installation
 
 ```sh
-npm install all-the-package-repositories --save
+npm install all-the-package-repos --save
 ```
 
 ## Usage
 
 ```js
-repos = require('all-the-package-repositories')
+repos = require('all-the-package-repos')
 
 repos.express
 // https://github.com/expressjs/express
