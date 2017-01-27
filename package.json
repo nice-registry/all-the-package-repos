@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node scripts/build.js > index.json",
-    "release": "node scripts/release.sh",
+    "release": "scripts/release.sh",
     "test": "node test.js | tap-spec"
   },
   "devDependencies": {
