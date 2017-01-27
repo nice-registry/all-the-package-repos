@@ -4,10 +4,11 @@
   "description": "All the repository URLs in the npm registry as an object whose keys are package names and values are URLs",
   "main": "index.js",
   "repository": "https://github.com/zeke/all-the-package-repos",
-  "author": "zeke",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node build.js > index.json",
+    "build": "node scripts/build.js > index.json",
+    "release": "node scripts/release.sh",
     "test": "node test.js | tap-spec"
   },
   "devDependencies": {
