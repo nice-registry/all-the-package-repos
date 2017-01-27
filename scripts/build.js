@@ -1,4 +1,4 @@
-const registry = require('all-the-packages')
+const registry = require('package-stream')()
 const gh = require('github-url-to-object')
 const repos = {}
 var totalPackages = 0
@@ -15,19 +15,21 @@ registry
     var repo
     var gho
 
+    // normalize github url _strings_ to https format
     if (typeof pkg.repository === 'string') {
       gho = gh(pkg.repository)
       repos[pkg.name] = gho ? gho.https_url : pkg.repository
       return
     }
 
+    // normalize github url _objects_ to https format
     if (pkg.repository.url) {
       gho = gh(pkg.repository.url)
       repos[pkg.name] = gho ? gho.https_url : pkg.repository.url
       return
     }
   })
-  .on('end', function () {
+  .on('up-to-date', function () {
     const urls = Object.keys(repos).map(name => repos[name])
     console.error(`${totalPackages} packages in the npm registry`)
     console.error(`${urls.length} packages with a repository`)
