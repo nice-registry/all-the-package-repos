@@ -5,7 +5,7 @@ const repos = require('.')
 
 describe('repos', () => {
   it('is an object with lots of values', () => {
-    expect(Object.keys(repos).length).to.be.above(280 * 1000)
+    expect(Object.keys(repos).length).to.be.above(330 * 1000)
   })
 
   it('sets URLs as values', () => {
