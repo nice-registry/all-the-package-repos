@@ -1,4 +1,6 @@
-const registry = require('package-stream')()
+const registry = require('package-stream')({
+  db: 'https://replicate.npmjs.com'
+})
 const gh = require('github-url-to-object')
 const repos = {}
 var totalPackages = 0
@@ -31,8 +33,9 @@ registry
   })
   .on('up-to-date', function () {
     const urls = Object.keys(repos).map(name => repos[name])
-    console.error(`${totalPackages} packages in the npm registry`)
+    console.error(`\n${totalPackages} packages total`)
     console.error(`${urls.length} packages with a repository`)
     console.error(`${urls.filter(url => url.match('github.com')).length} packages with a github repository`)
     process.stdout.write(JSON.stringify(repos, null, 2))
+    process.exit()
   })

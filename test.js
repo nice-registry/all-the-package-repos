@@ -1,9 +1,18 @@
-const test = require('tape')
+const describe = require('mocha').describe
+const it = require('mocha').it
+const expect = require('chai').expect
 const repos = require('.')
 
-test('repos', function (t) {
-  t.ok(Object.keys(repos).length > 280 * 1000, 'is an object with hella keys')
-  t.equal(repos.moby, 'https://github.com/zeke/moby', 'sets URLs as values')
-  t.equal(repos.express, 'https://github.com/expressjs/express', 'sets shorthand github URLs to full URL')
-  t.end()
+describe('repos', () => {
+  it('is an object with lots of values', () => {
+    expect(Object.keys(repos).length).to.be.above(280 * 1000)
+  })
+
+  it('sets URLs as values', () => {
+    expect(repos.moby).to.equal('https://github.com/zeke/moby')
+  })
+
+  it('sets shorthand GitHub URLS to full URL', () => {
+    expect(repos.express).to.equal('https://github.com/expressjs/express')
+  })
 })

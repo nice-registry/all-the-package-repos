@@ -9,13 +9,13 @@
   "scripts": {
     "build": "node scripts/build.js > index.json",
     "release": "scripts/release.sh",
-    "test": "node test.js | tap-spec"
+    "test": "mocha && standard"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "github-url-to-object": "^2.2.6",
+    "mocha": "^3.2.0",
     "package-stream": "^1.0.2",
-    "standard": "^8.6.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "standard": "^8.6.0"
   }
 }
