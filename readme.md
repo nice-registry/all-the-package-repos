@@ -4,9 +4,15 @@ All the repository URLs in the npm registry as an object whose keys are package 
 
 This package weighs in at about 20MB.
 
-- 362820 packages in the npm registry
-- 296959 with a repository in package.json
-- 290741 with a github repository
+## Stats
+
+Packages | Count | Percentage of Total Packages
+---- | ----- | ----------
+All | 490948 | 100%
+With repository in package.json | 377306 | 76.85%
+On GitHub | 366262 |  74.60%
+On BitBucket | 2761 |  0.56%
+On GitLab | 1295 |  0.26%
 
 ## Installation
 
@@ -22,6 +28,8 @@ repos = require('all-the-package-repos')
 repos.express
 // https://github.com/expressjs/express
 ```
+
+See [example.js](example.js) for more usage details.
 
 GitHub URLs are normalized to their `https` form using
 [github-url-to-object](http://ghub.io/github-url-to-object):
