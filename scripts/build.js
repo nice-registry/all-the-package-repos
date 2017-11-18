@@ -11,6 +11,10 @@ registry
     spinner.text = String(++totalPackages)
     if (!pkg || !pkg.name || !pkg.repository) return
 
+    if (totalPackages > 500 * 1000) {
+      console.log(pkg.name)
+    }
+
     const repo = (pkg.repository.url) ? pkg.repository.url : pkg.repository
     const parsed = parseGitHubUrl(repo)
 
@@ -18,6 +22,10 @@ registry
       repos[pkg.name] = parsed.https_url
     } else if (isUrl(repo) && repo.startsWith('http')) {
       repos[pkg.name] = repo
+    }
+
+    if (totalPackages > 500 * 1000) {
+      console.log*pkg.name
     }
 
     // uncomment for debugging
