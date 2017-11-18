@@ -16,6 +16,7 @@ registry
     }
   })
   .on('up-to-date', function () {
+    process.stderr.write('\ndone!\n')
     process.stdout.write(JSON.stringify(repos, null, 2))
     process.exit()
   })
