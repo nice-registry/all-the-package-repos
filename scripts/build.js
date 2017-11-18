@@ -27,7 +27,7 @@ registry
     }
 
     // uncomment for debugging
-    if (totalPackages>1000) return done()
+    // if (totalPackages>1000) return done()
   })
   .on('up-to-date', done)
 
