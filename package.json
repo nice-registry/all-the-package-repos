@@ -14,9 +14,11 @@
   "devDependencies": {
     "all-the-package-names": "^1.3250.0",
     "chai": "^3.5.0",
+    "github-url-to-object": "^4.0.2",
+    "is-url": "^1.2.2",
     "mocha": "^3.2.0",
     "ora": "^1.1.0",
-    "package-stream": "^2.0.0",
+    "package-stream": "^3.0.1",
     "standard": "^8.6.0"
   }
 }

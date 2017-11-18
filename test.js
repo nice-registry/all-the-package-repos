@@ -1,6 +1,7 @@
 const describe = require('mocha').describe
 const it = require('mocha').it
 const expect = require('chai').expect
+const isUrl = require('is-url')
 const repos = require('.')
 
 describe('repos', () => {
@@ -14,5 +15,12 @@ describe('repos', () => {
 
   it('sets shorthand GitHub URLS to full URL', () => {
     expect(repos.express).to.equal('https://github.com/expressjs/express')
+  })
+
+  it('is always a URL', () => {
+    const urls = Object.values(repos)
+    urls.forEach(url => {
+      expect(isUrl(url), `${url}`).to.eq(true)
+    })
   })
 })
