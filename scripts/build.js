@@ -1,3 +1,5 @@
+const fs = require('fs')
+const path = require('path')
 const registry = require('package-stream')()
 const ora = require('ora')
 const spinner = ora('Loading').start()
@@ -24,18 +26,16 @@ registry
       repos[pkg.name] = repo
     }
 
-    if (totalPackages > 500 * 1000) {
-      console.log*pkg.name
-    }
-
     // uncomment for debugging
-    // if (totalPackages>1000) return done()
+    if (totalPackages>1000) return done()
   })
   .on('up-to-date', done)
 
-
 function done() {
-  process.stderr.write('\ndone!\n')
-  process.stdout.write(JSON.stringify(repos, null, 2))
+  console.log('\ndone!')
+  fs.writeFileSync(
+    path.join(__dirname, '../index.json'),
+    JSON.stringify(repos, null, 2)
+  )
   process.exit()
 }

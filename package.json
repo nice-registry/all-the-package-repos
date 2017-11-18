@@ -7,7 +7,7 @@
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js > index.json",
+    "build": "node scripts/build.js",
     "release": "scripts/release.sh",
     "test": "mocha && standard"
   },
