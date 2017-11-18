@@ -16,10 +16,10 @@ registry
 
     if (parsed) {
       repos[pkg.name] = parsed.https_url
-    } else if (isUrl(repo)) {
+    } else if (isUrl(repo) && repo.startsWith('http')) {
       repos[pkg.name] = repo
     }
-
+s
     // uncomment for debugging
     // if (totalPackages>1000) return done()
   })
