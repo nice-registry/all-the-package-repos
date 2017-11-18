@@ -5,9 +5,8 @@ set -o errexit    # always exit on error
 set -o pipefail   # honor exit codes when piping
 set -o nounset    # fail on unset variables
 
-[ -z "$npm_package_repository_url" ] && echo "usage: npm run release" && exit 1;
 
-git clone $npm_package_repository_url pkg
+git clone https://github.com/nice-registry/all-the-package-repos pkg
 cd pkg
 npm run build
 npm test
