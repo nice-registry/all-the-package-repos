@@ -20,7 +20,8 @@ registry
       repos[pkg.name] = repo
     }
 
-    if (totalPackages>100) return done()
+    // uncomment for debugging
+    // if (totalPackages>1000) return done()
   })
   .on('up-to-date', done)
 
