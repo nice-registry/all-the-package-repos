@@ -31,7 +31,7 @@ registry
   })
   .on('up-to-date', done)
 
-function done() {
+function done () {
   console.log('\ndone!')
   fs.writeFileSync(
     path.join(__dirname, '../index.json'),
