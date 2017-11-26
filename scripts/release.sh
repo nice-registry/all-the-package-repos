@@ -9,6 +9,7 @@ set -o nounset    # fail on unset variables
 git clone https://github.com/nice-registry/all-the-package-repos pkg
 cd pkg
 npm run build
+npm run stats
 npm test
 [[ `git status --porcelain` ]] || exit
 git add .
