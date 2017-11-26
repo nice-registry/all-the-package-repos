@@ -2,17 +2,19 @@
 
 All the repository URLs in the npm registry as an object whose keys are package names and values are URLs.
 
-This package weighs in at about 20MB.
+This package weighs in at about 30MB.
 
 ## Stats
 
+<!-- stats -->
 Packages | Count | Percentage of Total Packages
----- | ----- | ----------
-All | 490948 | 100%
-With repository in package.json | 377306 | 76.85%
-On GitHub | 366262 |  74.60%
-On BitBucket | 2761 |  0.56%
-On GitLab | 1295 |  0.26%
+-------- | ----- | ----------------------------
+Total in npm registry | 588582 | 100%
+With repository in package.json | 456473 |  77.55%
+On GitHub | 448323 |  76.17%
+On BitBucket | 418 |  0.07%
+On GitLab | 110 |  0.02%
+<!-- /stats -->
 
 ## Installation
 

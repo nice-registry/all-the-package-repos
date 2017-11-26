@@ -8,11 +8,12 @@
   "license": "MIT",
   "scripts": {
     "build": "node scripts/build.js",
+    "stats": "node scripts/stats.js",
     "release": "scripts/release.sh",
     "test": "mocha && standard"
   },
   "devDependencies": {
-    "all-the-package-names": "^1.3250.0",
+    "all-the-package-names": "^1.3395.0",
     "chai": "^3.5.0",
     "github-url-to-object": "^4.0.2",
     "is-url": "^1.2.2",
