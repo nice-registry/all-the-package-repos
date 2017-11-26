@@ -23,4 +23,11 @@ describe('repos', () => {
       expect(isUrl(url), `${url}`).to.eq(true)
     })
   })
+
+  it('includes scoped package names', () => {
+    expect(repos['@angular/core']).to.equal('https://github.com/angular/angular')
+
+    const scopedNames = Object.keys(repos).filter(name => name.startsWith('@'))
+    expect(scopedNames.length).to.be.above(32 * 1000)
+  })
 })
