@@ -13,6 +13,6 @@ if (!module.parent) {
   const longestHostname = hostnames.sort((a, b) => b.length - a.length)[0]
 
   counts.forEach(hostname => {
-    console.log(pad(hostname.value, longestHostname.length+3) + String(hostname.count))
+    console.log(pad(hostname.value, longestHostname.length + 3) + String(hostname.count))
   })
 }
