@@ -21,5 +21,12 @@
     "ora": "^1.1.0",
     "package-stream": "^3.0.1",
     "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "count-array-values": "^1.2.1",
+    "pad": "^2.0.3"
+  },
+  "bin": {
+    "all-the-package-repo-hostnames": "hostnames.js"
   }
 }

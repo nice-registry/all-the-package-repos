@@ -40,6 +40,45 @@ GitHub URLs are normalized to their `https` form using
 - `foo/bar` becomes `https://github.com/foo/bar`
 - [etc...](http://ghub.io/github-url-to-object)
 
+### Repository Hostnames
+
+For the curious, there's a submodule that collects all the hostnames of all the
+repository URLS:
+
+```js
+require('./hostnames').slice(0,10)
+
+[ 
+  { value: 'github.com', count: 452768 },
+  { value: 'bitbucket.org', count: 553 },
+  { value: 'git.oschina.net', count: 219 },
+  { value: 'gitlab.com', count: 116 },
+  { value: 'git.coding.net', count: 114 },
+  { value: 'archive.voodoowarez.com', count: 81 },
+  { value: 'gitee.com', count: 60 },
+  { value: 'gitlab.baidu.com', count: 49 },
+  { value: 'git-wip-us.apache.org', count: 38 },
+  { value: 'gitlab.alibaba-inc.com', count: 36 }
+]
+```
+
+It also has a CLI:
+
+```sh
+all-the-package-repo-hostnames | head -n 10
+
+github.com                                        452768
+bitbucket.org                                     553
+git.oschina.net                                   219
+gitlab.com                                        116
+git.coding.net                                    114
+archive.voodoowarez.com                           81
+gitee.com                                         60
+gitlab.baidu.com                                  49
+git-wip-us.apache.org                             38
+gitlab.alibaba-inc.com                            36
+```
+
 ## Tests
 
 ```sh
