@@ -9,11 +9,11 @@ This package weighs in at about 30MB.
 <!-- stats -->
 Packages | Count | Percentage of Total Packages
 -------- | ----- | ----------------------------
-Total in npm registry | 689033 | 100%
-With repository in package.json | 521315 |  75.66%
-On GitHub | 511578 |  74.25%
+Total in npm registry | 690640 | 100%
+With repository in package.json | 521761 |  75.55%
+On GitHub | 512008 |  74.14%
 On BitBucket | 434 |  0.06%
-On GitLab | 253 |  0.04%
+On GitLab | 255 |  0.04%
 <!-- /stats -->
 
 ## Installation
