@@ -19,7 +19,7 @@ registry
 
     const repo = (pkg.repository.url) ? pkg.repository.url : pkg.repository
     let parsed
-    
+
     try {
       parsed = parseGitHubUrl(repo)
     } catch (err) {
