@@ -18,7 +18,14 @@ registry
     }
 
     const repo = (pkg.repository.url) ? pkg.repository.url : pkg.repository
-    const parsed = parseGitHubUrl(repo)
+    let parsed
+    
+    try {
+      parsed = parseGitHubUrl(repo)
+    } catch (err) {
+      console.error('unable to parse GitHub URL', repo)
+      console.error(err)
+    }
 
     if (parsed) {
       repos[pkg.name] = parsed.https_url
