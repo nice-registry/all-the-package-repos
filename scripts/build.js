@@ -40,9 +40,18 @@ registry
 
 function done () {
   console.log('\ndone!')
+
+  const sorted = {}
+  const keys = Object.keys(repos).sort()
+
+  for (const key of keys) {
+    sorted[key] = repos[key]
+    delete repos[key]
+  }
+
   fs.writeFileSync(
     path.join(__dirname, '../index.json'),
-    JSON.stringify(repos, null, 2)
+    JSON.stringify(sorted, null, 2)
   )
   process.exit()
 }
