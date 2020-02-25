@@ -17,7 +17,7 @@ describe('repos', () => {
     expect(repos.express).to.equal('https://github.com/expressjs/express')
   })
 
-  it('is always a URL', () => {
+  it('is always a URL', function () {
     this.timeout(10 * 1000)
     const urls = Object.values(repos)
     urls.forEach(url => {
