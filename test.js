@@ -18,6 +18,7 @@ describe('repos', () => {
   })
 
   it('is always a URL', () => {
+    this.timeout(10 * 1000)
     const urls = Object.values(repos)
     urls.forEach(url => {
       expect(isUrl(url), `${url}`).to.eq(true)
