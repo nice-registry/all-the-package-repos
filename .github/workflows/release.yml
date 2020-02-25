@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: npm ci
+      run: npm ci
+    - name: release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git checkout "${GITHUB_HEAD_REF}"
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+        npm run build
+        npm run stats
+        npm test
+        [[ `git status --porcelain` ]] || exit
+        git add .
+        git commit -am "update all-the-package-repos"
+        npm version minor -m "bump minor to %s"
+        git push origin master --follow-tags
+        npm publish
