@@ -13,9 +13,11 @@ registry
     spinner.text = String(++totalPackages)
     if (!pkg || !pkg.name || !pkg.repository) return
 
+    /* uncomment for debug
     if (totalPackages > 500 * 1000) {
       console.log(pkg.name)
     }
+    // */
 
     const repo = (pkg.repository.url) ? pkg.repository.url : pkg.repository
     let parsed
