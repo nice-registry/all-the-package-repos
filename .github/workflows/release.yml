@@ -25,8 +25,9 @@ jobs:
         npm run stats
         npm test
         [[ `git status --porcelain` ]] || exit
+
         git add .
-        git commit -am "update all-the-package-repos"
-        npm version minor -m "bump minor to %s"
+        npm version minor -f -m "update all-the-package-repos to %s"
+
         git push origin master --follow-tags
         npm publish
