@@ -15,6 +15,7 @@ jobs:
     - name: release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         git checkout "${GITHUB_SHA}"
         git config --global user.name "github-actions"
@@ -26,7 +27,7 @@ jobs:
         npm test
         [[ `git status --porcelain` ]] || exit
 
-        echo "//registry.npmjs.org/:_authToken=${secrets.NPM_TOKEN}" > .npmrc
+        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
         git add .
         # bump the version, commit, and create a tag
