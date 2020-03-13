@@ -1,0 +1,26 @@
+{
+  "packages": 0,
+  "last": 0,
+  "latest": 0,
+  "runs": {
+    "total": 0,
+    "status": {
+    }
+  },
+  "repos": {
+    "github": 0,
+    "gitlab": 0,
+    "bitbucket": 0,
+    "others": 0
+  },
+  "stats": {
+    "changes": 0,
+    "inserts": 0,
+    "updates": 0,
+    "deletes": 0,
+    "invalid": 0,
+    "ignored": 0
+  },
+  "batch": {
+  }
+}
