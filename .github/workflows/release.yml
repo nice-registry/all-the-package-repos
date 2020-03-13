@@ -27,7 +27,7 @@ jobs:
         npm test
         [[ `git status --porcelain` ]] || exit
 
-        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
         git add .
         # bump the version, commit, and create a tag
