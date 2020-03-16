@@ -13,28 +13,18 @@ jobs:
     - name: npm ci
       run: npm ci
     - name: release
-      env:
-        GITHUB_PAT_FROM_ZEKE: ${{ secrets.GITHUB_PAT_FROM_ZEKE }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        THE_SECRET: ${{ secrets.THE_SECRET }}
       run: |
-        echo using raw: ${{ secrets.THE_SECRET }}
-        echo using env: ${THE_SECRET}
-
-        exit 0
-
-        git checkout "${GITHUB_SHA}"
+        git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_PAT_FROM_ZEKE }}@github.com/${{ github.repository }}.git"
+        git checkout "${{ github.sha }}"
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
-        git remote set-url origin "https://x-access-token:${GITHUB_PAT_FROM_ZEKE}@github.com/${GITHUB_REPOSITORY}.git"
 
         npm run build
         npm run stats
         npm test
         [[ `git status --porcelain` ]] || exit
 
-        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
         git add .
         # bump the version, commit, and create a tag
