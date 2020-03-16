@@ -17,7 +17,13 @@ jobs:
         GITHUB_PAT_FROM_ZEKE: ${{ secrets.GITHUB_PAT_FROM_ZEKE }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        THE_SECRET: ${{ secrets.THE_SECRET }}
       run: |
+        echo using raw: ${{ secrets.THE_SECRET }}
+        echo using env: ${{ THE_SECRET }}
+
+        exit 0
+
         git checkout "${GITHUB_SHA}"
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
