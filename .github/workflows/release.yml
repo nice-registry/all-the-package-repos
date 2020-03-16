@@ -20,7 +20,7 @@ jobs:
         THE_SECRET: ${{ secrets.THE_SECRET }}
       run: |
         echo using raw: ${{ secrets.THE_SECRET }}
-        echo using env: ${{ THE_SECRET }}
+        echo using env: ${THE_SECRET}
 
         exit 0
 
