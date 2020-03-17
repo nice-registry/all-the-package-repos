@@ -534,8 +534,8 @@ const processCached = () => {
   const request = {
     since: batch.since,
     include_docs: true,
-    inactivity_ms: 1000 * 60 * 2, // 10 minutes
-    heartbeat: 1000 * 60 * 10 // 10 minutes
+    inactivity_ms: 1000 * 60 * 5, // 10 minutes
+    heartbeat: 1000 * 60 * 20 // 10 minutes
   }
 
   if (batch.limit > 0 && Number.isFinite(batch.limit)) {
