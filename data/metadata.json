@@ -1,11 +1,11 @@
 {
   "packages": 634154,
-  "last": 2817133,
-  "latest": 5591638,
+  "last": 2817134,
+  "latest": 5591742,
   "runs": {
-    "total": 2,
+    "total": 3,
     "status": {
-      "restart": 2
+      "restart": 3
     }
   },
   "repos": {
@@ -20,18 +20,21 @@
     "updates": 0,
     "deletes": 15512,
     "invalid": 293952,
-    "ignored": 0
+    "ignored": 1
   },
   "batch": {
-    "limit": 1,
-    "since": 2817133,
-    "index": 2817133,
-    "until": 2817134,
-    "started": "2020-03-17T23:08:23.513Z",
-    "finished": "2020-03-17T23:13:24.716Z",
-    "took_ms": 301203,
+    "limit": 2774608,
+    "since": 2817134,
+    "index": 2817134,
+    "until": 5591742,
+    "started": "2020-03-17T23:18:32.180Z",
+    "finished": "2020-03-17T23:23:51.641Z",
+    "took_ms": 319461,
     "found": 0,
     "status": "restart"
   },
+  "ignored": [
+    2817133
+  ],
   "error": true
 }
