@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+      with:
+        token: ${{ secrets.GITHUB_PAT_FROM_ZEKE }}
     - name: npm ci
       run: npm ci
     - name: release
       run: |
-        git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_PAT_FROM_ZEKE }}@github.com/${{ github.repository }}.git"
         git checkout "${{ github.sha }}"
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@users.noreply.github.com"
