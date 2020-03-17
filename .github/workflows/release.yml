@@ -28,7 +28,7 @@ jobs:
 
         git add .
         # bump the version, commit, and create a tag
-        npm version minor -f -m "update all-the-package-repos to %s"
+        npm version patch -f -m "update all-the-package-repos to %s"
 
         git push origin master --follow-tags
         npm publish
