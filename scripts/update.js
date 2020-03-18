@@ -86,6 +86,11 @@ const progress = {
   scale: 0.01
 }
 
+/**
+ * Maximum allowed run time
+ */
+const killAfter = 1000 * 60 * 60 * 5
+
 const setupBatch = async (db) => {
   const relax = await db.relax()
 
@@ -599,6 +604,12 @@ const processCached = () => {
     const force = true
     printProgress(force)
   })
+
+  setTimeout(() => {
+    console.log('killed!')
+    batch.status = 'killed'
+    feed.stop()
+  }, killAfter)
 
   const deferred = {}
 
