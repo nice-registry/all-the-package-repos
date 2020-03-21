@@ -2,7 +2,7 @@
   "name": "all-the-package-repos",
   "version": "1.357.13",
   "description": "All the repository URLs in the npm registry as an object whose keys are package names and values are URLs",
-  "main": "index.json",
+  "main": "data/packages.json",
   "repository": "https://github.com/nice-registry/all-the-package-repos",
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
