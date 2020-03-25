@@ -539,7 +539,7 @@ const processCached = () => {
   const request = {
     since: batch.since,
     include_docs: true,
-    inactivity_ms: 1000 * 60 * 60 *,
+    inactivity_ms: 1000 * 60 * 60,
     heartbeat: 1000 * 60 * 15
   }
 
