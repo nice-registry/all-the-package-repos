@@ -1,14 +1,14 @@
 {
   "packages": 837424,
   "last": 5891750,
-  "latest": 5958180,
+  "latest": 5966094,
   "runs": {
-    "total": 67,
+    "total": 68,
     "status": {
       "restart": 4,
       "timeout": 18,
       "ok": 11,
-      "killed": 34
+      "killed": 35
     }
   },
   "repos": {
@@ -26,13 +26,13 @@
     "ignored": 4
   },
   "batch": {
-    "limit": 1,
+    "limit": 74344,
     "since": 5891750,
     "index": 5891750,
-    "until": 5891751,
-    "started": "2020-04-07T16:04:30.123Z",
-    "finished": "2020-04-07T21:04:52.291Z",
-    "took_ms": 18022168,
+    "until": 5966094,
+    "started": "2020-04-08T00:10:18.865Z",
+    "finished": "2020-04-08T05:10:36.696Z",
+    "took_ms": 18017831,
     "found": 0,
     "status": "killed"
   },
