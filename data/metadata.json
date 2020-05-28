@@ -1,12 +1,12 @@
 {
   "packages": 867693,
   "last": 6918056,
-  "latest": 6919959,
+  "latest": 6928523,
   "runs": {
-    "total": 215,
+    "total": 216,
     "status": {
       "restart": 4,
-      "timeout": 50,
+      "timeout": 51,
       "ok": 51,
       "killed": 110
     }
@@ -26,15 +26,15 @@
     "ignored": 11
   },
   "batch": {
-    "limit": 20704,
-    "since": 6899255,
+    "limit": 10467,
+    "since": 6918056,
     "index": 6918056,
-    "until": 6919959,
-    "started": "2020-05-27T16:10:45.553Z",
-    "finished": "2020-05-27T21:10:56.557Z",
-    "took_ms": 18011004,
-    "found": 9478,
-    "status": "killed"
+    "until": 6928523,
+    "started": "2020-05-28T00:31:54.234Z",
+    "finished": "2020-05-28T01:34:17.714Z",
+    "took_ms": 3743480,
+    "found": 0,
+    "status": "timeout"
   },
   "ignored": [
     2817133,
@@ -48,5 +48,6 @@
     6408268,
     6597446,
     6815143
-  ]
+  ],
+  "error": true
 }
