@@ -1,40 +1,40 @@
 {
-  "packages": 877096,
-  "last": 7266044,
-  "latest": 7266044,
+  "packages": 877136,
+  "last": 7269822,
+  "latest": 7277756,
   "runs": {
-    "total": 271,
+    "total": 272,
     "status": {
       "restart": 4,
       "timeout": 57,
       "ok": 61,
-      "killed": 149
+      "killed": 150
     }
   },
   "repos": {
-    "github": 863698,
-    "gitlab": 3020,
+    "github": 863735,
+    "gitlab": 3023,
     "bitbucket": 1097,
     "others": 9281
   },
   "stats": {
-    "changes": 1992117,
-    "inserts": 880706,
-    "updates": 418957,
-    "deletes": 58913,
-    "invalid": 633541,
+    "changes": 1993546,
+    "inserts": 880749,
+    "updates": 419887,
+    "deletes": 58933,
+    "invalid": 633977,
     "ignored": 13
   },
   "batch": {
-    "limit": 6308,
-    "since": 7259736,
-    "index": 7266044,
-    "until": 7266044,
-    "started": "2020-06-15T08:09:34.327Z",
-    "finished": "2020-06-15T09:09:29.378Z",
-    "took_ms": 3595051,
-    "found": 2942,
-    "status": "ok"
+    "limit": 11712,
+    "since": 7266044,
+    "index": 7269822,
+    "until": 7277756,
+    "started": "2020-06-15T16:09:29.811Z",
+    "finished": "2020-06-15T21:10:00.353Z",
+    "took_ms": 18030542,
+    "found": 1429,
+    "status": "killed"
   },
   "ignored": [
     2817133,
