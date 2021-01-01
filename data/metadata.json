@@ -1,14 +1,14 @@
 {
   "packages": 971400,
   "last": 10968426,
-  "latest": 10977874,
+  "latest": 10979550,
   "runs": {
-    "total": 866,
+    "total": 867,
     "status": {
       "restart": 4,
       "timeout": 67,
       "ok": 229,
-      "killed": 566
+      "killed": 567
     }
   },
   "repos": {
@@ -26,13 +26,13 @@
     "ignored": 14
   },
   "batch": {
-    "limit": 9448,
+    "limit": 11124,
     "since": 10968426,
     "index": 10968426,
-    "until": 10977874,
-    "started": "2021-01-01T01:08:07.723Z",
-    "finished": "2021-01-01T06:08:23.100Z",
-    "took_ms": 18015377,
+    "until": 10979550,
+    "started": "2021-01-01T08:30:19.044Z",
+    "finished": "2021-01-01T13:30:53.624Z",
+    "took_ms": 18034580,
     "found": 0,
     "status": "killed"
   },
