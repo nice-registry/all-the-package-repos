@@ -7,27 +7,23 @@
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js",
+    "rebuild": "node scripts/rebuild.js",
     "stats": "node scripts/stats.js",
     "update": "node scripts/update.js",
-    "release": "scripts/release.sh",
     "test": "mocha && standard"
   },
   "devDependencies": {
-    "all-the-package-names": "^1.3395.0",
     "bitbucket-url-to-object": "^0.3.0",
-    "chai": "^3.5.0",
-    "github-url-to-object": "^4.0.2",
-    "is-url": "^1.2.2",
-    "mocha": "^3.2.0",
-    "nano": "^8.2.2",
-    "ora": "^1.1.0",
-    "package-stream": "^3.0.1",
-    "standard": "^8.6.0"
+    "chai": "^4.3.4",
+    "github-url-to-object": "^4.0.6",
+    "is-url": "^1.2.4",
+    "mocha": "^9.1.1",
+    "nano": "^8.2.3",
+    "standard": "^16.0.3"
   },
   "dependencies": {
     "count-array-values": "^1.2.1",
-    "pad": "^2.0.3"
+    "pad": "^3.2.0"
   },
   "bin": {
     "all-the-package-repo-hostnames": "hostnames.js"

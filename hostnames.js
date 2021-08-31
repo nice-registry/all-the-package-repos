@@ -1,14 +1,24 @@
 #!/usr/bin/env node
 
-const URL = require('url')
+const urlModule = require('url')
 const countValues = require('count-array-values')
-const urls = Object.values(require('.'))
-const hostnames = urls.map(url => URL.parse(url).hostname.replace(/^www\./i, ''))
+const hostnames = []
+
+Object.values(require('.')).forEach((url) => {
+  if (!url) {
+    return
+  }
+
+  try {
+    hostnames.push((new urlModule.URL('', url)).host.replace(/^www\./i, ''))
+  } catch (err) {}
+})
+
 const counts = countValues(hostnames)
 
 module.exports = counts
 
-if (!module.parent) {
+if (require.main) {
   const pad = require('pad')
   const longestHostname = hostnames.sort((a, b) => b.length - a.length)[0]
 
