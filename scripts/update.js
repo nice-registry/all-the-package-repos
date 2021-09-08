@@ -436,6 +436,7 @@ const writeChanges = (deferred) => {
     fs.writeFileSync(files.packages, toJson(sort(packages)))
   }
 
+  writeReadme()
   writeCache()
 
   err ? deferred.reject(err)
@@ -464,6 +465,21 @@ const writeCache = () => {
 
   caches.buffer.length = 0
   caches.index = next
+}
+
+const writeReadme = () => {
+  if (!batch.found) {
+    return // not new changes
+  }
+
+  const tpl = require('../lib/stats-tpl')
+
+  const readmeFile = path.join(__dirname, '../readme.md')
+  const readme = fs
+    .readFileSync(readmeFile, 'utf8')
+    .replace(tpl.regex, tpl.build(metadata))
+
+  fs.writeFileSync(readmeFile, readme)
 }
 
 const processCached = () => {
