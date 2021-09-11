@@ -25,7 +25,7 @@ const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
  */
 const batch = {
   // How many changes to apply during the process (or `<= 0` to disable)
-  limit: 0
+  limit: process.env.BATCH_LIMIT * 1 || 0
 }
 
 /**
