@@ -213,20 +213,17 @@ const apply = (change) => {
   const curr = packages[name]
 
   if (change.deleted) {
-    if (typeof curr === 'string') {
-      updateRepoStats(curr, -1)
-    }
+    updateRepoStats(curr, -1)
 
     stats.deletes += 1
     return delete packages[name]
   }
 
-  const url = extractUrl(change)
-
-  if (!url) {
-    stats.invalid += 1
-    return
-  }
+  // TODO: this must be simplified as soon as standard linter
+  //  will get updated since it doesn't support ?? operator
+  //  const url = extractUrl(change) ?? null
+  let url = extractUrl(change)
+  url = typeof url === 'string' ? url : null
 
   if (typeof curr === 'string') {
     updateRepoStats(curr, -1)
@@ -328,6 +325,10 @@ const extractDomain = (repoUrl) => {
 }
 
 const updateRepoStats = (url, delta) => {
+  if (typeof url !== 'string') {
+    return
+  }
+
   const type = extractType(url)
   repos[type] = (repos[type] || 0) + Math.sign(delta)
 }
