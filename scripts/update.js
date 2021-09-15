@@ -225,6 +225,10 @@ const apply = (change) => {
   let url = extractUrl(change)
   url = typeof url === 'string' ? url : null
 
+  if (!url) {
+    stats.invalid += 1
+  }
+
   if (typeof curr === 'string') {
     updateRepoStats(curr, -1)
     stats.updates += 1
