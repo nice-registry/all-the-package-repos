@@ -87,10 +87,16 @@ const progress = {
   scale: 0.01
 }
 
+const millis = 1
+const seconds = 1000 * millis
+const minutes = 60 * seconds
+const hours = 60 * minutes
+
 /**
  * Maximum allowed run time
  */
-const killAfter = 1000 * 60 * 60 * 5
+const killAfter = process.env.KILL_AFTER_MILLIS * 1
+               || 7.5 * hours
 
 const setupBatch = async (db) => {
   const relax = await db.relax()
