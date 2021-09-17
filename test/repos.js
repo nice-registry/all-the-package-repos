@@ -2,7 +2,7 @@ const describe = require('mocha').describe
 const it = require('mocha').it
 const expect = require('chai').expect
 const isUrl = require('is-url')
-const repos = require('.')
+const repos = require('..')
 
 describe('repos', () => {
   it('is an object with lots of values', () => {
