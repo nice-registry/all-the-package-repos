@@ -24,6 +24,7 @@ const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
  * State info about the changes being processed
  */
 const batch = {
+  status: 'init',
   // How many changes to apply during the process (or `<= 0` to disable)
   limit: process.env.BATCH_LIMIT * 1 || 0
 }
@@ -114,7 +115,6 @@ const setupBatch = async (db) => {
   }
 
   // 2. setup batch limits
-
   batch.latest = relax.update_seq
   batch.index =
   batch.since = metadata.last || 0
@@ -137,7 +137,7 @@ const setupBatch = async (db) => {
     batch.limit = batch.until - batch.since
   }
 
-  delete metadata.error
+  metadata.error = false
 }
 
 /**
@@ -355,6 +355,7 @@ const updateStats = () => {
   metadata.repos = metadata.repos || {}
   metadata.stats = metadata.stats || {}
   metadata.batch = batch
+  metadata.error = Boolean(batch.error)
 
   for (const key of Object.keys(stats)) {
     metadata.stats[key] = (metadata.stats[key] || 0) + stats[key]
@@ -368,10 +369,6 @@ const updateStats = () => {
 
   const err = batch.error
 
-  if (err) {
-    metadata.error = true
-  }
-
   delete batch.latest
   delete batch.error
 
@@ -382,14 +379,10 @@ const updateStats = () => {
 
 const buildStatus = () => {
   if (batch.status) return batch.status
-
   if (batch.found === 0) {
-    metadata.error = true
+    batch.error = true
     return 'empty'
   }
-
-  delete metadata.error
-
   return 'ok'
 }
 
@@ -608,6 +601,7 @@ const processCached = () => {
 
   setTimeout(() => {
     console.log('killed!')
+    batch.error = true
     batch.status = 'killed'
     feed.stop()
   }, killAfter)
