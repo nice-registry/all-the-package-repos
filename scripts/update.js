@@ -96,7 +96,7 @@ const hours = 60 * minutes
  * Maximum allowed run time
  */
 const killAfter = process.env.KILL_AFTER_MILLIS * 1
-               || 7.5 * hours
+               || 5.75 * hours
 
 const setupBatch = async (db) => {
   const relax = await db.relax()
