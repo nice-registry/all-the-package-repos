@@ -171,20 +171,12 @@ const cache = (change) => {
     return // cache is disabled
   }
 
-  const isDelete = change.deleted
-  const isGitUrl = change.doc &&
-                   change.doc.repository
-
-  if (!(isDelete || isGitUrl)) {
-    return // not worth keeping
-  }
-
   const entry = {
     seq: change.seq,
     id: change.id
   }
 
-  if (isDelete) {
+  if (change.deleted) {
     entry.deleted = true
   } else {
     entry.doc = {
