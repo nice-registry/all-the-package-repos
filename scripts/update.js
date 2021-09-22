@@ -13,8 +13,8 @@ const to = {
  * Where the support files are stored
  */
 const files = {
-  packages: path.join(__dirname, '../data/packages.json'),
-  metadata: path.join(__dirname, '../data/metadata.json')
+  packages: path.resolve(process.env.DATA_DIR || './data', 'packages.json'),
+  metadata: path.resolve(process.env.DATA_DIR || './data', 'metadata.json')
 }
 
 const packages = fs.existsSync(files.packages) ? require(files.packages) : {}
@@ -52,7 +52,8 @@ const repos = {
   github: 0,
   gitlab: 0,
   bitbucket: 0,
-  others: 0
+  others: 0,
+  unset: 0
 }
 
 /**
@@ -216,17 +217,13 @@ const apply = (change) => {
     return delete packages[name]
   }
 
-  // TODO: this must be simplified as soon as standard linter
-  //  will get updated since it doesn't support ?? operator
-  //  const url = extractUrl(change) ?? null
-  let url = extractUrl(change)
-  url = typeof url === 'string' ? url : null
+  let url = extractUrl(change) || null
 
   if (!url) {
     stats.invalid += 1
   }
 
-  if (typeof curr === 'string') {
+  if (curr === null || typeof curr === 'string') {
     updateRepoStats(curr, -1)
     stats.updates += 1
   } else {
@@ -326,11 +323,7 @@ const extractDomain = (repoUrl) => {
 }
 
 const updateRepoStats = (url, delta) => {
-  if (typeof url !== 'string') {
-    return
-  }
-
-  const type = extractType(url)
+  const type = url === null ? 'unset' : extractType(url)
   repos[type] = (repos[type] || 0) + Math.sign(delta)
 }
 
@@ -434,7 +427,7 @@ const writeChanges = (deferred) => {
   writeCache()
 
   err ? deferred.reject(err)
-      : deferred.resolve()
+      : deferred.resolve(metadata)
 }
 
 const writeCache = () => {
@@ -513,10 +506,7 @@ const processCached = () => {
   console.log(' -> added %d entries', batch.found)
 }
 
-/**
- * Main
- */
-!(async () => {
+const update = async () => {
   const db = nano('https://replicate.npmjs.com')
 
   await setupBatch(db)
@@ -619,13 +609,22 @@ const processCached = () => {
     deferred.reject = reject
     feed.start()
   })
-})().then(
-  () => {
-    console.log(metadata)
-    process.exit(0)
-  },
-  (err) => {
-    console.error(err)
-    process.exit(1)
-  }
-)
+}
+
+module.exports = update
+
+if (process.env.NODE_ENV !== 'test') {
+  /**
+   * Main
+   */
+  update().then(
+    () => {
+      console.log(metadata)
+      process.exit(0)
+    },
+    (err) => {
+      console.error(err)
+      process.exit(1)
+    }
+  )
+}

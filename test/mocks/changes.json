@@ -1,0 +1,119 @@
+{
+  "remove-repo-from-existing" : [
+    {
+      "seq": 1,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1.git" }
+      }
+    },
+    {
+      "seq": 2,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1-updated.git" }
+      }
+    },
+    {
+      "seq": 3,
+      "id": "package1",
+      "doc": {}
+    }
+  ],
+  "delete-package": [
+    {
+      "seq": 1,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1.git" }
+      }
+    },
+    {
+      "seq": 2,
+      "id": "package1",
+      "doc": {
+        "repository": "https://gitlab.com/test/package1-updated.git"
+      }
+    },
+    {
+      "seq": 3,
+      "id": "package1",
+      "deleted": true,
+      "doc": {}
+    }
+  ],
+  "track-repos-stats": [
+    {
+      "seq": 1,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1.git" }
+      }
+    },
+    {
+      "seq": 2,
+      "id": "package1",
+      "doc": {}
+    },
+    {
+      "seq": 3,
+      "id": "package1",
+      "doc": {
+        "repository": "https://gitlab.com/test/package1-updated.git"
+      }
+    }
+  ],
+  "track-repos-stats-2": [
+    {
+      "seq": 1,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1.git" }
+      }
+    },
+    {
+      "seq": 2,
+      "id": "package1",
+      "doc": {}
+    },
+    {
+      "seq": 3,
+      "id": "package1",
+      "doc": {
+        "repository": "https://gitlab.com/test/package1-updated.git"
+      }
+    },
+    {
+      "seq": 4,
+      "id": "package1",
+      "doc": {}
+    }
+  ],
+  "cache-all-changes": [
+    {
+      "seq": 1,
+      "id": "package1",
+      "doc": {
+        "repository": { "type": "git", "url": "git+https://github.com/test/package1.git" }
+      }
+    },
+    {
+      "seq": 2,
+      "id": "package1",
+      "doc": {
+        "repository": "https://gitlab.com/test/package1-updated.git"
+      }
+    },
+    {
+      "seq": 3,
+      "id": "package1",
+      "doc": {}
+    },
+    {
+      "seq": 4,
+      "id": "package1",
+      "deleted": true,
+      "doc": {}
+    }
+  ]
+}
