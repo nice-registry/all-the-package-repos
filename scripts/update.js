@@ -49,6 +49,7 @@ const stats = {
  * Stats about the repos
  */
 const repos = {
+  unsets: 0,
   github: 0,
   gitlab: 0,
   bitbucket: 0,
@@ -177,12 +178,6 @@ const cache = (change) => {
   }
 
   const isDelete = change.deleted
-  const isGitUrl = change.doc &&
-                   change.doc.repository
-
-  if (!(isDelete || isGitUrl)) {
-    return // not worth keeping
-  }
 
   const entry = {
     seq: change.seq,
@@ -191,9 +186,13 @@ const cache = (change) => {
 
   if (isDelete) {
     entry.deleted = true
-  } else {
+  }
+
+  const repo = extractRepository(change)
+
+  if (repo) {
     entry.doc = {
-      repository: change.doc.repository
+      repository: repo
     }
   }
 
@@ -226,32 +225,38 @@ const apply = (change) => {
     return delete packages[name]
   }
 
-  const url = extractUrl(change)
+  const changeUrl = extractUrl(change)
+  const parsedUrl = parseUrl(changeUrl) || null
 
-  if (!url) {
+  if (changeUrl && !parsedUrl) {
     stats.invalid += 1
     return
   }
 
-  if (typeof curr === 'string') {
-    updateRepoStats(curr, -1)
-    stats.updates += 1
-  } else {
+  if (typeof curr === 'undefined') {
     stats.inserts += 1
+  } else {
+    stats.updates += 1
+    updateRepoStats(curr, -1)
   }
 
-  packages[name] = url
-  updateRepoStats(url, +1)
+  packages[name] = parsedUrl
+  updateRepoStats(parsedUrl, +1)
+}
+
+const extractRepository = (change) => {
+  return change.doc &&
+         change.doc.repository
 }
 
 /**
  * @return {string} - repo url
  */
 const extractUrl = (change) => {
-  const repo = change.doc &&
-               change.doc.repository
-
-  return repo && parseUrl(repo)
+  const repo = extractRepository(change)
+  return typeof repo === 'string'
+    ? repo
+    : repo && repo.url
 }
 
 const urlToObject = (parse) => {
@@ -275,11 +280,7 @@ const URL_PARSERS = [
   plainUrl
 ]
 
-const parseUrl = (repo) => {
-  const url = typeof repo === 'string'
-    ? repo
-    : repo.url
-
+const parseUrl = (url) => {
   if (typeof url !== 'string') {
     return
   }
@@ -310,6 +311,10 @@ const TYPES = [
 ]
 
 const extractType = (url) => {
+  if (url === null) {
+    return 'unsets'
+  }
+
   const domain = extractDomain(url)
 
   if (domain) {

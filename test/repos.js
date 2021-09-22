@@ -19,10 +19,9 @@ describe('repos', () => {
 
   it('is always a URL', function () {
     this.timeout(10 * 1000)
-    const urls = Object.values(repos)
-    urls.forEach(url => {
-      expect(isUrl(url), `${url}`).to.eq(true)
-    })
+    for (const url of Object.values(repos)) {
+      expect(url === null || isUrl(url), url).to.eq(true)
+    }
   })
 
   it('includes scoped package names', () => {
