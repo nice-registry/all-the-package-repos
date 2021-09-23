@@ -3,7 +3,7 @@ const nock = require('nock')
 
 module.exports.loadUpdateScript = () => {
   delete require.cache[require.resolve('../scripts/update.js')]
-  return require('../scripts/update');
+  return require('../scripts/update')
 }
 
 module.exports.mockChangesStream = (changes) => {

@@ -3,7 +3,7 @@ const expect = require('chai').expect
 const { mockChangesStream, loadUpdateScript } = require('../utils')
 const changes = require('../mocks/changes.json')
 
-describe('Update process', function () {
+describe('update process', function () {
   it('should process empty batch', async () => {
     mockChangesStream([])
 
@@ -29,10 +29,10 @@ describe('Update process', function () {
     })
 
     expect(meta.stats).to.deep.equal({
-      'changes': 3,
+      'changes': 4,
       'inserts': 1,
       'updates': 1,
-      'deletes': 1,
+      'deletes': 2,
       'invalid': 0,
       'ignored': 0
     })
@@ -72,15 +72,15 @@ describe('Update process', function () {
       'github': 0,
       'gitlab': 1,
       'bitbucket': 0,
-      'others': 0,
+      'others': 1,
       'unset': 0
     })
 
     expect(meta.stats).to.deep.equal({
-      'changes': 3,
-      'inserts': 1,
+      'changes': 5,
+      'inserts': 2,
       'updates': 2,
-      'deletes': 0,
+      'deletes': 1,
       'invalid': 1,
       'ignored': 0
     })

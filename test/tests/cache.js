@@ -7,7 +7,7 @@ const changes = require('../mocks/changes.json')
 
 process.env.CACHE_DIR = './.test_output/cache'
 
-describe('Caching', function () {
+describe('caching', function () {
   before(() => {
     process.env.CACHE_READ = 0
     process.env.CACHE_WRITE = 1

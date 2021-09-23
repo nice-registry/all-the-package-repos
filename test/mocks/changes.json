@@ -40,6 +40,12 @@
       "id": "package1",
       "deleted": true,
       "doc": {}
+    },
+    {
+      "seq": 4,
+      "id": "package2",
+      "deleted": true,
+      "doc": {}
     }
   ],
   "track-repos-stats": [
@@ -61,6 +67,18 @@
       "doc": {
         "repository": "https://gitlab.com/test/package1-updated.git"
       }
+    },
+    {
+      "seq": 4,
+      "id": "package2",
+      "doc": {
+        "repository": "https://othergit.com/test/package1-updated.git"
+      }
+    },
+    {
+      "seq": 5,
+      "id": "package3",
+      "deleted": true
     }
   ],
   "track-repos-stats-2": [

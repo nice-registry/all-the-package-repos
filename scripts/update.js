@@ -211,7 +211,9 @@ const apply = (change) => {
   const curr = packages[name]
 
   if (change.deleted) {
-    updateRepoStats(curr, -1)
+    if (curr !== undefined) {
+      updateRepoStats(curr, -1)
+    }
 
     stats.deletes += 1
     return delete packages[name]
@@ -300,6 +302,8 @@ const TYPES = [
 ]
 
 const extractType = (url) => {
+  if (url === null) return 'unset'
+
   const domain = extractDomain(url)
 
   if (domain) {
@@ -323,7 +327,7 @@ const extractDomain = (repoUrl) => {
 }
 
 const updateRepoStats = (url, delta) => {
-  const type = url === null ? 'unset' : extractType(url)
+  const type = extractType(url)
   repos[type] = (repos[type] || 0) + Math.sign(delta)
 }
 

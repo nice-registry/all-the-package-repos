@@ -1,6 +1,7 @@
 const expect = require('chai').expect
 const isUrl = require('is-url')
 const repos = require('../..')
+const metadata = require('../../data/metadata.json')
 
 describe('repos', () => {
   it('is an object with lots of values', () => {
@@ -28,5 +29,12 @@ describe('repos', () => {
 
     const scopedNames = Object.keys(repos).filter(name => name.startsWith('@'))
     expect(scopedNames.length).to.be.above(32 * 1000)
+  })
+
+  it('should keep correct repos statistics', () => {
+    const packagesCount = Object.keys(repos).length
+    const statsCount = Object.values(metadata.repos).reduce((a, b) => a + b, 0)
+
+    expect(packagesCount).to.equal(statsCount)
   })
 })
