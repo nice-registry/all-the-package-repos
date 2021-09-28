@@ -1,6 +1,4 @@
 .env
 .npmrc
 .cache/
-.nyc_output/
-.test_output/
-node_modules/
+node_modules

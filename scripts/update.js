@@ -1,5 +1,5 @@
 const fs = require('fs')
-const url = require('url')
+const urlParser = require('url')
 const path = require('path')
 const nano = require('nano')
 
@@ -13,8 +13,8 @@ const to = {
  * Where the support files are stored
  */
 const files = {
-  packages: path.resolve(process.env.DATA_DIR || './data', 'packages.json'),
-  metadata: path.resolve(process.env.DATA_DIR || './data', 'metadata.json')
+  packages: path.join(__dirname, '../data/packages.json'),
+  metadata: path.join(__dirname, '../data/metadata.json')
 }
 
 const packages = fs.existsSync(files.packages) ? require(files.packages) : {}
@@ -49,11 +49,11 @@ const stats = {
  * Stats about the repos
  */
 const repos = {
+  unsets: 0,
   github: 0,
   gitlab: 0,
   bitbucket: 0,
-  others: 0,
-  unset: 0
+  others: 0
 }
 
 /**
@@ -121,6 +121,7 @@ const setupBatch = async (db) => {
   }
 
   // 2. setup batch limits
+
   batch.latest = relax.update_seq
   batch.index =
   batch.since = metadata.last || 0
@@ -186,7 +187,7 @@ const cache = (change) => {
     entry.deleted = true
   } else {
     entry.doc = {
-      repository: change.doc.repository
+      repository: change.doc && change.doc.repository
     }
   }
 
@@ -211,7 +212,7 @@ const apply = (change) => {
   const curr = packages[name]
 
   if (change.deleted) {
-    if (curr !== undefined) {
+    if (typeof curr === 'string') {
       updateRepoStats(curr, -1)
     }
 
@@ -219,31 +220,34 @@ const apply = (change) => {
     return delete packages[name]
   }
 
-  let url = extractUrl(change) || null
+  const changeUrl = extractUrl(change)
+  const parsedUrl = parseUrl(changeUrl) || null
 
-  if (!url) {
+  if (changeUrl && !parsedUrl) {
     stats.invalid += 1
+    return
   }
 
-  if (curr === null || typeof curr === 'string') {
-    updateRepoStats(curr, -1)
-    stats.updates += 1
-  } else {
+  if (typeof curr === 'undefined') {
     stats.inserts += 1
+  } else {
+    stats.updates += 1
+    updateRepoStats(curr, -1)
   }
 
-  packages[name] = url
-  updateRepoStats(url, +1)
+  packages[name] = parsedUrl
+  updateRepoStats(parsedUrl, +1)
 }
 
 /**
  * @return {string} - repo url
  */
 const extractUrl = (change) => {
-  const repo = change.doc &&
-               change.doc.repository
+  const repo = change.doc && change.doc.repository
 
-  return repo && parseUrl(repo)
+  return typeof repo === 'string'
+    ? repo
+    : repo && repo.url
 }
 
 const urlToObject = (parse) => {
@@ -267,11 +271,7 @@ const URL_PARSERS = [
   plainUrl
 ]
 
-const parseUrl = (repo) => {
-  const url = typeof repo === 'string'
-    ? repo
-    : repo.url
-
+const parseUrl = (url) => {
   if (typeof url !== 'string') {
     return
   }
@@ -302,7 +302,9 @@ const TYPES = [
 ]
 
 const extractType = (url) => {
-  if (url === null) return 'unset'
+  if (url === null) {
+    return 'unsets'
+  }
 
   const domain = extractDomain(url)
 
@@ -319,7 +321,7 @@ const extractType = (url) => {
 
 const extractDomain = (repoUrl) => {
   try {
-    const { hostname } = url.parse(repoUrl)
+    const { hostname } = urlParser.parse(repoUrl)
     return hostname.replace(/^www\./i, '')
   } catch (err) {
     // empty
@@ -432,7 +434,7 @@ const writeChanges = (deferred) => {
   writeCache()
 
   err ? deferred.reject(err)
-      : deferred.resolve(metadata)
+      : deferred.resolve()
 }
 
 const writeCache = () => {
@@ -526,7 +528,10 @@ const processCached = () => {
   console.log(' -> added %d entries', batch.found)
 }
 
-const update = async () => {
+/**
+ * Main
+ */
+!(async () => {
   const db = nano('https://replicate.npmjs.com')
 
   await setupBatch(db)
@@ -629,22 +634,13 @@ const update = async () => {
     deferred.reject = reject
     feed.start()
   })
-}
-
-module.exports = update
-
-if (process.env.NODE_ENV !== 'test') {
-  /**
-   * Main
-   */
-  update().then(
-    () => {
-      console.log(metadata)
-      process.exit(0)
-    },
-    (err) => {
-      console.error(err)
-      process.exit(1)
-    }
-  )
-}
+})().then(
+  () => {
+    console.log(metadata)
+    process.exit(0)
+  },
+  (err) => {
+    console.error(err)
+    process.exit(1)
+  }
+)

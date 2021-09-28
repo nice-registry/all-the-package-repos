@@ -1,6 +1,6 @@
 {
   "name": "all-the-package-repos",
-  "version": "1.358.4",
+  "version": "1.358.2",
   "description": "All the repository URLs in the npm registry as an object whose keys are package names and values are URLs",
   "main": "data/packages.json",
   "repository": "https://github.com/nice-registry/all-the-package-repos",
@@ -11,20 +11,17 @@
     "stats": "node scripts/stats.js",
     "update": "node scripts/update.js",
     "release": "scripts/release.sh",
-    "test": "mocha && standard",
-    "coverage": "nyc mocha"
+    "test": "mocha && standard"
   },
   "devDependencies": {
     "all-the-package-names": "^1.3395.0",
     "bitbucket-url-to-object": "^0.3.0",
-    "chai": "^4.3.4",
+    "chai": "^3.5.0",
     "dedent": "^0.7.0",
     "github-url-to-object": "^4.0.2",
     "is-url": "^1.2.2",
-    "mocha": "^9.1.1",
+    "mocha": "^3.2.0",
     "nano": "^8.2.2",
-    "nock": "^13.1.3",
-    "nyc": "^15.1.0",
     "ora": "^1.1.0",
     "package-stream": "^3.0.1",
     "standard": "^8.6.0"
@@ -35,10 +32,5 @@
   },
   "bin": {
     "all-the-package-repo-hostnames": "hostnames.js"
-  },
-  "standard": {
-    "env": [
-      "mocha"
-    ]
   }
 }
