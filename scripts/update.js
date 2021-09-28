@@ -149,12 +149,12 @@ const setupBatch = async (db) => {
 
 /**
  * @param {object} object
- * @param {string|integer} spaces [optional] default 2 spaces
+ * @param {number} spaces [optional] default 2 spaces
  *
  * @return {string}
  */
-const toJson = (object, spaces) => {
-  return JSON.stringify(object, null, spaces || 2)
+const toJson = (object, spaces = 2) => {
+  return JSON.stringify(object, null, spaces)
 }
 
 /**
@@ -212,7 +212,7 @@ const apply = (change) => {
   const curr = packages[name]
 
   if (change.deleted) {
-    if (typeof curr === 'string') {
+    if (typeof curr !== 'undefined') {
       updateRepoStats(curr, -1)
     }
 
