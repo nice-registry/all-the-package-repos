@@ -17,7 +17,7 @@ const files = {
   metadata: path.join(__dirname, '../data/metadata.json')
 }
 
-const packages = fs.existsSync(files.packages) ? require(files.packages) : {}
+const packages = new Map(fs.existsSync(files.packages) ? Object.entries(require(files.packages)) : [])
 const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
 
 /**
@@ -209,7 +209,7 @@ const apply = (change) => {
   stats.changes += 1
 
   const name = change.id
-  const curr = packages[name]
+  const curr = packages.get(name)
 
   if (change.deleted) {
     if (typeof curr !== 'undefined') {
@@ -217,7 +217,7 @@ const apply = (change) => {
     }
 
     stats.deletes += 1
-    return delete packages[name]
+    return packages.delete(name)
   }
 
   const changeUrl = extractUrl(change)
@@ -235,7 +235,7 @@ const apply = (change) => {
     updateRepoStats(curr, -1)
   }
 
-  packages[name] = parsedUrl
+  packages.set(name, parsedUrl)
   updateRepoStats(parsedUrl, +1)
 }
 
@@ -342,7 +342,7 @@ const updateStats = () => {
 
   const status = buildStatus()
 
-  metadata.packages = Object.keys(packages).length
+  metadata.packages = packages.size
   metadata.last = batch.index ||
                   batch.since
 
@@ -427,7 +427,7 @@ const writeChanges = (deferred) => {
   fs.writeFileSync(files.metadata, toJson(metadata))
 
   if (batch.found > 0) {
-    fs.writeFileSync(files.packages, toJson(sort(packages)))
+    fs.writeFileSync(files.packages, toJson(sort(Object.fromEntries(packages))))
   }
 
   writeReadme()
