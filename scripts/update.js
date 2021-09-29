@@ -158,16 +158,16 @@ const toJson = (object, spaces = 2) => {
 }
 
 /**
- * @param {object} object
+ * @param {Map<string, string | null>} packagesMap
  * @return {object}
  */
-const sort = (object) => {
+const toSortedObject = (packagesMap) => {
   const sorted = {}
-  const keys = Object.keys(object).sort()
+  const keys = [...packagesMap.keys()].sort()
 
   for (const key of keys) {
-    sorted[key] = object[key]
-    delete object[key]
+    sorted[key] = packagesMap.get(key)
+    delete packagesMap.delete(key)
   }
 
   return sorted
@@ -427,7 +427,7 @@ const writeChanges = (deferred) => {
   fs.writeFileSync(files.metadata, toJson(metadata))
 
   if (batch.found > 0) {
-    fs.writeFileSync(files.packages, toJson(sort(Object.fromEntries(packages))))
+    fs.writeFileSync(files.packages, toJson(toSortedObject(packages)))
   }
 
   writeReadme()
