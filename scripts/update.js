@@ -167,7 +167,7 @@ const toSortedObject = (packagesMap) => {
 
   for (const key of keys) {
     sorted[key] = packagesMap.get(key)
-    delete packagesMap.delete(key)
+    packagesMap.delete(key)
   }
 
   return sorted
