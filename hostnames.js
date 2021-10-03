@@ -3,7 +3,7 @@
 const URL = require('url')
 const countValues = require('count-array-values')
 const urls = Object.values(require('.'))
-const hostnames = urls.filter(u => u).map(url => URL.parse(url).hostname.replace(/^www\./i, ''))
+const hostnames = urls.filter(Boolean).map(url => URL.parse(url).hostname.replace(/^www\./i, ''))
 const counts = countValues(hostnames)
 
 module.exports = counts
