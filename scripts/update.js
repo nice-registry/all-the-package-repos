@@ -1,5 +1,5 @@
 const fs = require('fs')
-const url = require('url')
+const urlParser = require('url')
 const path = require('path')
 const nano = require('nano')
 
@@ -17,7 +17,7 @@ const files = {
   metadata: path.join(__dirname, '../data/metadata.json')
 }
 
-const packages = fs.existsSync(files.packages) ? require(files.packages) : {}
+const packages = new Map(fs.existsSync(files.packages) ? Object.entries(require(files.packages)) : [])
 const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
 
 /**
@@ -49,6 +49,7 @@ const stats = {
  * Stats about the repos
  */
 const repos = {
+  unsets: 0,
   github: 0,
   gitlab: 0,
   bitbucket: 0,
@@ -120,6 +121,7 @@ const setupBatch = async (db) => {
   }
 
   // 2. setup batch limits
+
   batch.latest = relax.update_seq
   batch.index =
   batch.since = metadata.last || 0
@@ -147,25 +149,25 @@ const setupBatch = async (db) => {
 
 /**
  * @param {object} object
- * @param {string|integer} spaces [optional] default 2 spaces
+ * @param {number} spaces [optional] default 2 spaces
  *
  * @return {string}
  */
-const toJson = (object, spaces) => {
-  return JSON.stringify(object, null, spaces || 2)
+const toJson = (object, spaces = 2) => {
+  return JSON.stringify(object, null, spaces)
 }
 
 /**
- * @param {object} object
+ * @param {Map<string, string | null>} packagesMap
  * @return {object}
  */
-const sort = (object) => {
+const toSortedObject = (packagesMap) => {
   const sorted = {}
-  const keys = Object.keys(object).sort()
+  const keys = [...packagesMap.keys()].sort()
 
   for (const key of keys) {
-    sorted[key] = object[key]
-    delete object[key]
+    sorted[key] = packagesMap.get(key)
+    packagesMap.delete(key)
   }
 
   return sorted
@@ -176,24 +178,16 @@ const cache = (change) => {
     return // cache is disabled
   }
 
-  const isDelete = change.deleted
-  const isGitUrl = change.doc &&
-                   change.doc.repository
-
-  if (!(isDelete || isGitUrl)) {
-    return // not worth keeping
-  }
-
   const entry = {
     seq: change.seq,
     id: change.id
   }
 
-  if (isDelete) {
+  if (change.deleted) {
     entry.deleted = true
   } else {
     entry.doc = {
-      repository: change.doc.repository
+      repository: change.doc && change.doc.repository
     }
   }
 
@@ -215,43 +209,45 @@ const apply = (change) => {
   stats.changes += 1
 
   const name = change.id
-  const curr = packages[name]
+  const curr = packages.get(name)
 
   if (change.deleted) {
-    if (typeof curr === 'string') {
+    if (typeof curr !== 'undefined') {
       updateRepoStats(curr, -1)
     }
 
     stats.deletes += 1
-    return delete packages[name]
+    return packages.delete(name)
   }
 
-  const url = extractUrl(change)
+  const changeUrl = extractUrl(change)
+  const parsedUrl = parseUrl(changeUrl) || null
 
-  if (!url) {
+  if (changeUrl && !parsedUrl) {
     stats.invalid += 1
     return
   }
 
-  if (typeof curr === 'string') {
-    updateRepoStats(curr, -1)
-    stats.updates += 1
-  } else {
+  if (typeof curr === 'undefined') {
     stats.inserts += 1
+  } else {
+    stats.updates += 1
+    updateRepoStats(curr, -1)
   }
 
-  packages[name] = url
-  updateRepoStats(url, +1)
+  packages.set(name, parsedUrl)
+  updateRepoStats(parsedUrl, +1)
 }
 
 /**
  * @return {string} - repo url
  */
 const extractUrl = (change) => {
-  const repo = change.doc &&
-               change.doc.repository
+  const repo = change.doc && change.doc.repository
 
-  return repo && parseUrl(repo)
+  return typeof repo === 'string'
+    ? repo
+    : repo && repo.url
 }
 
 const urlToObject = (parse) => {
@@ -275,11 +271,7 @@ const URL_PARSERS = [
   plainUrl
 ]
 
-const parseUrl = (repo) => {
-  const url = typeof repo === 'string'
-    ? repo
-    : repo.url
-
+const parseUrl = (url) => {
   if (typeof url !== 'string') {
     return
   }
@@ -310,6 +302,10 @@ const TYPES = [
 ]
 
 const extractType = (url) => {
+  if (url === null) {
+    return 'unsets'
+  }
+
   const domain = extractDomain(url)
 
   if (domain) {
@@ -325,7 +321,7 @@ const extractType = (url) => {
 
 const extractDomain = (repoUrl) => {
   try {
-    const { hostname } = url.parse(repoUrl)
+    const { hostname } = urlParser.parse(repoUrl)
     return hostname.replace(/^www\./i, '')
   } catch (err) {
     // empty
@@ -346,7 +342,7 @@ const updateStats = () => {
 
   const status = buildStatus()
 
-  metadata.packages = Object.keys(packages).length
+  metadata.packages = packages.size
   metadata.last = batch.index ||
                   batch.since
 
@@ -431,7 +427,7 @@ const writeChanges = (deferred) => {
   fs.writeFileSync(files.metadata, toJson(metadata))
 
   if (batch.found > 0) {
-    fs.writeFileSync(files.packages, toJson(sort(packages)))
+    fs.writeFileSync(files.packages, toJson(toSortedObject(packages)))
   }
 
   writeReadme()
