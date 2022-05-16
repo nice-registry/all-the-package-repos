@@ -1,8 +1,10 @@
 # all-the-package-repos
 
+*Maintained by [jsDelivr](https://github.com/jsdelivr). Please consider [becoming a sponsor](https://github.com/sponsors/jsdelivr) to support us.*
+
 All the repository URLs in the npm registry as an object whose keys are package names and values are URLs.
 
-This package weighs in at about 30MB.
+This package weighs in at about 100 MB.
 
 ## Stats
 
