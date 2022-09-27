@@ -1,12 +1,12 @@
 {
-  "error": true,
+  "error": false,
   "packages": 2095694,
-  "last": 16137044,
-  "latest": 16148797,
+  "last": 16137045,
+  "latest": 16165076,
   "runs": {
-    "total": 455,
+    "total": 456,
     "status": {
-      "init": 439,
+      "init": 440,
       "timeout": 10,
       "killed": 5,
       "restart": 1
@@ -20,22 +20,22 @@
     "others": 19621
   },
   "stats": {
-    "changes": 8234049,
+    "changes": 8234050,
     "inserts": 2131884,
-    "updates": 5440605,
+    "updates": 5440606,
     "deletes": 486025,
     "invalid": 175535,
     "ignored": 0
   },
   "batch": {
-    "status": "restart",
-    "limit": 12713,
-    "since": 16136084,
-    "index": 16137044,
-    "until": 16148797,
-    "started": "2022-09-26T12:07:17.245Z",
-    "finished": "2022-09-26T13:31:59.293Z",
-    "took_ms": 5082048,
-    "found": 588
+    "status": "init",
+    "limit": 1,
+    "since": 16137044,
+    "index": 16137045,
+    "until": 16137045,
+    "started": "2022-09-27T00:23:01.969Z",
+    "finished": "2022-09-27T00:23:03.109Z",
+    "took_ms": 1140,
+    "found": 1
   }
 }
