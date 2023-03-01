@@ -54,8 +54,7 @@ describe('metadata', () => {
       const changes = metadata.stats.inserts +
         metadata.stats.updates +
         metadata.stats.deletes +
-        metadata.stats.invalid +
-        metadata.stats.ignored
+        metadata.stats.invalid
 
       expect(metadata.stats.changes)
         .to.be.equals(changes)
