@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3215868,
-  "last": 23778354,
-  "latest": 23778354,
+  "packages": 3205522,
+  "last": 23803696,
+  "latest": 23803696,
   "runs": {
-    "total": 976,
+    "total": 977,
     "status": {
-      "init": 864,
+      "init": 865,
       "timeout": 67,
       "killed": 44,
       "restart": 1
     }
   },
   "repos": {
-    "unsets": 1731221,
-    "github": 1455145,
-    "gitlab": 5461,
+    "unsets": 1726426,
+    "github": 1449590,
+    "gitlab": 5462,
     "bitbucket": 1352,
-    "others": 22689
+    "others": 22692
   },
   "stats": {
-    "changes": 13031811,
-    "inserts": 3350466,
-    "updates": 8664538,
-    "deletes": 707385,
-    "invalid": 309422,
+    "changes": 13054409,
+    "inserts": 3351059,
+    "updates": 8673293,
+    "deletes": 720435,
+    "invalid": 309622,
     "ignored": 5
   },
   "batch": {
     "status": "init",
-    "limit": 15405,
-    "since": 23762949,
-    "index": 23778354,
-    "until": 23778354,
-    "started": "2023-06-23T12:06:16.078Z",
-    "finished": "2023-06-23T16:02:03.371Z",
-    "took_ms": 14147293,
-    "found": 11268
+    "limit": 25342,
+    "since": 23778354,
+    "index": 23803696,
+    "until": 23803696,
+    "started": "2023-06-24T00:17:33.581Z",
+    "finished": "2023-06-24T04:32:53.869Z",
+    "took_ms": 15320288,
+    "found": 22598
   },
   "ignored": [
     20012191,
