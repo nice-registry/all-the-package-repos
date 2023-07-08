@@ -1,12 +1,12 @@
 {
-  "error": true,
+  "error": false,
   "packages": 2459058,
-  "last": 24809564,
-  "latest": 24809933,
+  "last": 24809567,
+  "latest": 24822282,
   "runs": {
-    "total": 1003,
+    "total": 1004,
     "status": {
-      "init": 883,
+      "init": 884,
       "timeout": 71,
       "killed": 48,
       "restart": 1
@@ -20,23 +20,23 @@
     "others": 22792
   },
   "stats": {
-    "changes": 13991023,
+    "changes": 13991024,
     "inserts": 3364364,
-    "updates": 8818792,
+    "updates": 8818793,
     "deletes": 1495161,
     "invalid": 312706,
     "ignored": 5
   },
   "batch": {
-    "status": "killed",
-    "limit": 30523,
-    "since": 24779410,
-    "index": 24809564,
-    "until": 24809933,
-    "started": "2023-07-07T12:05:58.737Z",
-    "finished": "2023-07-07T17:51:01.783Z",
-    "took_ms": 20703046,
-    "found": 18888
+    "status": "init",
+    "limit": 1,
+    "since": 24809564,
+    "index": 24809567,
+    "until": 24809565,
+    "started": "2023-07-08T00:16:34.205Z",
+    "finished": "2023-07-08T00:16:35.285Z",
+    "took_ms": 1080,
+    "found": 1
   },
   "ignored": [
     20012191,
