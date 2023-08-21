@@ -11,17 +11,17 @@ This package weighs in at about 100 MB.
 <!-- stats -->
 Packages | Count | Percentage
 :------- | -----:| ----------:
-With repository | 1502361 | 60.18%
-Null repository | 993989 | 39.82%
-**Total** | 2496350 | 100.00%
+With repository | 1503154 | 60.19%
+Null repository | 994169 | 39.81%
+**Total** | 2497323 | 100.00%
 
 Providers | Count | Percentage
 :-------- | -----:| ----------:
-GitHub | 1472216 | 58.97%
-GitLab | 5566 | 0.22%
+GitHub | 1473002 | 58.98%
+GitLab | 5571 | 0.22%
 Bitbucket | 1361 | 0.05%
-Others | 23218 | 0.93%
-**Total** | 1502361 | 60.18%
+Others | 23220 | 0.93%
+**Total** | 1503154 | 60.19%
 <!-- /stats -->
 
 ## Installation
