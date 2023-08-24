@@ -12,8 +12,8 @@ This package weighs in at about 100 MB.
 Packages | Count | Percentage
 :------- | -----:| ----------:
 With repository | 1504196 | 60.17%
-Null repository | 995580 | 39.83%
-**Total** | 2499776 | 100.00%
+Null repository | 995581 | 39.83%
+**Total** | 2499777 | 100.00%
 
 Providers | Count | Percentage
 :-------- | -----:| ----------:
