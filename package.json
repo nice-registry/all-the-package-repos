@@ -27,8 +27,7 @@
     "standard": "^8.6.0"
   },
   "dependencies": {
-    "count-array-values": "^1.2.1",
-    "pad": "^2.0.3"
+    "count-array-values": "^1.2.1"
   },
   "bin": {
     "all-the-package-repo-hostnames": "hostnames.js"
