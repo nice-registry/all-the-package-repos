@@ -2,13 +2,13 @@
   "error": true,
   "packages": 3407718,
   "last": 38630352,
-  "latest": 39205514,
+  "latest": 39214474,
   "runs": {
-    "total": 2212,
+    "total": 2213,
     "status": {
       "init": 1960,
       "timeout": 84,
-      "killed": 166,
+      "killed": 167,
       "restart": 2
     }
   },
@@ -29,13 +29,13 @@
   },
   "batch": {
     "status": "killed",
-    "limit": 575162,
+    "limit": 1,
     "since": 38630352,
     "index": 38630352,
-    "until": 39205514,
-    "started": "2025-03-09T12:05:31.498Z",
-    "finished": "2025-03-09T17:50:31.576Z",
-    "took_ms": 20700078,
+    "until": 38630353,
+    "started": "2025-03-10T00:16:50.950Z",
+    "finished": "2025-03-10T06:01:51.053Z",
+    "took_ms": 20700103,
     "found": 0
   },
   "ignored": [
