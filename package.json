@@ -17,6 +17,7 @@
     "all-the-package-names": "^1.3395.0",
     "bitbucket-url-to-object": "^0.3.0",
     "chai": "^4.3.6",
+    "cloudant-follow": "^0.18.2",
     "dedent": "^0.7.0",
     "github-url-to-object": "^4.0.2",
     "is-url": "^1.2.2",

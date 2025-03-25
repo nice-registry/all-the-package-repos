@@ -2,6 +2,7 @@ const fs = require('fs')
 const urlParser = require('url')
 const path = require('path')
 const nano = require('nano')
+const originalFollow = require('cloudant-follow')
 
 const isUrl = require('is-url')
 const to = {
@@ -528,11 +529,30 @@ const processCached = () => {
   console.log(' -> added %d entries', batch.found)
 }
 
+const fixFollowOptions = (opts) => {
+  return { ...opts, db: opts.db.replace(/\/$/, '') }
+}
+
+const fixedFollow = (opts, callback) => {
+  return originalFollow(fixFollowOptions(opts), callback)
+}
+
+class FixedFeed extends originalFollow.Feed {
+  constructor (opts) {
+    super(fixFollowOptions(opts))
+  }
+}
+
+fixedFollow.Feed = FixedFeed
+
 /**
  * Main
  */
 !(async () => {
-  const db = nano('https://replicate.npmjs.com')
+  const db = nano({
+    url:'https://replicate.npmjs.com',
+    follow: fixedFollow,
+  })
 
   await setupBatch(db)
   await processCached()
