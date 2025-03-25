@@ -13,11 +13,11 @@
     }
   },
   "repos": {
-    "unsets": 1425852,
-    "github": 1984783,
-    "gitlab": 6332,
-    "bitbucket": 1379,
-    "others": 27899
+    "unsets": 1415948,
+    "github": 1975976,
+    "gitlab": 6317,
+    "bitbucket": 1391,
+    "others": 27812
   },
   "stats": {
     "changes": 26073839,
