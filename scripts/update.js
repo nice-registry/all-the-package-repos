@@ -550,8 +550,8 @@ fixedFollow.Feed = FixedFeed
  */
 !(async () => {
   const db = nano({
-    url:'https://replicate.npmjs.com',
-    follow: fixedFollow,
+    url: 'https://replicate.npmjs.com',
+    follow: fixedFollow
   })
 
   await setupBatch(db)
