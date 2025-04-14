@@ -105,8 +105,8 @@ const setupBatch = async (db) => {
   // 1. was the previous ran an error?
 
   if (metadata.error) {
-    const previousLimit = metadata.batch &&
-                          metadata.batch.limit ||
+    const previousLimit = (metadata.batch &&
+                          metadata.batch.limit) ||
                           batch.limit
 
     if (previousLimit > 1) {
@@ -266,7 +266,7 @@ const plainUrl = (url) => {
 
 const URL_PARSERS = [
   urlToObject(to.github),
-/* FIXME: disabled
+  /* FIXME: disabled
   urlToObject(to.bitbucket),
 // */
   plainUrl
@@ -279,7 +279,7 @@ const parseUrl = (url) => {
 
   for (const parse of URL_PARSERS) {
     try {
-      let result = parse(url)
+      const result = parse(url)
       if (result) return result
     } catch (err) {
       continue
@@ -322,6 +322,7 @@ const extractType = (url) => {
 
 const extractDomain = (repoUrl) => {
   try {
+    // eslint-disable-next-line n/no-deprecated-api
     const { hostname } = urlParser.parse(repoUrl)
     return hostname.replace(/^www\./i, '')
   } catch (err) {
@@ -434,8 +435,9 @@ const writeChanges = (deferred) => {
   writeReadme()
   writeCache()
 
-  err ? deferred.reject(err)
-      : deferred.resolve()
+  err
+    ? deferred.reject(err)
+    : deferred.resolve()
 }
 
 const writeCache = () => {
@@ -444,7 +446,7 @@ const writeCache = () => {
   }
 
   if (!caches.buffer || caches.buffer.length === 0) {
-    return  // empty cache
+    return // empty cache
   }
 
   let next = caches.index || -1
@@ -548,6 +550,7 @@ fixedFollow.Feed = FixedFeed
 /**
  * Main
  */
+// eslint-disable-next-line no-unused-expressions
 !(async () => {
   const db = nano({
     url: 'https://replicate.npmjs.com',

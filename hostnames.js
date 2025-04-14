@@ -3,6 +3,7 @@
 const URL = require('url')
 const countValues = require('count-array-values')
 const urls = Object.values(require('.'))
+// eslint-disable-next-line n/no-deprecated-api
 const hostnames = urls.filter(Boolean).map(url => URL.parse(url).hostname.replace(/^www\./i, ''))
 const counts = countValues(hostnames)
 
