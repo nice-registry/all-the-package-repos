@@ -6,7 +6,7 @@ const spinner = ora('Loading').start()
 const parseGitHubUrl = require('github-url-to-object')
 const isUrl = require('is-url')
 const repos = {}
-var totalPackages = 0
+let totalPackages = 0
 
 registry
   .on('package', (pkg) => {

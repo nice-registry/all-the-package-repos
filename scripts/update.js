@@ -1,14 +1,30 @@
 const fs = require('fs')
 const urlParser = require('url')
 const path = require('path')
-const nano = require('nano')
-const originalFollow = require('cloudant-follow')
+const events = require('events')
+const EventEmitter = events.EventEmitter
 
+const debug = require('debug')('update')
 const isUrl = require('is-url')
+
+const got = require('got').default.extend({
+  headers: {
+    'npm-replication-opt-in': 'true' // See https://github.com/orgs/community/discussions/152515
+  },
+  timeout: {
+    request: 60 * 1000
+  }
+})
+
 const to = {
   github: require('github-url-to-object'),
   bitbucket: require('bitbucket-url-to-object')
 }
+
+const replicateUrl = 'https://replicate.npmjs.com/registry'
+const registryUrl = 'https://registry.npmjs.org'
+
+events.setMaxListeners(Infinity)
 
 /**
  * Where the support files are stored
@@ -20,6 +36,7 @@ const files = {
 
 const packages = new Map(fs.existsSync(files.packages) ? Object.entries(require(files.packages)) : [])
 const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
+metadata.notFound = new Map(metadata.notFound)
 
 /**
  * State info about the changes being processed
@@ -43,7 +60,9 @@ const stats = {
   // wrong repo urls
   invalid: 0,
   // unable to process
-  ignored: 0
+  ignored: 0,
+  // 404 response from the registry; most likely deleted in a later change
+  notFound: 0
 }
 
 /**
@@ -82,7 +101,7 @@ const caches = {
  */
 const progress = {
   // minimum time to shown something (in millis)
-  delay: 1000 * 60 * 15,
+  delay: 1000 * 60 * 5,
   // space between changes, range (0, 100)
   steps: 5.0,
   // min percent change
@@ -99,14 +118,14 @@ const hours = 60 * minutes
  */
 const killAfter = process.env.KILL_AFTER_MILLIS * 1 || 5.75 * hours
 
-const setupBatch = async (db) => {
-  const relax = await db.relax()
+const setupBatch = async () => {
+  const remoteMeta = await got(`${replicateUrl}/`).json()
 
   // 1. was the previous ran an error?
 
   if (metadata.error) {
-    const previousLimit = metadata.batch &&
-                          metadata.batch.limit ||
+    const previousLimit = (metadata.batch &&
+                          metadata.batch.limit) ||
                           batch.limit
 
     if (previousLimit > 1) {
@@ -123,7 +142,7 @@ const setupBatch = async (db) => {
 
   // 2. setup batch limits
 
-  batch.latest = relax.update_seq
+  batch.latest = remoteMeta.update_seq
   batch.index =
   batch.since = metadata.last || 0
   batch.until = Math.min(
@@ -150,7 +169,7 @@ const setupBatch = async (db) => {
 
 /**
  * @param {object} object
- * @param {number} spaces [optional] default 2 spaces
+ * @param {number} [spaces] default 2 spaces
  *
  * @return {string}
  */
@@ -212,6 +231,13 @@ const apply = (change) => {
   const name = change.id
   const curr = packages.get(name)
 
+  // We got a valid change => delete records of any previous errors for the package.
+  if (metadata.notFound.has(change.id)) {
+    stats.notFound -= 1
+    metadata.notFound.delete(change.id)
+    debug('deleting previous error for', name, change)
+  }
+
   if (change.deleted) {
     if (typeof curr !== 'undefined') {
       updateRepoStats(curr, -1)
@@ -266,7 +292,7 @@ const plainUrl = (url) => {
 
 const URL_PARSERS = [
   urlToObject(to.github),
-/* FIXME: disabled
+  /* FIXME: disabled
   urlToObject(to.bitbucket),
 // */
   plainUrl
@@ -279,7 +305,7 @@ const parseUrl = (url) => {
 
   for (const parse of URL_PARSERS) {
     try {
-      let result = parse(url)
+      const result = parse(url)
       if (result) return result
     } catch (err) {
       continue
@@ -322,6 +348,7 @@ const extractType = (url) => {
 
 const extractDomain = (repoUrl) => {
   try {
+    // eslint-disable-next-line n/no-deprecated-api
     const { hostname } = urlParser.parse(repoUrl)
     return hostname.replace(/^www\./i, '')
   } catch (err) {
@@ -425,7 +452,7 @@ const writeChanges = (deferred) => {
 
   const err = updateStats()
 
-  fs.writeFileSync(files.metadata, toJson(metadata))
+  fs.writeFileSync(files.metadata, toJson({ ...metadata, notFound: Array.from(metadata.notFound) }))
 
   if (batch.found > 0) {
     fs.writeFileSync(files.packages, toJson(toSortedObject(packages)))
@@ -434,8 +461,9 @@ const writeChanges = (deferred) => {
   writeReadme()
   writeCache()
 
-  err ? deferred.reject(err)
-      : deferred.resolve()
+  err
+    ? deferred.reject(err)
+    : deferred.resolve()
 }
 
 const writeCache = () => {
@@ -444,7 +472,7 @@ const writeCache = () => {
   }
 
   if (!caches.buffer || caches.buffer.length === 0) {
-    return  // empty cache
+    return // empty cache
   }
 
   let next = caches.index || -1
@@ -529,32 +557,144 @@ const processCached = () => {
   console.log(' -> added %d entries', batch.found)
 }
 
-const fixFollowOptions = (opts) => {
-  return { ...opts, db: opts.db.replace(/\/$/, '') }
+const wait = (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-const fixedFollow = (opts, callback) => {
-  return originalFollow(fixFollowOptions(opts), callback)
+const backoff = async (retry) => {
+  const bo = Math.min(Math.pow(retry + 1, 3) * 1000, 60 * 1000)
+  debug('retrying (', retry, '), waiting for', bo)
+  await wait(bo)
 }
 
-class FixedFeed extends originalFollow.Feed {
-  constructor (opts) {
-    super(fixFollowOptions(opts))
+const asyncQueue = async function * (items, executor, { concurrency }) {
+  const waiting = []
+
+  for (const item of items) {
+    waiting.push(executor(item))
+
+    if (waiting.length >= concurrency) {
+      yield await waiting.shift()
+    }
+  }
+
+  for (const item of waiting) {
+    yield await item
   }
 }
 
-fixedFollow.Feed = FixedFeed
+class Follower extends EventEmitter {
+  constructor ({ since, limit }) {
+    super()
+    this.since = since
+    this.limit = limit
+    this.abortController = null
+  }
+
+  start () {
+    if (this.abortController) {
+      return this
+    }
+
+    this.abortController = new AbortController()
+    this.startInternal().catch(console.error)
+    return this
+  }
+
+  async startInternal () {
+    const signal = this.abortController.signal
+    let retry = 0
+
+    while (!signal.aborted && this.limit > 0) {
+      try {
+        const body = await got(
+          `${replicateUrl}/_changes`,
+          {
+            timeout: {
+              request: 5 * 60 * 1000
+            },
+            searchParams: {
+              since: this.since,
+              limit: Math.min(this.limit, 10000)
+            },
+            retry: {
+              limit: 0
+            },
+            signal
+          }
+        ).json()
+
+        retry = 0
+
+        if (body.last_seq) {
+          this.since = body.last_seq
+        }
+
+        if (body.results) {
+          const lazyResults = asyncQueue(body.results, (change) => {
+            // Don't attempt to fetch the doc for deleted packages.
+            if (change.deleted) {
+              return change
+            }
+
+            return got(`${registryUrl}/${change.id}`, {
+              retry: {
+                limit: 10
+              },
+              signal
+            }).json().then((doc) => {
+              return { ...change, doc }
+            }).catch((error) => {
+              return { ...change, error }
+            })
+          }, { concurrency: 40 })
+
+          // The async generator ensures we process the changes in the right order,
+          // while making multiple registry fetches in parallel.
+          for await (const result of lazyResults) {
+            if (signal.aborted) {
+              break
+            }
+
+            if (result.error) {
+              this.emit('error', result.error, result)
+            } else {
+              this.emit('change', result)
+            }
+
+            this.limit -= 1
+          }
+
+          debug(`processed ${body.results.length} changes`)
+        }
+      } catch (e) {
+        debug('[error]', e)
+
+        if (!signal.aborted) {
+          await backoff(++retry)
+        }
+      }
+    }
+
+    if (this.limit <= 0) {
+      this.emit('catchup')
+    }
+
+    this.abortController = null
+  }
+
+  stop () {
+    this.abortController?.abort()
+    this.emit('stop')
+  }
+}
 
 /**
  * Main
  */
+// eslint-disable-next-line no-unused-expressions
 !(async () => {
-  const db = nano({
-    url: 'https://replicate.npmjs.com',
-    follow: fixedFollow
-  })
-
-  await setupBatch(db)
+  await setupBatch()
   await processCached()
 
   console.log('batch:')
@@ -567,19 +707,14 @@ fixedFollow.Feed = FixedFeed
   })
 
   const request = {
-    since: batch.since,
-    include_docs: true,
-    inactivity_ms: 1000 * 60 * 60,
-    heartbeat: 1000 * 60 * 15
+    since: batch.since
   }
 
   if (batch.limit > 0 && Number.isFinite(batch.limit)) {
     request.limit = batch.limit
   }
 
-  const feed = await db
-    .use('')
-    .follow(request)
+  const feed = new Follower(request)
 
   feed.on('change', (change) => {
     cache(change)
@@ -598,21 +733,20 @@ fixedFollow.Feed = FixedFeed
     feed.stop()
   })
 
-  feed.on('restart', () => {
-    console.log('restart!')
-    batch.status = 'restart'
-    batch.error = true
-    feed.stop()
-  })
+  feed.on('error', (err, maybeChange) => {
+    if (err?.response?.statusCode === 404 && maybeChange?.seq && maybeChange?.id) {
+      const seqs = metadata.notFound.get(maybeChange.id) || []
 
-  feed.on('timeout', () => {
-    console.log('timeout!')
-    batch.status = 'timeout'
-    batch.error = true
-    feed.stop()
-  })
+      if (!seqs.length) {
+        stats.notFound += 1
+      }
 
-  feed.on('error', (err) => {
+      seqs.push(maybeChange.seq)
+      metadata.notFound.set(maybeChange.id, seqs)
+      debug(`ignoring 404 for ${maybeChange?.id} (${maybeChange?.seq})`)
+      return
+    }
+
     console.log('error!')
     batch.status = 'error'
     batch.error = err
