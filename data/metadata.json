@@ -1,42 +1,43 @@
 {
   "error": false,
-  "packages": 3444329,
-  "last": 41261169,
-  "latest": 41261169,
+  "packages": 3453857,
+  "last": 62572446,
+  "latest": 62572444,
   "runs": {
-    "total": 2201,
+    "total": 2202,
     "status": {
-      "init": 1979,
+      "init": 1980,
       "timeout": 84,
       "killed": 133,
       "restart": 2
     }
   },
   "repos": {
-    "unsets": 1424129,
-    "github": 1984422,
-    "gitlab": 6442,
-    "bitbucket": 1396,
-    "others": 27940
+    "unsets": 1429461,
+    "github": 1988540,
+    "gitlab": 6454,
+    "bitbucket": 1397,
+    "others": 28005
   },
   "stats": {
-    "changes": 26263115,
-    "inserts": 4842152,
-    "updates": 18899283,
-    "deletes": 2012096,
-    "invalid": 509584,
-    "ignored": 6
+    "changes": 26340564,
+    "inserts": 4852808,
+    "updates": 18961540,
+    "deletes": 2015206,
+    "invalid": 511010,
+    "ignored": 6,
+    "notFound": 8
   },
   "batch": {
     "status": "init",
-    "limit": 135507,
-    "since": 41125662,
-    "index": 41261169,
-    "until": 41261169,
-    "started": "2025-04-07T16:47:14.406Z",
-    "finished": "2025-04-07T19:05:37.715Z",
-    "took_ms": 8303309,
-    "found": 48330
+    "limit": 21311275,
+    "since": 41261169,
+    "index": 62572446,
+    "until": 62572444,
+    "started": "2025-04-15T15:23:38.525Z",
+    "finished": "2025-04-15T15:52:29.070Z",
+    "took_ms": 1730545,
+    "found": 77449
   },
   "ignored": [
     20012191,
@@ -45,5 +46,55 @@
     21553560,
     21660508,
     38167386
+  ],
+  "notFound": [
+    [
+      "@bodycheck/body-check-core",
+      [
+        41381630
+      ]
+    ],
+    [
+      "@dsr-rollback-org-raits-mufti-roopy-ulnar/dsr-rollback-raits-mufti-roopy-ulnar",
+      [
+        41386262
+      ]
+    ],
+    [
+      "@primess/package_poc",
+      [
+        41403706
+      ]
+    ],
+    [
+      "@character-tech/client-common",
+      [
+        41430887
+      ]
+    ],
+    [
+      "@abdul_samad_12/ez-js",
+      [
+        41448952
+      ]
+    ],
+    [
+      "rulesthatvalidnpmpackagenameshouldconformtopackagenamelengthshouldbegreaterthanzeroallthecharactersinthepackagenamemustbelowercasenouppercaseormixedcasenamesareallowedpackagenamecanconsistofhyphenspackagenamemustno",
+      [
+        62237333
+      ]
+    ],
+    [
+      "rulesthatvalidnpmpackagenameshouldconformtopackagenamelengthshouldbegreaterthanzeroallthecharactersinthepackagenamemustbelowercasenouppercaseormixedcasenamesareallowedpackagenamecanconsistofhyphenspackagenamemustn",
+      [
+        62249536
+      ]
+    ],
+    [
+      "rulesthatvalidnpmpackagenameshouldconformtopackagenamelengthshouldbegreaterthanzeroallthecharactersinthepackagenamemustbelowercasenouppercaseormixedcasenamesareallowedpackagenamecanconsistofhyphenspackagename",
+      [
+        62249587
+      ]
+    ]
   ]
 }
