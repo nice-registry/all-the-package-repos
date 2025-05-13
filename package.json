@@ -6,6 +6,10 @@
   "repository": "https://github.com/nice-registry/all-the-package-repos",
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
+  "files": [
+    "data",
+    "hostnames.js"
+  ],
   "scripts": {
     "build": "node scripts/build.js",
     "stats": "node scripts/stats.js",
