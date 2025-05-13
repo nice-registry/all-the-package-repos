@@ -10,7 +10,7 @@ jobs:
     name: lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_PAT_FROM_ZEKE }}
         lfs: true
@@ -28,11 +28,18 @@ jobs:
         npm test
         [[ `git status --porcelain` ]] || exit
 
-        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
         git add .
-        # bump the version, commit, and create a tag
-        npm version patch -f -m "update all-the-package-repos to %s"
 
-        git push origin master --follow-tags
-        npm publish
+        # Publish only if data/packages.json changed
+        if [[ -z `git status --porcelain 'data/packages.json'` ]]; then
+          git commit -m "update metadata"
+          git push origin master
+        else
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+          # bump the version, commit, and create a tag
+          npm version patch -f -m "update all-the-package-repos to %s"
+
+          git push origin master --follow-tags
+          npm publish
+        fi
