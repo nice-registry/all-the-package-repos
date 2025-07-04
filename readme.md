@@ -4,7 +4,7 @@
 
 All the repository URLs in the npm registry as an object whose keys are package names and values are URLs.
 
-This package weighs in at about 100 MB.
+This package weighs in at about 200 MB.
 
 ## Stats
 
@@ -97,16 +97,6 @@ npm test
 ## Dependencies
 
 None
-
-## Dev Dependencies
-
-- [all-the-packages](https://github.com/zeke/all-the-packages): All the npm registry metadata as an offline event stream.
-- [github-url-to-object](https://github.com/zeke/github-url-to-object): Extract user, repo, and other interesting properties from GitHub URLs
-- [object-values](https://github.com/sindresorhus/object-values): Get the values of an object
-- [standard](https://github.com/feross/standard): JavaScript Standard Style
-- [tap-spec](https://github.com/scottcorgan/tap-spec): Formatted TAP output like Mocha&#39;s spec reporter
-- [tape](https://github.com/substack/tape): tap-producing test harness for node and browsers
-
 
 ## License
 
