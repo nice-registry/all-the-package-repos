@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3502196,
-  "last": 72148811,
-  "latest": 72148811,
+  "packages": 3529252,
+  "last": 74383366,
+  "latest": 74383366,
   "runs": {
-    "total": 10,
+    "total": 11,
     "status": {
       "killed": 2,
-      "init": 6,
+      "init": 7,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1461246,
-    "github": 2005064,
-    "gitlab": 6461,
-    "bitbucket": 1320,
-    "others": 28105
+    "unsets": 1473450,
+    "github": 2019749,
+    "gitlab": 6475,
+    "bitbucket": 1321,
+    "others": 28257
   },
   "stats": {
-    "changes": 5605120,
-    "inserts": 3502205,
-    "updates": 43857,
-    "deletes": 1993697,
-    "invalid": 65361,
+    "changes": 5732245,
+    "inserts": 3529275,
+    "updates": 141357,
+    "deletes": 1993845,
+    "invalid": 67768,
     "ignored": 0,
-    "notFound": 27916
+    "notFound": 27917
   },
   "batch": {
     "status": "init",
-    "limit": 337930,
-    "since": 71810881,
-    "index": 72148811,
-    "until": 72148811,
-    "started": "2025-07-04T12:59:33.727Z",
-    "finished": "2025-07-04T13:17:25.640Z",
-    "took_ms": 1071913,
-    "found": 38693
+    "limit": 2234555,
+    "since": 72148811,
+    "index": 74383366,
+    "until": 74383366,
+    "started": "2025-07-28T17:28:22.458Z",
+    "finished": "2025-07-28T18:16:54.141Z",
+    "took_ms": 2911683,
+    "found": 127125
   },
   "notFound": [
     [
@@ -167533,6 +167533,12 @@
       "@diahkomalasarinpm/magnam-officiis-eveniet",
       [
         71604279
+      ]
+    ],
+    [
+      "@ivy-shared-components/testing",
+      [
+        73328717
       ]
     ]
   ]
