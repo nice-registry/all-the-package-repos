@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3529638,
-  "last": 74414471,
-  "latest": 74414471,
+  "packages": 3531057,
+  "last": 74543827,
+  "latest": 74543823,
   "runs": {
-    "total": 12,
+    "total": 13,
     "status": {
       "killed": 2,
-      "init": 8,
+      "init": 9,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1473592,
-    "github": 2019976,
-    "gitlab": 6475,
+    "unsets": 1474275,
+    "github": 2020699,
+    "gitlab": 6477,
     "bitbucket": 1321,
-    "others": 28274
+    "others": 28285
   },
   "stats": {
-    "changes": 5738607,
-    "inserts": 3529661,
-    "updates": 147268,
-    "deletes": 1993847,
-    "invalid": 67831,
+    "changes": 5759544,
+    "inserts": 3531082,
+    "updates": 166371,
+    "deletes": 1993856,
+    "invalid": 68235,
     "ignored": 0,
-    "notFound": 27917
+    "notFound": 27922
   },
   "batch": {
     "status": "init",
-    "limit": 31105,
-    "since": 74383366,
-    "index": 74414471,
-    "until": 74414471,
-    "started": "2025-07-29T00:25:54.799Z",
-    "finished": "2025-07-29T00:29:36.152Z",
-    "took_ms": 221353,
-    "found": 6362
+    "limit": 129352,
+    "since": 74414471,
+    "index": 74543827,
+    "until": 74543823,
+    "started": "2025-07-30T00:23:54.835Z",
+    "finished": "2025-07-30T00:35:37.907Z",
+    "took_ms": 703072,
+    "found": 20937
   },
   "notFound": [
     [
@@ -167539,6 +167539,36 @@
       "@ivy-shared-components/testing",
       [
         73328717
+      ]
+    ],
+    [
+      "@twork-data-services/counterfree",
+      [
+        74513103
+      ]
+    ],
+    [
+      "@twork-data-services/proxy-prime-api-v1-accounts-get-programs",
+      [
+        74513148
+      ]
+    ],
+    [
+      "@twork-data-services/customer-attribute-api-v3-customer-attribute-by-name",
+      [
+        74513251
+      ]
+    ],
+    [
+      "@twork-data-services/proxy-invest-api-v1-customer-stop-orders",
+      [
+        74513277
+      ]
+    ],
+    [
+      "@twork-data-services/company-counters",
+      [
+        74513356
       ]
     ]
   ]
