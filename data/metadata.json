@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3535214,
-  "last": 74938707,
-  "latest": 74938707,
+  "packages": 3535673,
+  "last": 74957598,
+  "latest": 74957598,
   "runs": {
-    "total": 20,
+    "total": 21,
     "status": {
       "killed": 2,
-      "init": 16,
+      "init": 17,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1476203,
-    "github": 2022887,
-    "gitlab": 6477,
+    "unsets": 1476417,
+    "github": 2023128,
+    "gitlab": 6478,
     "bitbucket": 1321,
-    "others": 28326
+    "others": 28329
   },
   "stats": {
-    "changes": 5832229,
-    "inserts": 3535243,
-    "updates": 233959,
-    "deletes": 1993897,
-    "invalid": 69130,
+    "changes": 5835765,
+    "inserts": 3535703,
+    "updates": 236994,
+    "deletes": 1993899,
+    "invalid": 69169,
     "ignored": 0,
-    "notFound": 27922
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 20878,
-    "since": 74917829,
-    "index": 74938707,
-    "until": 74938707,
-    "started": "2025-08-02T12:08:11.379Z",
-    "finished": "2025-08-02T12:10:47.469Z",
-    "took_ms": 156090,
-    "found": 4479
+    "limit": 18891,
+    "since": 74938707,
+    "index": 74957598,
+    "until": 74957598,
+    "started": "2025-08-03T00:26:29.352Z",
+    "finished": "2025-08-03T00:28:05.998Z",
+    "took_ms": 96646,
+    "found": 3536
   },
   "notFound": [
     [
@@ -167569,6 +167569,12 @@
       "@twork-data-services/company-counters",
       [
         74513356
+      ]
+    ],
+    [
+      "@embodi/image",
+      [
+        74957517
       ]
     ]
   ]
