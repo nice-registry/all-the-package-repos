@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3553565,
-  "last": 76362181,
-  "latest": 76362181,
+  "packages": 3554244,
+  "last": 76417090,
+  "latest": 76417090,
   "runs": {
-    "total": 51,
+    "total": 52,
     "status": {
       "killed": 2,
-      "init": 47,
+      "init": 48,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1484195,
-    "github": 2033068,
-    "gitlab": 6494,
+    "unsets": 1484527,
+    "github": 2033405,
+    "gitlab": 6497,
     "bitbucket": 1326,
-    "others": 28482
+    "others": 28489
   },
   "stats": {
-    "changes": 6106938,
-    "inserts": 3553622,
-    "updates": 486507,
-    "deletes": 1994024,
-    "invalid": 72785,
+    "changes": 6116764,
+    "inserts": 3554302,
+    "updates": 495476,
+    "deletes": 1994029,
+    "invalid": 72957,
     "ignored": 0,
-    "notFound": 27923
+    "notFound": 27924
   },
   "batch": {
     "status": "init",
-    "limit": 22481,
-    "since": 76339700,
-    "index": 76362181,
-    "until": 76362181,
-    "started": "2025-08-18T01:45:44.104Z",
-    "finished": "2025-08-18T01:49:08.413Z",
-    "took_ms": 204309,
-    "found": 4601
+    "limit": 54909,
+    "since": 76362181,
+    "index": 76417090,
+    "until": 76417090,
+    "started": "2025-08-18T12:41:36.287Z",
+    "finished": "2025-08-18T12:46:34.432Z",
+    "took_ms": 298145,
+    "found": 9826
   },
   "notFound": [
     [
@@ -167575,6 +167575,12 @@
       "@arnavchoubey/hello-world-node",
       [
         75737419
+      ]
+    ],
+    [
+      "@taptap/com.taptap.sdk.achievement",
+      [
+        76386226
       ]
     ]
   ]
