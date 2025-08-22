@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3558858,
-  "last": 76861583,
-  "latest": 76861576,
+  "packages": 3559562,
+  "last": 76915556,
+  "latest": 76915556,
   "runs": {
-    "total": 59,
+    "total": 60,
     "status": {
       "killed": 2,
-      "init": 55,
+      "init": 56,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1486695,
-    "github": 2035798,
+    "unsets": 1487076,
+    "github": 2036110,
     "gitlab": 6500,
-    "bitbucket": 1326,
-    "others": 28539
+    "bitbucket": 1329,
+    "others": 28547
   },
   "stats": {
-    "changes": 6195595,
-    "inserts": 3558931,
-    "updates": 568377,
-    "deletes": 1994080,
-    "invalid": 74207,
+    "changes": 6206171,
+    "inserts": 3559638,
+    "updates": 578084,
+    "deletes": 1994087,
+    "invalid": 74362,
     "ignored": 0,
-    "notFound": 27924
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 64730,
-    "since": 76796846,
-    "index": 76861583,
-    "until": 76861576,
-    "started": "2025-08-22T01:24:48.420Z",
-    "finished": "2025-08-22T01:35:00.650Z",
-    "took_ms": 612230,
-    "found": 12794
+    "limit": 53973,
+    "since": 76861583,
+    "index": 76915556,
+    "until": 76915556,
+    "started": "2025-08-22T12:37:20.539Z",
+    "finished": "2025-08-22T12:43:14.164Z",
+    "took_ms": 353625,
+    "found": 10576
   },
   "notFound": [
     [
@@ -165151,12 +165151,6 @@
       "@isali/payments-googlecloud-tasks",
       [
         37755385
-      ]
-    ],
-    [
-      "@ximax/theme-chalk",
-      [
-        37763144
       ]
     ],
     [
