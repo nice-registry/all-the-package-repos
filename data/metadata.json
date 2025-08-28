@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3565349,
-  "last": 77368247,
-  "latest": 77368247,
+  "packages": 3565984,
+  "last": 77446313,
+  "latest": 77446313,
   "runs": {
-    "total": 70,
+    "total": 71,
     "status": {
       "killed": 2,
-      "init": 66,
+      "init": 67,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1489668,
-    "github": 2039206,
+    "unsets": 1489912,
+    "github": 2039593,
     "gitlab": 6508,
     "bitbucket": 1330,
-    "others": 28637
+    "others": 28641
   },
   "stats": {
-    "changes": 6291671,
-    "inserts": 3565428,
-    "updates": 656212,
-    "deletes": 1994128,
-    "invalid": 75903,
+    "changes": 6305606,
+    "inserts": 3566066,
+    "updates": 669299,
+    "deletes": 1994135,
+    "invalid": 76106,
     "ignored": 0,
-    "notFound": 27923
+    "notFound": 27922
   },
   "batch": {
     "status": "init",
-    "limit": 57723,
-    "since": 77310524,
-    "index": 77368247,
-    "until": 77368247,
-    "started": "2025-08-27T12:08:03.868Z",
-    "finished": "2025-08-27T12:15:03.162Z",
-    "took_ms": 419294,
-    "found": 11221
+    "limit": 78066,
+    "since": 77368247,
+    "index": 77446313,
+    "until": 77446313,
+    "started": "2025-08-28T00:20:51.799Z",
+    "finished": "2025-08-28T00:29:37.254Z",
+    "took_ms": 525455,
+    "found": 13935
   },
   "notFound": [
     [
@@ -164455,12 +164455,6 @@
       "@heartlandone/vega-angular-sandbox-pr-1520-ddb0bcfaacbbf3d2ab27bc4b781fe5fe86246b9a",
       [
         36843962
-      ]
-    ],
-    [
-      "@avalabs/country-to-aws-region",
-      [
-        36863988
       ]
     ],
     [
