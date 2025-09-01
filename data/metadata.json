@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3570180,
-  "last": 77754313,
-  "latest": 77754313,
+  "packages": 3570854,
+  "last": 77809979,
+  "latest": 77809979,
   "runs": {
-    "total": 79,
+    "total": 80,
     "status": {
       "killed": 2,
-      "init": 75,
+      "init": 76,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1491778,
-    "github": 2041859,
-    "gitlab": 6532,
+    "unsets": 1492047,
+    "github": 2042255,
+    "gitlab": 6533,
     "bitbucket": 1330,
-    "others": 28681
+    "others": 28689
   },
   "stats": {
-    "changes": 6365027,
-    "inserts": 3570270,
-    "updates": 723630,
-    "deletes": 1994166,
-    "invalid": 76961,
+    "changes": 6375405,
+    "inserts": 3570945,
+    "updates": 732979,
+    "deletes": 1994168,
+    "invalid": 77313,
     "ignored": 0,
-    "notFound": 27922
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 19224,
-    "since": 77735089,
-    "index": 77754313,
-    "until": 77754313,
-    "started": "2025-09-01T00:25:44.282Z",
-    "finished": "2025-09-01T00:27:53.491Z",
-    "took_ms": 129209,
-    "found": 4016
+    "limit": 55666,
+    "since": 77754313,
+    "index": 77809979,
+    "until": 77809979,
+    "started": "2025-09-01T12:08:46.551Z",
+    "finished": "2025-09-01T12:14:47.272Z",
+    "took_ms": 360721,
+    "found": 10378
   },
   "notFound": [
     [
@@ -167569,6 +167569,12 @@
       "@taptap/com.taptap.sdk.achievement",
       [
         76386226
+      ]
+    ],
+    [
+      "@tsahil01/billingsdk",
+      [
+        77776780
       ]
     ]
   ]
