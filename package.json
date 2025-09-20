@@ -1,6 +1,6 @@
 {
   "name": "all-the-package-repos",
-  "version": "2.0.2412",
+  "version": "2.0.2413",
   "description": "All the repository URLs in the npm registry as an object whose keys are package names and values are URLs",
   "main": "data/packages.json",
   "repository": "https://github.com/nice-registry/all-the-package-repos",
