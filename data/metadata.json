@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3593937,
-  "last": 80020587,
-  "latest": 80020587,
+  "packages": 3594515,
+  "last": 80088176,
+  "latest": 80088176,
   "runs": {
-    "total": 122,
+    "total": 123,
     "status": {
       "killed": 2,
-      "init": 118,
+      "init": 119,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1502381,
-    "github": 2054759,
-    "gitlab": 6549,
+    "unsets": 1502605,
+    "github": 2055111,
+    "gitlab": 6550,
     "bitbucket": 1332,
-    "others": 28916
+    "others": 28917
   },
   "stats": {
-    "changes": 6783304,
-    "inserts": 3594147,
-    "updates": 1110390,
-    "deletes": 1994490,
-    "invalid": 84277,
+    "changes": 6795680,
+    "inserts": 3594725,
+    "updates": 1122045,
+    "deletes": 1994496,
+    "invalid": 84414,
     "ignored": 0,
-    "notFound": 27922
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 57302,
-    "since": 79963285,
-    "index": 80020587,
-    "until": 80020587,
-    "started": "2025-09-22T12:08:23.917Z",
-    "finished": "2025-09-22T12:14:36.876Z",
-    "took_ms": 372959,
-    "found": 10835
+    "limit": 67589,
+    "since": 80020587,
+    "index": 80088176,
+    "until": 80088176,
+    "started": "2025-09-23T00:20:20.284Z",
+    "finished": "2025-09-23T00:27:45.153Z",
+    "took_ms": 444869,
+    "found": 12376
   },
   "notFound": [
     [
@@ -167569,6 +167569,12 @@
       "@tsahil01/billingsdk",
       [
         77776780
+      ]
+    ],
+    [
+      "@yoobic/design-system",
+      [
+        80084837
       ]
     ]
   ]
