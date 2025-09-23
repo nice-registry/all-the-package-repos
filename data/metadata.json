@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3594515,
-  "last": 80088176,
-  "latest": 80088176,
+  "packages": 3595177,
+  "last": 80149347,
+  "latest": 80149347,
   "runs": {
-    "total": 123,
+    "total": 124,
     "status": {
       "killed": 2,
-      "init": 119,
+      "init": 120,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1502605,
-    "github": 2055111,
+    "unsets": 1502942,
+    "github": 2055431,
     "gitlab": 6550,
     "bitbucket": 1332,
-    "others": 28917
+    "others": 28922
   },
   "stats": {
-    "changes": 6795680,
-    "inserts": 3594725,
-    "updates": 1122045,
-    "deletes": 1994496,
-    "invalid": 84414,
+    "changes": 6806934,
+    "inserts": 3595391,
+    "updates": 1132499,
+    "deletes": 1994500,
+    "invalid": 84544,
     "ignored": 0,
     "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 67589,
-    "since": 80020587,
-    "index": 80088176,
-    "until": 80088176,
-    "started": "2025-09-23T00:20:20.284Z",
-    "finished": "2025-09-23T00:27:45.153Z",
-    "took_ms": 444869,
-    "found": 12376
+    "limit": 61171,
+    "since": 80088176,
+    "index": 80149347,
+    "until": 80149347,
+    "started": "2025-09-23T12:08:15.273Z",
+    "finished": "2025-09-23T12:15:11.764Z",
+    "took_ms": 416491,
+    "found": 11254
   },
   "notFound": [
     [
