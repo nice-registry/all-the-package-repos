@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3603814,
-  "last": 80931307,
-  "latest": 80931231,
+  "packages": 3604331,
+  "last": 80991568,
+  "latest": 80991568,
   "runs": {
-    "total": 139,
+    "total": 140,
     "status": {
       "killed": 2,
-      "init": 135,
+      "init": 136,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1507158,
-    "github": 2059771,
-    "gitlab": 6555,
+    "unsets": 1507428,
+    "github": 2060018,
+    "gitlab": 6554,
     "bitbucket": 1334,
-    "others": 28996
+    "others": 28997
   },
   "stats": {
-    "changes": 6957938,
-    "inserts": 3604039,
-    "updates": 1272522,
-    "deletes": 1994548,
-    "invalid": 86829,
+    "changes": 6968810,
+    "inserts": 3604558,
+    "updates": 1282682,
+    "deletes": 1994556,
+    "invalid": 87014,
     "ignored": 0,
-    "notFound": 27923
+    "notFound": 27922
   },
   "batch": {
     "status": "init",
-    "limit": 69667,
-    "since": 80861564,
-    "index": 80931307,
-    "until": 80931231,
-    "started": "2025-10-01T00:23:23.916Z",
-    "finished": "2025-10-01T00:31:25.431Z",
-    "took_ms": 481515,
-    "found": 12122
+    "limit": 60261,
+    "since": 80931307,
+    "index": 80991568,
+    "until": 80991568,
+    "started": "2025-10-01T12:08:36.894Z",
+    "finished": "2025-10-01T12:15:04.456Z",
+    "took_ms": 387562,
+    "found": 10872
   },
   "notFound": [
     [
@@ -166729,12 +166729,6 @@
       "@dsr-rollback-lists-curie-watch-myall/dsr-rollback-lists-curie-watch-myall",
       [
         40897358
-      ]
-    ],
-    [
-      "@simonpallisterhcl/hclcdp-node-sdk",
-      [
-        40897392
       ]
     ],
     [
