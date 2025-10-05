@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3607850,
-  "last": 81309282,
-  "latest": 81309282,
+  "packages": 3608166,
+  "last": 81326095,
+  "latest": 81326095,
   "runs": {
-    "total": 147,
+    "total": 148,
     "status": {
       "killed": 2,
-      "init": 143,
+      "init": 144,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1508844,
-    "github": 2062102,
+    "unsets": 1508936,
+    "github": 2062321,
     "gitlab": 6555,
     "bitbucket": 1334,
-    "others": 29015
+    "others": 29020
   },
   "stats": {
-    "changes": 7028250,
-    "inserts": 3608085,
-    "updates": 1337225,
-    "deletes": 1994592,
-    "invalid": 88348,
+    "changes": 7031800,
+    "inserts": 3608403,
+    "updates": 1340413,
+    "deletes": 1994595,
+    "invalid": 88389,
     "ignored": 0,
-    "notFound": 27922
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 18054,
-    "since": 81291228,
-    "index": 81309282,
-    "until": 81309282,
-    "started": "2025-10-05T00:22:37.528Z",
-    "finished": "2025-10-05T00:24:43.587Z",
-    "took_ms": 126059,
-    "found": 3766
+    "limit": 16813,
+    "since": 81309282,
+    "index": 81326095,
+    "until": 81326095,
+    "started": "2025-10-05T12:07:28.450Z",
+    "finished": "2025-10-05T12:09:26.446Z",
+    "took_ms": 117996,
+    "found": 3550
   },
   "notFound": [
     [
@@ -167569,6 +167569,12 @@
       "@yoobic/design-system",
       [
         80084837
+      ]
+    ],
+    [
+      "@neabyte/markdown-html",
+      [
+        81316612
       ]
     ]
   ]
