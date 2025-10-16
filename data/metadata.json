@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3620618,
-  "last": 82368868,
-  "latest": 82368868,
+  "packages": 3621238,
+  "last": 82443340,
+  "latest": 82443340,
   "runs": {
-    "total": 168,
+    "total": 169,
     "status": {
       "killed": 2,
-      "init": 164,
+      "init": 165,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1513984,
-    "github": 2069624,
+    "unsets": 1514263,
+    "github": 2069971,
     "gitlab": 6558,
     "bitbucket": 1334,
-    "others": 29118
+    "others": 29112
   },
   "stats": {
-    "changes": 7220523,
-    "inserts": 3620875,
-    "updates": 1513177,
-    "deletes": 1994688,
-    "invalid": 91783,
+    "changes": 7233926,
+    "inserts": 3621497,
+    "updates": 1525808,
+    "deletes": 1994693,
+    "invalid": 91928,
     "ignored": 0,
-    "notFound": 27924
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 70664,
-    "since": 82298204,
-    "index": 82368868,
-    "until": 82368868,
-    "started": "2025-10-15T12:08:47.448Z",
-    "finished": "2025-10-15T12:16:16.346Z",
-    "took_ms": 448898,
-    "found": 12370
+    "limit": 74472,
+    "since": 82368868,
+    "index": 82443340,
+    "until": 82443340,
+    "started": "2025-10-16T00:21:17.616Z",
+    "finished": "2025-10-16T00:29:31.529Z",
+    "took_ms": 493913,
+    "found": 13403
   },
   "notFound": [
     [
@@ -167575,12 +167575,6 @@
       "@neabyte/markdown-html",
       [
         81316612
-      ]
-    ],
-    [
-      "@shaunstapes/proctoring-widget",
-      [
-        82222768
       ]
     ]
   ]
