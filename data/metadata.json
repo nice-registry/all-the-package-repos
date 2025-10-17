@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3622745,
-  "last": 82575259,
-  "latest": 82575259,
+  "packages": 3623455,
+  "last": 82641009,
+  "latest": 82641009,
   "runs": {
-    "total": 171,
+    "total": 172,
     "status": {
       "killed": 2,
-      "init": 167,
+      "init": 168,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1514979,
-    "github": 2070753,
+    "unsets": 1515366,
+    "github": 2071072,
     "gitlab": 6560,
     "bitbucket": 1334,
-    "others": 29119
+    "others": 29123
   },
   "stats": {
-    "changes": 7259057,
-    "inserts": 3623005,
-    "updates": 1548859,
-    "deletes": 1994699,
-    "invalid": 92494,
+    "changes": 7270292,
+    "inserts": 3623719,
+    "updates": 1559068,
+    "deletes": 1994708,
+    "invalid": 92797,
     "ignored": 0,
-    "notFound": 27923
+    "notFound": 27924
   },
   "batch": {
     "status": "init",
-    "limit": 65576,
-    "since": 82509683,
-    "index": 82575259,
-    "until": 82575259,
-    "started": "2025-10-17T00:21:07.224Z",
-    "finished": "2025-10-17T00:28:57.567Z",
-    "took_ms": 470343,
-    "found": 12493
+    "limit": 65750,
+    "since": 82575259,
+    "index": 82641009,
+    "until": 82641009,
+    "started": "2025-10-17T12:08:17.688Z",
+    "finished": "2025-10-17T12:15:18.164Z",
+    "took_ms": 420476,
+    "found": 11235
   },
   "notFound": [
     [
@@ -167575,6 +167575,12 @@
       "@neabyte/markdown-html",
       [
         81316612
+      ]
+    ],
+    [
+      "@nnpmtest2/revshel",
+      [
+        82575397
       ]
     ]
   ]
