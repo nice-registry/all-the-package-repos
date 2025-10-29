@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3637145,
-  "last": 83777410,
-  "latest": 83777410,
+  "packages": 3638005,
+  "last": 83837326,
+  "latest": 83837326,
   "runs": {
-    "total": 195,
+    "total": 196,
     "status": {
       "killed": 2,
-      "init": 191,
+      "init": 192,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1520810,
-    "github": 2079191,
-    "gitlab": 6574,
+    "unsets": 1521203,
+    "github": 2079655,
+    "gitlab": 6573,
     "bitbucket": 1333,
-    "others": 29237
+    "others": 29241
   },
   "stats": {
-    "changes": 7479675,
-    "inserts": 3637439,
-    "updates": 1751541,
-    "deletes": 1994820,
-    "invalid": 95875,
+    "changes": 7491020,
+    "inserts": 3638300,
+    "updates": 1761838,
+    "deletes": 1994825,
+    "invalid": 96057,
     "ignored": 0,
-    "notFound": 27924
+    "notFound": 27923
   },
   "batch": {
     "status": "init",
-    "limit": 82013,
-    "since": 83695397,
-    "index": 83777410,
-    "until": 83777410,
-    "started": "2025-10-29T00:21:50.257Z",
-    "finished": "2025-10-29T00:30:26.537Z",
-    "took_ms": 516280,
-    "found": 14115
+    "limit": 59916,
+    "since": 83777410,
+    "index": 83837326,
+    "until": 83837326,
+    "started": "2025-10-29T12:08:38.737Z",
+    "finished": "2025-10-29T12:15:17.438Z",
+    "took_ms": 398701,
+    "found": 11345
   },
   "notFound": [
     [
@@ -165601,12 +165601,6 @@
       "@js-code-crafter/dash",
       [
         38165312
-      ]
-    ],
-    [
-      "@omantel6d/omantel_library",
-      [
-        38165527
       ]
     ],
     [
