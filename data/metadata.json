@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3642088,
-  "last": 84190298,
-  "latest": 84190298,
+  "packages": 3642527,
+  "last": 84209990,
+  "latest": 84209990,
   "runs": {
-    "total": 202,
+    "total": 203,
     "status": {
       "killed": 2,
-      "init": 198,
+      "init": 199,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1522745,
-    "github": 2082163,
-    "gitlab": 6577,
+    "unsets": 1522916,
+    "github": 2082430,
+    "gitlab": 6578,
     "bitbucket": 1333,
     "others": 29270
   },
   "stats": {
-    "changes": 7557906,
-    "inserts": 3642389,
-    "updates": 1823542,
-    "deletes": 1994867,
-    "invalid": 97108,
+    "changes": 7562102,
+    "inserts": 3642829,
+    "updates": 1827256,
+    "deletes": 1994873,
+    "invalid": 97144,
     "ignored": 0,
-    "notFound": 27923
+    "notFound": 27925
   },
   "batch": {
     "status": "init",
-    "limit": 16817,
-    "since": 84173481,
-    "index": 84190298,
-    "until": 84190298,
-    "started": "2025-11-01T12:07:35.400Z",
-    "finished": "2025-11-01T12:10:18.854Z",
-    "took_ms": 163454,
-    "found": 4464
+    "limit": 19692,
+    "since": 84190298,
+    "index": 84209990,
+    "until": 84209990,
+    "started": "2025-11-02T00:23:10.741Z",
+    "finished": "2025-11-02T00:25:35.529Z",
+    "took_ms": 144788,
+    "found": 4196
   },
   "notFound": [
     [
@@ -167575,6 +167575,18 @@
       "@nnpmtest2/revshel",
       [
         82575397
+      ]
+    ],
+    [
+      "@rethinkhealth/hl7v2-lint-message-structure-missing-empty",
+      [
+        84209920
+      ]
+    ],
+    [
+      "@rethinkhealth/hl7v2-annotate-message-structure",
+      [
+        84209921
       ]
     ]
   ]
