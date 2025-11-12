@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3654736,
-  "last": 85219167,
-  "latest": 85219167,
+  "packages": 3655371,
+  "last": 85270847,
+  "latest": 85270847,
   "runs": {
-    "total": 224,
+    "total": 225,
     "status": {
       "killed": 2,
-      "init": 220,
+      "init": 221,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1527889,
-    "github": 2089543,
+    "unsets": 1528126,
+    "github": 2089941,
     "gitlab": 6588,
     "bitbucket": 1330,
     "others": 29386
   },
   "stats": {
-    "changes": 7756428,
-    "inserts": 3655073,
-    "updates": 2006313,
-    "deletes": 1994994,
-    "invalid": 100048,
+    "changes": 7765872,
+    "inserts": 3655710,
+    "updates": 2015004,
+    "deletes": 1995005,
+    "invalid": 100153,
     "ignored": 0,
-    "notFound": 27925
+    "notFound": 27926
   },
   "batch": {
     "status": "init",
-    "limit": 951,
-    "since": 85218216,
-    "index": 85219167,
-    "until": 85219167,
-    "started": "2025-11-11T13:35:30.999Z",
-    "finished": "2025-11-11T13:35:38.865Z",
-    "took_ms": 7866,
-    "found": 264
+    "limit": 51680,
+    "since": 85219167,
+    "index": 85270847,
+    "until": 85270847,
+    "started": "2025-11-12T00:22:03.165Z",
+    "finished": "2025-11-12T00:27:38.199Z",
+    "took_ms": 335034,
+    "found": 9444
   },
   "notFound": [
     [
@@ -167587,6 +167587,12 @@
       "@junaidxa/create-vite-react-tailwind",
       [
         84595937
+      ]
+    ],
+    [
+      "@notidotbot/api-client",
+      [
+        85270807
       ]
     ]
   ]
