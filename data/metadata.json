@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3667897,
-  "last": 87159247,
-  "latest": 87159247,
+  "packages": 3668671,
+  "last": 87214669,
+  "latest": 87214669,
   "runs": {
-    "total": 243,
+    "total": 244,
     "status": {
       "killed": 2,
-      "init": 239,
+      "init": 240,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1461259,
-    "github": 2169170,
-    "gitlab": 6590,
-    "bitbucket": 1331,
-    "others": 29547
+    "unsets": 1461653,
+    "github": 2169543,
+    "gitlab": 6591,
+    "bitbucket": 1332,
+    "others": 29552
   },
   "stats": {
-    "changes": 8035988,
-    "inserts": 3668263,
-    "updates": 2269769,
-    "deletes": 1995093,
-    "invalid": 102863,
+    "changes": 8047317,
+    "inserts": 3669038,
+    "updates": 2280192,
+    "deletes": 1995098,
+    "invalid": 102989,
     "ignored": 0,
-    "notFound": 27926
+    "notFound": 27928
   },
   "batch": {
     "status": "init",
-    "limit": 70387,
-    "since": 87088860,
-    "index": 87159247,
-    "until": 87159247,
-    "started": "2025-11-21T00:21:23.708Z",
-    "finished": "2025-11-21T00:29:06.006Z",
-    "took_ms": 462298,
-    "found": 12653
+    "limit": 55422,
+    "since": 87159247,
+    "index": 87214669,
+    "until": 87214669,
+    "started": "2025-11-21T12:08:44.020Z",
+    "finished": "2025-11-21T12:14:00.825Z",
+    "took_ms": 316805,
+    "found": 11329
   },
   "notFound": [
     [
@@ -167593,6 +167593,18 @@
       "@notidotbot/api-client",
       [
         85270807
+      ]
+    ],
+    [
+      "@ra-ftds/motion-extension",
+      [
+        87172578
+      ]
+    ],
+    [
+      "@ra-ftds/tracing-sdk",
+      [
+        87172596
       ]
     ]
   ]
