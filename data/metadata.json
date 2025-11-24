@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3670664,
-  "last": 87334941,
-  "latest": 87334941,
+  "packages": 3671211,
+  "last": 87357822,
+  "latest": 87357822,
   "runs": {
-    "total": 248,
+    "total": 249,
     "status": {
       "killed": 2,
-      "init": 244,
+      "init": 245,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1462459,
-    "github": 2170718,
+    "unsets": 1462679,
+    "github": 2171042,
     "gitlab": 6591,
     "bitbucket": 1332,
-    "others": 29564
+    "others": 29567
   },
   "stats": {
-    "changes": 8071814,
-    "inserts": 3671033,
-    "updates": 2302478,
-    "deletes": 1995114,
-    "invalid": 103189,
+    "changes": 8076152,
+    "inserts": 3671581,
+    "updates": 2306245,
+    "deletes": 1995116,
+    "invalid": 103210,
     "ignored": 0,
-    "notFound": 27929
+    "notFound": 27928
   },
   "batch": {
     "status": "init",
-    "limit": 16227,
-    "since": 87318714,
-    "index": 87334941,
-    "until": 87334941,
-    "started": "2025-11-23T12:07:29.056Z",
-    "finished": "2025-11-23T12:09:21.437Z",
-    "took_ms": 112381,
-    "found": 3855
+    "limit": 22881,
+    "since": 87334941,
+    "index": 87357822,
+    "until": 87357822,
+    "started": "2025-11-24T00:23:32.549Z",
+    "finished": "2025-11-24T00:25:23.329Z",
+    "took_ms": 110780,
+    "found": 4338
   },
   "notFound": [
     [
@@ -167605,12 +167605,6 @@
       "@ra-ftds/tracing-sdk",
       [
         87172596
-      ]
-    ],
-    [
-      "@arkxos/choerodon-base",
-      [
-        87334927
       ]
     ]
   ]
