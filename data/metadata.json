@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3707742,
-  "last": 90678866,
-  "latest": 90678866,
+  "packages": 3708216,
+  "last": 90713359,
+  "latest": 90713359,
   "runs": {
-    "total": 302,
+    "total": 303,
     "status": {
       "killed": 2,
-      "init": 298,
+      "init": 299,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1476151,
-    "github": 2193768,
+    "unsets": 1476320,
+    "github": 2194072,
     "gitlab": 6613,
     "bitbucket": 1334,
-    "others": 29876
+    "others": 29877
   },
   "stats": {
-    "changes": 8636825,
-    "inserts": 3708164,
-    "updates": 2820386,
-    "deletes": 1995361,
-    "invalid": 112914,
+    "changes": 8641311,
+    "inserts": 3708638,
+    "updates": 2824364,
+    "deletes": 1995364,
+    "invalid": 112945,
     "ignored": 0,
-    "notFound": 27928
+    "notFound": 27927
   },
   "batch": {
     "status": "init",
-    "limit": 34231,
-    "since": 90644635,
-    "index": 90678866,
-    "until": 90678866,
-    "started": "2025-12-20T12:37:24.137Z",
-    "finished": "2025-12-20T12:39:16.360Z",
-    "took_ms": 112223,
-    "found": 4777
+    "limit": 34493,
+    "since": 90678866,
+    "index": 90713359,
+    "until": 90713359,
+    "started": "2025-12-21T01:46:45.521Z",
+    "finished": "2025-12-21T01:48:29.667Z",
+    "took_ms": 104146,
+    "found": 4486
   },
   "notFound": [
     [
@@ -167599,12 +167599,6 @@
       "@ra-ftds/tracing-sdk",
       [
         87172596
-      ]
-    ],
-    [
-      "@packlabs/cli",
-      [
-        90678852
       ]
     ]
   ]
