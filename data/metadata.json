@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3712097,
-  "last": 91043918,
-  "latest": 91043918,
+  "packages": 3712722,
+  "last": 91092885,
+  "latest": 91092885,
   "runs": {
-    "total": 309,
+    "total": 310,
     "status": {
       "killed": 2,
-      "init": 305,
+      "init": 306,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1477788,
-    "github": 2196468,
+    "unsets": 1478098,
+    "github": 2196779,
     "gitlab": 6615,
     "bitbucket": 1334,
-    "others": 29892
+    "others": 29896
   },
   "stats": {
-    "changes": 8690695,
-    "inserts": 3712525,
-    "updates": 2869261,
-    "deletes": 1995383,
-    "invalid": 113526,
+    "changes": 8699946,
+    "inserts": 3713150,
+    "updates": 2877641,
+    "deletes": 1995390,
+    "invalid": 113765,
     "ignored": 0,
-    "notFound": 27929
+    "notFound": 27932
   },
   "batch": {
     "status": "init",
-    "limit": 63488,
-    "since": 90980430,
-    "index": 91043918,
-    "until": 91043918,
-    "started": "2025-12-24T01:40:10.391Z",
-    "finished": "2025-12-24T01:44:31.644Z",
-    "took_ms": 261253,
-    "found": 9510
+    "limit": 48967,
+    "since": 91043918,
+    "index": 91092885,
+    "until": 91092885,
+    "started": "2025-12-24T12:09:27.490Z",
+    "finished": "2025-12-24T12:13:03.126Z",
+    "took_ms": 215636,
+    "found": 9251
   },
   "notFound": [
     [
@@ -167611,6 +167611,24 @@
       "@photon-ai/flux",
       [
         91043900
+      ]
+    ],
+    [
+      "@shrinkwork/next-image",
+      [
+        91092735
+      ]
+    ],
+    [
+      "@shrinkwork/node-client",
+      [
+        91092746
+      ]
+    ],
+    [
+      "@shrinkwork/vue-image",
+      [
+        91092761
       ]
     ]
   ]
