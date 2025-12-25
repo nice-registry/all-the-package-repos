@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3712722,
-  "last": 91092885,
-  "latest": 91092885,
+  "packages": 3713264,
+  "last": 91131052,
+  "latest": 91131052,
   "runs": {
-    "total": 310,
+    "total": 311,
     "status": {
       "killed": 2,
-      "init": 306,
+      "init": 307,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1478098,
-    "github": 2196779,
+    "unsets": 1478323,
+    "github": 2197096,
     "gitlab": 6615,
     "bitbucket": 1334,
     "others": 29896
   },
   "stats": {
-    "changes": 8699946,
-    "inserts": 3713150,
-    "updates": 2877641,
-    "deletes": 1995390,
-    "invalid": 113765,
+    "changes": 8706040,
+    "inserts": 3713693,
+    "updates": 2883127,
+    "deletes": 1995394,
+    "invalid": 113826,
     "ignored": 0,
-    "notFound": 27932
+    "notFound": 27933
   },
   "batch": {
     "status": "init",
-    "limit": 48967,
-    "since": 91043918,
-    "index": 91092885,
-    "until": 91092885,
-    "started": "2025-12-24T12:09:27.490Z",
-    "finished": "2025-12-24T12:13:03.126Z",
-    "took_ms": 215636,
-    "found": 9251
+    "limit": 38167,
+    "since": 91092885,
+    "index": 91131052,
+    "until": 91131052,
+    "started": "2025-12-25T00:23:04.354Z",
+    "finished": "2025-12-25T00:26:02.412Z",
+    "took_ms": 178058,
+    "found": 6094
   },
   "notFound": [
     [
@@ -167629,6 +167629,12 @@
       "@shrinkwork/vue-image",
       [
         91092761
+      ]
+    ],
+    [
+      "@synchjs/elysocket",
+      [
+        91131043
       ]
     ]
   ]
