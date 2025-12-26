@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3715309,
-  "last": 91217764,
-  "latest": 91217764,
+  "packages": 3715937,
+  "last": 91254614,
+  "latest": 91254614,
   "runs": {
-    "total": 313,
+    "total": 314,
     "status": {
       "killed": 2,
-      "init": 309,
+      "init": 310,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1478713,
-    "github": 2198746,
-    "gitlab": 6615,
+    "unsets": 1478988,
+    "github": 2199092,
+    "gitlab": 6617,
     "bitbucket": 1334,
-    "others": 29901
+    "others": 29906
   },
   "stats": {
-    "changes": 8726517,
-    "inserts": 3715740,
-    "updates": 2901443,
-    "deletes": 1995401,
-    "invalid": 113933,
+    "changes": 8733188,
+    "inserts": 3716369,
+    "updates": 2907428,
+    "deletes": 1995403,
+    "invalid": 113988,
     "ignored": 0,
-    "notFound": 27931
+    "notFound": 27932
   },
   "batch": {
     "status": "init",
-    "limit": 30239,
-    "since": 91187525,
-    "index": 91217764,
-    "until": 91217764,
-    "started": "2025-12-26T00:23:21.872Z",
-    "finished": "2025-12-26T00:25:24.592Z",
-    "took_ms": 122720,
-    "found": 5072
+    "limit": 36850,
+    "since": 91217764,
+    "index": 91254614,
+    "until": 91254614,
+    "started": "2025-12-26T12:09:29.343Z",
+    "finished": "2025-12-26T12:12:24.151Z",
+    "took_ms": 174808,
+    "found": 6671
   },
   "notFound": [
     [
@@ -167623,6 +167623,12 @@
       "@shrinkwork/vue-image",
       [
         91092761
+      ]
+    ],
+    [
+      "@liruns/context-sync-mcp",
+      [
+        91254583
       ]
     ]
   ]
