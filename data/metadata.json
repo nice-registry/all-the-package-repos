@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3713931,
-  "last": 91187525,
-  "latest": 91187525,
+  "packages": 3715309,
+  "last": 91217764,
+  "latest": 91217764,
   "runs": {
-    "total": 312,
+    "total": 313,
     "status": {
       "killed": 2,
-      "init": 308,
+      "init": 309,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1478494,
-    "github": 2197589,
+    "unsets": 1478713,
+    "github": 2198746,
     "gitlab": 6615,
     "bitbucket": 1334,
-    "others": 29899
+    "others": 29901
   },
   "stats": {
-    "changes": 8721445,
-    "inserts": 3714362,
-    "updates": 2897800,
-    "deletes": 1995397,
-    "invalid": 113886,
+    "changes": 8726517,
+    "inserts": 3715740,
+    "updates": 2901443,
+    "deletes": 1995401,
+    "invalid": 113933,
     "ignored": 0,
-    "notFound": 27932
+    "notFound": 27931
   },
   "batch": {
     "status": "init",
-    "limit": 56473,
-    "since": 91131052,
-    "index": 91187525,
-    "until": 91187525,
-    "started": "2025-12-25T12:09:12.051Z",
-    "finished": "2025-12-25T12:13:46.708Z",
-    "took_ms": 274657,
-    "found": 15405
+    "limit": 30239,
+    "since": 91187525,
+    "index": 91217764,
+    "until": 91217764,
+    "started": "2025-12-26T00:23:21.872Z",
+    "finished": "2025-12-26T00:25:24.592Z",
+    "took_ms": 122720,
+    "found": 5072
   },
   "notFound": [
     [
@@ -167605,12 +167605,6 @@
       "@mvd/event-target",
       [
         90740200
-      ]
-    ],
-    [
-      "@photon-ai/flux",
-      [
-        91043900
       ]
     ],
     [
