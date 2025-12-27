@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3716435,
-  "last": 91297488,
-  "latest": 91297488,
+  "packages": 3716915,
+  "last": 91329228,
+  "latest": 91329228,
   "runs": {
-    "total": 315,
+    "total": 316,
     "status": {
       "killed": 2,
-      "init": 311,
+      "init": 312,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1479140,
-    "github": 2199435,
+    "unsets": 1479370,
+    "github": 2199684,
     "gitlab": 6617,
     "bitbucket": 1334,
-    "others": 29909
+    "others": 29910
   },
   "stats": {
-    "changes": 8738893,
-    "inserts": 3716868,
-    "updates": 2912484,
-    "deletes": 1995406,
-    "invalid": 114135,
+    "changes": 8743159,
+    "inserts": 3717348,
+    "updates": 2916233,
+    "deletes": 1995407,
+    "invalid": 114171,
     "ignored": 0,
-    "notFound": 27932
+    "notFound": 27931
   },
   "batch": {
     "status": "init",
-    "limit": 42874,
-    "since": 91254614,
-    "index": 91297488,
-    "until": 91297488,
-    "started": "2025-12-27T00:22:47.339Z",
-    "finished": "2025-12-27T00:25:28.301Z",
-    "took_ms": 160962,
-    "found": 5705
+    "limit": 31740,
+    "since": 91297488,
+    "index": 91329228,
+    "until": 91329228,
+    "started": "2025-12-27T12:08:13.292Z",
+    "finished": "2025-12-27T12:10:03.654Z",
+    "took_ms": 110362,
+    "found": 4266
   },
   "notFound": [
     [
@@ -167623,12 +167623,6 @@
       "@shrinkwork/vue-image",
       [
         91092761
-      ]
-    ],
-    [
-      "@eldrforge/tree-execution",
-      [
-        91297436
       ]
     ]
   ]
