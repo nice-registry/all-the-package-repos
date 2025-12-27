@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3715937,
-  "last": 91254614,
-  "latest": 91254614,
+  "packages": 3716435,
+  "last": 91297488,
+  "latest": 91297488,
   "runs": {
-    "total": 314,
+    "total": 315,
     "status": {
       "killed": 2,
-      "init": 310,
+      "init": 311,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1478988,
-    "github": 2199092,
+    "unsets": 1479140,
+    "github": 2199435,
     "gitlab": 6617,
     "bitbucket": 1334,
-    "others": 29906
+    "others": 29909
   },
   "stats": {
-    "changes": 8733188,
-    "inserts": 3716369,
-    "updates": 2907428,
-    "deletes": 1995403,
-    "invalid": 113988,
+    "changes": 8738893,
+    "inserts": 3716868,
+    "updates": 2912484,
+    "deletes": 1995406,
+    "invalid": 114135,
     "ignored": 0,
     "notFound": 27932
   },
   "batch": {
     "status": "init",
-    "limit": 36850,
-    "since": 91217764,
-    "index": 91254614,
-    "until": 91254614,
-    "started": "2025-12-26T12:09:29.343Z",
-    "finished": "2025-12-26T12:12:24.151Z",
-    "took_ms": 174808,
-    "found": 6671
+    "limit": 42874,
+    "since": 91254614,
+    "index": 91297488,
+    "until": 91297488,
+    "started": "2025-12-27T00:22:47.339Z",
+    "finished": "2025-12-27T00:25:28.301Z",
+    "took_ms": 160962,
+    "found": 5705
   },
   "notFound": [
     [
@@ -167626,9 +167626,9 @@
       ]
     ],
     [
-      "@liruns/context-sync-mcp",
+      "@eldrforge/tree-execution",
       [
-        91254583
+        91297436
       ]
     ]
   ]
