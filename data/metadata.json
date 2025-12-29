@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3717840,
-  "last": 91392818,
-  "latest": 91392818,
+  "packages": 3718572,
+  "last": 91429866,
+  "latest": 91429866,
   "runs": {
-    "total": 318,
+    "total": 319,
     "status": {
       "killed": 2,
-      "init": 314,
+      "init": 315,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1479688,
-    "github": 2200287,
+    "unsets": 1479903,
+    "github": 2200803,
     "gitlab": 6617,
     "bitbucket": 1334,
-    "others": 29914
+    "others": 29915
   },
   "stats": {
-    "changes": 8751249,
-    "inserts": 3718274,
-    "updates": 2923340,
+    "changes": 8756149,
+    "inserts": 3719006,
+    "updates": 2927483,
     "deletes": 1995410,
-    "invalid": 114225,
+    "invalid": 114250,
     "ignored": 0,
-    "notFound": 27931
+    "notFound": 27932
   },
   "batch": {
     "status": "init",
-    "limit": 31550,
-    "since": 91361268,
-    "index": 91392818,
-    "until": 91392818,
-    "started": "2025-12-28T12:08:17.804Z",
-    "finished": "2025-12-28T12:09:52.754Z",
-    "took_ms": 94950,
-    "found": 3975
+    "limit": 37048,
+    "since": 91392818,
+    "index": 91429866,
+    "until": 91429866,
+    "started": "2025-12-29T00:25:40.169Z",
+    "finished": "2025-12-29T00:27:27.409Z",
+    "took_ms": 107240,
+    "found": 4900
   },
   "notFound": [
     [
@@ -167623,6 +167623,12 @@
       "@shrinkwork/vue-image",
       [
         91092761
+      ]
+    ],
+    [
+      "@nyxikitty.dev/velosync",
+      [
+        91429850
       ]
     ]
   ]
