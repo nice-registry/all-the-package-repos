@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3721616,
-  "last": 91646171,
-  "latest": 91646171,
+  "packages": 3722265,
+  "last": 91692292,
+  "latest": 91692292,
   "runs": {
-    "total": 323,
+    "total": 324,
     "status": {
       "killed": 2,
-      "init": 319,
+      "init": 320,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1480966,
-    "github": 2202767,
-    "gitlab": 6618,
+    "unsets": 1481219,
+    "github": 2203159,
+    "gitlab": 6619,
     "bitbucket": 1334,
-    "others": 29931
+    "others": 29934
   },
   "stats": {
-    "changes": 8791763,
-    "inserts": 3722054,
-    "updates": 2959660,
-    "deletes": 1995417,
-    "invalid": 114632,
+    "changes": 8799655,
+    "inserts": 3722703,
+    "updates": 2966804,
+    "deletes": 1995420,
+    "invalid": 114728,
     "ignored": 0,
-    "notFound": 27933
+    "notFound": 27932
   },
   "batch": {
     "status": "init",
-    "limit": 56056,
-    "since": 91590115,
-    "index": 91646171,
-    "until": 91646171,
-    "started": "2025-12-31T00:24:11.530Z",
-    "finished": "2025-12-31T00:28:14.015Z",
-    "took_ms": 242485,
-    "found": 8748
+    "limit": 46121,
+    "since": 91646171,
+    "index": 91692292,
+    "until": 91692292,
+    "started": "2025-12-31T12:09:29.193Z",
+    "finished": "2025-12-31T12:13:11.115Z",
+    "took_ms": 221922,
+    "found": 7892
   },
   "notFound": [
     [
@@ -167629,12 +167629,6 @@
       "@nyxikitty.dev/velosync",
       [
         91429850
-      ]
-    ],
-    [
-      "@tachles/starter",
-      [
-        91646155
       ]
     ]
   ]
