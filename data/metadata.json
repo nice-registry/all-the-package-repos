@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3723379,
-  "last": 91754615,
-  "latest": 91754615,
+  "packages": 3723966,
+  "last": 91784631,
+  "latest": 91784629,
   "runs": {
-    "total": 326,
+    "total": 327,
     "status": {
       "killed": 2,
-      "init": 322,
+      "init": 323,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1481583,
-    "github": 2203906,
-    "gitlab": 6619,
+    "unsets": 1481839,
+    "github": 2204236,
+    "gitlab": 6620,
     "bitbucket": 1334,
     "others": 29937
   },
   "stats": {
-    "changes": 8810343,
-    "inserts": 3723818,
-    "updates": 2976299,
+    "changes": 8814779,
+    "inserts": 3724405,
+    "updates": 2980120,
     "deletes": 1995427,
-    "invalid": 114799,
+    "invalid": 114827,
     "ignored": 0,
-    "notFound": 27933
+    "notFound": 27935
   },
   "batch": {
     "status": "init",
-    "limit": 23533,
-    "since": 91731082,
-    "index": 91754615,
-    "until": 91754615,
-    "started": "2026-01-01T12:09:39.338Z",
-    "finished": "2026-01-01T12:11:59.511Z",
-    "took_ms": 140173,
-    "found": 4653
+    "limit": 30014,
+    "since": 91754615,
+    "index": 91784631,
+    "until": 91784629,
+    "started": "2026-01-02T00:24:01.768Z",
+    "finished": "2026-01-02T00:26:05.812Z",
+    "took_ms": 124044,
+    "found": 4436
   },
   "notFound": [
     [
@@ -167635,6 +167635,18 @@
       "@hashubs/core",
       [
         91754367
+      ]
+    ],
+    [
+      "@uselingu/react-native-sdk",
+      [
+        91784603
+      ]
+    ],
+    [
+      "@hedgequantx/cli",
+      [
+        91784629
       ]
     ]
   ]
