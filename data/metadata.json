@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3725254,
-  "last": 91861109,
-  "latest": 91861109,
+  "packages": 3725709,
+  "last": 91896208,
+  "latest": 91896208,
   "runs": {
-    "total": 329,
+    "total": 330,
     "status": {
       "killed": 2,
-      "init": 325,
+      "init": 326,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1482325,
-    "github": 2205030,
-    "gitlab": 6624,
+    "unsets": 1482481,
+    "github": 2205326,
+    "gitlab": 6625,
     "bitbucket": 1334,
-    "others": 29941
+    "others": 29943
   },
   "stats": {
-    "changes": 8827795,
-    "inserts": 3725694,
-    "updates": 2991703,
-    "deletes": 1995435,
-    "invalid": 114963,
+    "changes": 8832493,
+    "inserts": 3726153,
+    "updates": 2995910,
+    "deletes": 1995439,
+    "invalid": 114991,
     "ignored": 0,
-    "notFound": 27935
+    "notFound": 27947
   },
   "batch": {
     "status": "init",
-    "limit": 39440,
-    "since": 91821669,
-    "index": 91861109,
-    "until": 91861109,
-    "started": "2026-01-03T00:22:26.861Z",
-    "finished": "2026-01-03T00:25:41.948Z",
-    "took_ms": 195087,
-    "found": 7494
+    "limit": 35099,
+    "since": 91861109,
+    "index": 91896208,
+    "until": 91896208,
+    "started": "2026-01-03T12:08:28.402Z",
+    "finished": "2026-01-03T12:10:35.021Z",
+    "took_ms": 126619,
+    "found": 4698
   },
   "notFound": [
     [
@@ -167647,6 +167647,78 @@
       "@jigonr/letta-switch",
       [
         91861103
+      ]
+    ],
+    [
+      "@donotdev/components",
+      [
+        91896124
+      ]
+    ],
+    [
+      "@donotdev/adv-comps",
+      [
+        91896127
+      ]
+    ],
+    [
+      "@donotdev/core",
+      [
+        91896138
+      ]
+    ],
+    [
+      "@donotdev/crud",
+      [
+        91896141
+      ]
+    ],
+    [
+      "@donotdev/firebase",
+      [
+        91896146
+      ]
+    ],
+    [
+      "@donotdev/auth",
+      [
+        91896149
+      ]
+    ],
+    [
+      "@donotdev/billing",
+      [
+        91896158
+      ]
+    ],
+    [
+      "@donotdev/oauth",
+      [
+        91896161
+      ]
+    ],
+    [
+      "@donotdev/ui",
+      [
+        91896167
+      ]
+    ],
+    [
+      "@donotdev/templates",
+      [
+        91896174
+      ]
+    ],
+    [
+      "@donotdev/cli",
+      [
+        91896185
+      ]
+    ],
+    [
+      "@donotdev/functions",
+      [
+        91896190
       ]
     ]
   ]
