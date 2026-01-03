@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3724501,
-  "last": 91821669,
-  "latest": 91821669,
+  "packages": 3725254,
+  "last": 91861109,
+  "latest": 91861109,
   "runs": {
-    "total": 328,
+    "total": 329,
     "status": {
       "killed": 2,
-      "init": 324,
+      "init": 325,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1482058,
-    "github": 2204552,
-    "gitlab": 6621,
+    "unsets": 1482325,
+    "github": 2205030,
+    "gitlab": 6624,
     "bitbucket": 1334,
-    "others": 29936
+    "others": 29941
   },
   "stats": {
-    "changes": 8820301,
-    "inserts": 3724940,
-    "updates": 2985042,
-    "deletes": 1995431,
-    "invalid": 114888,
+    "changes": 8827795,
+    "inserts": 3725694,
+    "updates": 2991703,
+    "deletes": 1995435,
+    "invalid": 114963,
     "ignored": 0,
-    "notFound": 27933
+    "notFound": 27935
   },
   "batch": {
     "status": "init",
-    "limit": 37038,
-    "since": 91784631,
-    "index": 91821669,
-    "until": 91821669,
-    "started": "2026-01-02T12:09:28.908Z",
-    "finished": "2026-01-02T12:12:01.311Z",
-    "took_ms": 152403,
-    "found": 5522
+    "limit": 39440,
+    "since": 91821669,
+    "index": 91861109,
+    "until": 91861109,
+    "started": "2026-01-03T00:22:26.861Z",
+    "finished": "2026-01-03T00:25:41.948Z",
+    "took_ms": 195087,
+    "found": 7494
   },
   "notFound": [
     [
@@ -167635,6 +167635,18 @@
       "@hashubs/core",
       [
         91754367
+      ]
+    ],
+    [
+      "@jigonr/claude-switch",
+      [
+        91861086
+      ]
+    ],
+    [
+      "@jigonr/letta-switch",
+      [
+        91861103
       ]
     ]
   ]
