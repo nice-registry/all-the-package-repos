@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3727655,
-  "last": 91990300,
-  "latest": 91990300,
+  "packages": 3728419,
+  "last": 92051883,
+  "latest": 92051883,
   "runs": {
-    "total": 333,
+    "total": 334,
     "status": {
       "killed": 2,
-      "init": 329,
+      "init": 330,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1483253,
-    "github": 2206491,
-    "gitlab": 6627,
+    "unsets": 1483521,
+    "github": 2206955,
+    "gitlab": 6628,
     "bitbucket": 1334,
-    "others": 29950
+    "others": 29981
   },
   "stats": {
-    "changes": 8847708,
-    "inserts": 3728103,
-    "updates": 3009063,
-    "deletes": 1995451,
-    "invalid": 115091,
+    "changes": 8857773,
+    "inserts": 3728868,
+    "updates": 3018211,
+    "deletes": 1995455,
+    "invalid": 115239,
     "ignored": 0,
-    "notFound": 27948
+    "notFound": 27947
   },
   "batch": {
     "status": "init",
-    "limit": 33127,
-    "since": 91957173,
-    "index": 91990300,
-    "until": 91990300,
-    "started": "2026-01-05T00:26:02.121Z",
-    "finished": "2026-01-05T00:28:20.715Z",
-    "took_ms": 138594,
-    "found": 5311
+    "limit": 61583,
+    "since": 91990300,
+    "index": 92051883,
+    "until": 92051883,
+    "started": "2026-01-05T12:09:53.127Z",
+    "finished": "2026-01-05T12:13:47.177Z",
+    "took_ms": 234050,
+    "found": 10065
   },
   "notFound": [
     [
@@ -167719,12 +167719,6 @@
       "@donotdev/functions",
       [
         91896190
-      ]
-    ],
-    [
-      "@smart-alert/evm-observability",
-      [
-        91990206
       ]
     ]
   ]
