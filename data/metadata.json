@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3732532,
-  "last": 92438396,
-  "latest": 92438396,
+  "packages": 3733390,
+  "last": 92508143,
+  "latest": 92508143,
   "runs": {
-    "total": 339,
+    "total": 340,
     "status": {
       "killed": 2,
-      "init": 335,
+      "init": 336,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1485002,
-    "github": 2209554,
-    "gitlab": 6619,
+    "unsets": 1485338,
+    "github": 2210066,
+    "gitlab": 6621,
     "bitbucket": 1334,
-    "others": 30023
+    "others": 30031
   },
   "stats": {
-    "changes": 8920590,
-    "inserts": 3732987,
-    "updates": 3075846,
-    "deletes": 1995479,
-    "invalid": 116278,
+    "changes": 8933044,
+    "inserts": 3733846,
+    "updates": 3087240,
+    "deletes": 1995483,
+    "invalid": 116475,
     "ignored": 0,
-    "notFound": 27935
+    "notFound": 27936
   },
   "batch": {
     "status": "init",
-    "limit": 88559,
-    "since": 92349837,
-    "index": 92438396,
-    "until": 92438396,
-    "started": "2026-01-08T00:24:09.837Z",
-    "finished": "2026-01-08T00:31:04.492Z",
-    "took_ms": 414655,
-    "found": 13836
+    "limit": 69747,
+    "since": 92438396,
+    "index": 92508143,
+    "until": 92508143,
+    "started": "2026-01-08T12:09:48.539Z",
+    "finished": "2026-01-08T12:15:49.500Z",
+    "took_ms": 360961,
+    "found": 12454
   },
   "notFound": [
     [
@@ -167647,6 +167647,12 @@
       "@jigonr/letta-switch",
       [
         91861103
+      ]
+    ],
+    [
+      "@mollie-foundation/import-retry",
+      [
+        92459598
       ]
     ]
   ]
