@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3736451,
-  "last": 92765328,
-  "latest": 92765328,
+  "packages": 3737087,
+  "last": 92799098,
+  "latest": 92799098,
   "runs": {
-    "total": 344,
+    "total": 345,
     "status": {
       "killed": 2,
-      "init": 340,
+      "init": 341,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1486562,
-    "github": 2211889,
+    "unsets": 1486768,
+    "github": 2212317,
     "gitlab": 6622,
     "bitbucket": 1334,
-    "others": 30044
+    "others": 30046
   },
   "stats": {
-    "changes": 8976124,
-    "inserts": 3736911,
-    "updates": 3126614,
-    "deletes": 1995495,
-    "invalid": 117104,
+    "changes": 8981252,
+    "inserts": 3737550,
+    "updates": 3131031,
+    "deletes": 1995499,
+    "invalid": 117172,
     "ignored": 0,
-    "notFound": 27936
+    "notFound": 27938
   },
   "batch": {
     "status": "init",
-    "limit": 35989,
-    "since": 92729339,
-    "index": 92765328,
-    "until": 92765328,
-    "started": "2026-01-10T12:08:10.382Z",
-    "finished": "2026-01-10T12:10:54.073Z",
-    "took_ms": 163691,
-    "found": 5962
+    "limit": 33770,
+    "since": 92765328,
+    "index": 92799098,
+    "until": 92799098,
+    "started": "2026-01-11T00:26:31.521Z",
+    "finished": "2026-01-11T00:28:26.749Z",
+    "took_ms": 115228,
+    "found": 5128
   },
   "notFound": [
     [
@@ -167653,6 +167653,18 @@
       "@mollie-foundation/import-retry",
       [
         92459598
+      ]
+    ],
+    [
+      "@astromonacinema/passport",
+      [
+        92799032
+      ]
+    ],
+    [
+      "@node-jhora/reporting",
+      [
+        92799074
       ]
     ]
   ]
