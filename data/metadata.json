@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3738469,
-  "last": 92856306,
-  "latest": 92856306,
+  "packages": 3739506,
+  "last": 92941958,
+  "latest": 92941942,
   "runs": {
-    "total": 347,
+    "total": 348,
     "status": {
       "killed": 2,
-      "init": 343,
+      "init": 344,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1487112,
-    "github": 2213353,
+    "unsets": 1487405,
+    "github": 2214089,
     "gitlab": 6622,
     "bitbucket": 1334,
-    "others": 30048
+    "others": 30056
   },
   "stats": {
-    "changes": 8991224,
-    "inserts": 3738934,
-    "updates": 3139510,
-    "deletes": 1995505,
-    "invalid": 117275,
+    "changes": 9003070,
+    "inserts": 3739971,
+    "updates": 3150161,
+    "deletes": 1995511,
+    "invalid": 117427,
     "ignored": 0,
-    "notFound": 27937
+    "notFound": 27938
   },
   "batch": {
     "status": "init",
-    "limit": 32700,
-    "since": 92823606,
-    "index": 92856306,
-    "until": 92856306,
-    "started": "2026-01-12T00:25:08.510Z",
-    "finished": "2026-01-12T00:27:15.865Z",
-    "took_ms": 127355,
-    "found": 5427
+    "limit": 85636,
+    "since": 92856306,
+    "index": 92941958,
+    "until": 92941942,
+    "started": "2026-01-12T12:09:47.722Z",
+    "finished": "2026-01-12T12:15:26.599Z",
+    "took_ms": 338877,
+    "found": 11846
   },
   "notFound": [
     [
@@ -167659,6 +167659,12 @@
       "@astromonacinema/passport",
       [
         92799032
+      ]
+    ],
+    [
+      "@instadapp/token-price",
+      [
+        92941942
       ]
     ]
   ]
