@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3750147,
-  "last": 93826201,
-  "latest": 93826201,
+  "packages": 3750936,
+  "last": 93866913,
+  "latest": 93866913,
   "runs": {
-    "total": 360,
+    "total": 361,
     "status": {
       "killed": 2,
-      "init": 356,
+      "init": 357,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1491375,
-    "github": 2220699,
-    "gitlab": 6629,
+    "unsets": 1491617,
+    "github": 2221239,
+    "gitlab": 6630,
     "bitbucket": 1336,
-    "others": 30108
+    "others": 30114
   },
   "stats": {
-    "changes": 9145550,
-    "inserts": 3750618,
-    "updates": 3279812,
-    "deletes": 1995560,
-    "invalid": 119560,
+    "changes": 9151770,
+    "inserts": 3751408,
+    "updates": 3285156,
+    "deletes": 1995564,
+    "invalid": 119642,
     "ignored": 0,
-    "notFound": 27938
+    "notFound": 27939
   },
   "batch": {
     "status": "init",
-    "limit": 35599,
-    "since": 93790602,
-    "index": 93826201,
-    "until": 93826201,
-    "started": "2026-01-18T12:09:04.550Z",
-    "finished": "2026-01-18T12:11:33.019Z",
-    "took_ms": 148469,
-    "found": 5177
+    "limit": 40712,
+    "since": 93826201,
+    "index": 93866913,
+    "until": 93866913,
+    "started": "2026-01-19T00:25:24.971Z",
+    "finished": "2026-01-19T00:28:06.232Z",
+    "took_ms": 161261,
+    "found": 6220
   },
   "notFound": [
     [
@@ -167665,6 +167665,12 @@
       "@instadapp/token-price",
       [
         92941942
+      ]
+    ],
+    [
+      "@bigmistqke/typed-lexicons",
+      [
+        93866901
       ]
     ]
   ]
