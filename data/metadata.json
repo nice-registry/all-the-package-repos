@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3750936,
-  "last": 93866913,
-  "latest": 93866913,
+  "packages": 3751906,
+  "last": 93940592,
+  "latest": 93940592,
   "runs": {
-    "total": 361,
+    "total": 362,
     "status": {
       "killed": 2,
-      "init": 357,
+      "init": 358,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1491617,
-    "github": 2221239,
-    "gitlab": 6630,
+    "unsets": 1492053,
+    "github": 2221768,
+    "gitlab": 6629,
     "bitbucket": 1336,
-    "others": 30114
+    "others": 30120
   },
   "stats": {
-    "changes": 9151770,
-    "inserts": 3751408,
-    "updates": 3285156,
-    "deletes": 1995564,
-    "invalid": 119642,
+    "changes": 9163842,
+    "inserts": 3752379,
+    "updates": 3296094,
+    "deletes": 1995569,
+    "invalid": 119800,
     "ignored": 0,
-    "notFound": 27939
+    "notFound": 27941
   },
   "batch": {
     "status": "init",
-    "limit": 40712,
-    "since": 93826201,
-    "index": 93866913,
-    "until": 93866913,
-    "started": "2026-01-19T00:25:24.971Z",
-    "finished": "2026-01-19T00:28:06.232Z",
-    "took_ms": 161261,
-    "found": 6220
+    "limit": 73679,
+    "since": 93866913,
+    "index": 93940592,
+    "until": 93940592,
+    "started": "2026-01-19T12:10:23.290Z",
+    "finished": "2026-01-19T12:15:34.927Z",
+    "took_ms": 311637,
+    "found": 12072
   },
   "notFound": [
     [
@@ -167668,9 +167668,21 @@
       ]
     ],
     [
-      "@bigmistqke/typed-lexicons",
+      "@holding-list/holding-list-md",
       [
-        93866901
+        93870202
+      ]
+    ],
+    [
+      "@holding-list/holding-list-xs",
+      [
+        93870212
+      ]
+    ],
+    [
+      "@kui-react/text",
+      [
+        93897148
       ]
     ]
   ]
