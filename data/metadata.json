@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3758366,
-  "last": 94523125,
-  "latest": 94523125,
+  "packages": 3759277,
+  "last": 94582685,
+  "latest": 94582685,
   "runs": {
-    "total": 369,
+    "total": 370,
     "status": {
       "killed": 2,
-      "init": 365,
+      "init": 366,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1494696,
-    "github": 2225550,
-    "gitlab": 6630,
+    "unsets": 1495158,
+    "github": 2225986,
+    "gitlab": 6634,
     "bitbucket": 1336,
-    "others": 30154
+    "others": 30163
   },
   "stats": {
-    "changes": 9264412,
-    "inserts": 3758852,
-    "updates": 3388658,
-    "deletes": 1995618,
-    "invalid": 121284,
+    "changes": 9277255,
+    "inserts": 3759764,
+    "updates": 3400281,
+    "deletes": 1995627,
+    "invalid": 121583,
     "ignored": 0,
-    "notFound": 27942
+    "notFound": 27946
   },
   "batch": {
     "status": "init",
-    "limit": 82820,
-    "since": 94440305,
-    "index": 94523125,
-    "until": 94523125,
-    "started": "2026-01-23T00:24:29.293Z",
-    "finished": "2026-01-23T00:32:04.013Z",
-    "took_ms": 454720,
-    "found": 15416
+    "limit": 59560,
+    "since": 94523125,
+    "index": 94582685,
+    "until": 94582685,
+    "started": "2026-01-23T12:10:04.265Z",
+    "finished": "2026-01-23T12:16:12.684Z",
+    "took_ms": 368419,
+    "found": 12843
   },
   "notFound": [
     [
@@ -167689,6 +167689,30 @@
       "@longegeg/components-extra-4fco",
       [
         94389911
+      ]
+    ],
+    [
+      "@sdjkals/adapter-theme-kernel",
+      [
+        94542814
+      ]
+    ],
+    [
+      "@sdjkals/assets-dist-jim0",
+      [
+        94542825
+      ]
+    ],
+    [
+      "@sdjkals/lib-v1-ifmt",
+      [
+        94542983
+      ]
+    ],
+    [
+      "@nihaoyaya/vendor-shim-store",
+      [
+        94543135
       ]
     ]
   ]
