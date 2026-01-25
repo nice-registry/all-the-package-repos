@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3760176,
-  "last": 94653787,
-  "latest": 94653787,
+  "packages": 3761486,
+  "last": 94706122,
+  "latest": 94706118,
   "runs": {
-    "total": 371,
+    "total": 372,
     "status": {
       "killed": 2,
-      "init": 367,
+      "init": 368,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1495484,
-    "github": 2226548,
-    "gitlab": 6634,
+    "unsets": 1495915,
+    "github": 2227422,
+    "gitlab": 6635,
     "bitbucket": 1336,
-    "others": 30174
+    "others": 30178
   },
   "stats": {
-    "changes": 9290113,
-    "inserts": 3760663,
-    "updates": 3412058,
-    "deletes": 1995632,
-    "invalid": 121760,
+    "changes": 9300399,
+    "inserts": 3761979,
+    "updates": 3420931,
+    "deletes": 1995641,
+    "invalid": 121848,
     "ignored": 0,
-    "notFound": 27946
+    "notFound": 27947
   },
   "batch": {
     "status": "init",
-    "limit": 71102,
-    "since": 94582685,
-    "index": 94653787,
-    "until": 94653787,
-    "started": "2026-01-24T00:23:27.724Z",
-    "finished": "2026-01-24T00:29:08.590Z",
-    "took_ms": 340866,
-    "found": 12858
+    "limit": 52331,
+    "since": 94653787,
+    "index": 94706122,
+    "until": 94706118,
+    "started": "2026-01-25T00:26:49.628Z",
+    "finished": "2026-01-25T00:30:59.023Z",
+    "took_ms": 249395,
+    "found": 10286
   },
   "notFound": [
     [
@@ -167713,6 +167713,12 @@
       "@nihaoyaya/vendor-shim-store",
       [
         94543135
+      ]
+    ],
+    [
+      "@sureshdsk/devflow-mcp",
+      [
+        94706112
       ]
     ]
   ]
