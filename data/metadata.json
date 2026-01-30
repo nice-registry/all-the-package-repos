@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3769852,
-  "last": 95274430,
-  "latest": 95274430,
+  "packages": 3770973,
+  "last": 95355056,
+  "latest": 95355056,
   "runs": {
-    "total": 381,
+    "total": 382,
     "status": {
       "killed": 2,
-      "init": 377,
+      "init": 378,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1499190,
-    "github": 2232441,
+    "unsets": 1499524,
+    "github": 2233223,
     "gitlab": 6647,
     "bitbucket": 1336,
-    "others": 30238
+    "others": 30243
   },
   "stats": {
-    "changes": 9410143,
-    "inserts": 3770358,
-    "updates": 3520718,
-    "deletes": 1995688,
-    "invalid": 123379,
+    "changes": 9424810,
+    "inserts": 3771479,
+    "updates": 3534022,
+    "deletes": 1995693,
+    "invalid": 123616,
     "ignored": 0,
-    "notFound": 27947
+    "notFound": 27948
   },
   "batch": {
     "status": "init",
-    "limit": 70795,
-    "since": 95203635,
-    "index": 95274430,
-    "until": 95274430,
-    "started": "2026-01-29T12:13:13.984Z",
-    "finished": "2026-01-29T12:20:01.312Z",
-    "took_ms": 407328,
-    "found": 14493
+    "limit": 80626,
+    "since": 95274430,
+    "index": 95355056,
+    "until": 95355056,
+    "started": "2026-01-30T00:27:38.540Z",
+    "finished": "2026-01-30T00:34:09.658Z",
+    "took_ms": 391118,
+    "found": 14667
   },
   "notFound": [
     [
@@ -167719,6 +167719,12 @@
       "@franckantonny/design-system",
       [
         94758619
+      ]
+    ],
+    [
+      "@fefortunato/jsrev",
+      [
+        95354987
       ]
     ]
   ]
