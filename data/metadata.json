@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3773235,
-  "last": 95482813,
-  "latest": 95482813,
+  "packages": 3774653,
+  "last": 95509761,
+  "latest": 95509761,
   "runs": {
-    "total": 384,
+    "total": 385,
     "status": {
       "killed": 2,
-      "init": 380,
+      "init": 381,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1500274,
-    "github": 2234699,
+    "unsets": 1500500,
+    "github": 2235890,
     "gitlab": 6647,
     "bitbucket": 1336,
-    "others": 30279
+    "others": 30280
   },
   "stats": {
-    "changes": 9451622,
-    "inserts": 3773745,
-    "updates": 3558237,
-    "deletes": 1995703,
-    "invalid": 123937,
+    "changes": 9458439,
+    "inserts": 3775164,
+    "updates": 3563595,
+    "deletes": 1995706,
+    "invalid": 123974,
     "ignored": 0,
-    "notFound": 27948
+    "notFound": 27949
   },
   "batch": {
     "status": "init",
-    "limit": 67034,
-    "since": 95415779,
-    "index": 95482813,
-    "until": 95482813,
-    "started": "2026-01-31T00:26:53.091Z",
-    "finished": "2026-01-31T00:32:55.522Z",
-    "took_ms": 362431,
-    "found": 13968
+    "limit": 26948,
+    "since": 95482813,
+    "index": 95509761,
+    "until": 95509761,
+    "started": "2026-01-31T12:09:43.573Z",
+    "finished": "2026-01-31T12:12:14.988Z",
+    "took_ms": 151415,
+    "found": 6817
   },
   "notFound": [
     [
@@ -167725,6 +167725,12 @@
       "@fefortunato/jsrev",
       [
         95354987
+      ]
+    ],
+    [
+      "@fenwave/agent",
+      [
+        95509747
       ]
     ]
   ]
