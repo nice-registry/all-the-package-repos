@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3785985,
-  "last": 96244480,
-  "latest": 96244480,
+  "packages": 3787087,
+  "last": 96308212,
+  "latest": 96308212,
   "runs": {
-    "total": 396,
+    "total": 397,
     "status": {
       "killed": 2,
-      "init": 392,
+      "init": 393,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1504570,
-    "github": 2243102,
-    "gitlab": 6674,
+    "unsets": 1505136,
+    "github": 2243633,
+    "gitlab": 6675,
     "bitbucket": 1337,
-    "others": 30302
+    "others": 30306
   },
   "stats": {
-    "changes": 9599714,
-    "inserts": 3786509,
-    "updates": 3691596,
-    "deletes": 1995757,
-    "invalid": 125852,
+    "changes": 9612576,
+    "inserts": 3787611,
+    "updates": 3703124,
+    "deletes": 1995761,
+    "invalid": 126080,
     "ignored": 0,
-    "notFound": 27948
+    "notFound": 27949
   },
   "batch": {
     "status": "init",
-    "limit": 91684,
-    "since": 96152796,
-    "index": 96244480,
-    "until": 96244480,
-    "started": "2026-02-06T00:27:14.831Z",
-    "finished": "2026-02-06T00:34:40.229Z",
-    "took_ms": 445398,
-    "found": 15962
+    "limit": 63732,
+    "since": 96244480,
+    "index": 96308212,
+    "until": 96308212,
+    "started": "2026-02-06T12:14:03.879Z",
+    "finished": "2026-02-06T12:20:12.239Z",
+    "took_ms": 368360,
+    "found": 12862
   },
   "notFound": [
     [
@@ -167725,6 +167725,12 @@
       "@fefortunato/jsrev",
       [
         95354987
+      ]
+    ],
+    [
+      "@uss-stargazer/job-queue",
+      [
+        96306742
       ]
     ]
   ]
