@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3804872,
-  "last": 97275036,
-  "latest": 97275036,
+  "packages": 3805909,
+  "last": 97307054,
+  "latest": 97307052,
   "runs": {
-    "total": 413,
+    "total": 414,
     "status": {
       "killed": 2,
-      "init": 409,
+      "init": 410,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1511660,
-    "github": 2254685,
+    "unsets": 1512122,
+    "github": 2255254,
     "gitlab": 6686,
     "bitbucket": 1337,
-    "others": 30504
+    "others": 30510
   },
   "stats": {
-    "changes": 9810232,
-    "inserts": 3805409,
-    "updates": 3880140,
+    "changes": 9817100,
+    "inserts": 3806446,
+    "updates": 3885913,
     "deletes": 1995820,
-    "invalid": 128863,
+    "invalid": 128921,
     "ignored": 0,
-    "notFound": 27948
+    "notFound": 27952
   },
   "batch": {
     "status": "init",
-    "limit": 30837,
-    "since": 97244199,
-    "index": 97275036,
-    "until": 97275036,
-    "started": "2026-02-14T12:10:00.257Z",
-    "finished": "2026-02-14T12:13:14.898Z",
-    "took_ms": 194641,
-    "found": 7361
+    "limit": 32016,
+    "since": 97275036,
+    "index": 97307054,
+    "until": 97307052,
+    "started": "2026-02-15T00:31:28.732Z",
+    "finished": "2026-02-15T00:33:40.325Z",
+    "took_ms": 131593,
+    "found": 6868
   },
   "notFound": [
     [
@@ -167725,6 +167725,30 @@
       "@fefortunato/jsrev",
       [
         95354987
+      ]
+    ],
+    [
+      "@the-forgebase/api",
+      [
+        97303525
+      ]
+    ],
+    [
+      "@websdr/frontend-core",
+      [
+        97307011
+      ]
+    ],
+    [
+      "@websdr/nestjs-microservice",
+      [
+        97307043
+      ]
+    ],
+    [
+      "@websdr/vue3-components",
+      [
+        97307052
       ]
     ]
   ]
