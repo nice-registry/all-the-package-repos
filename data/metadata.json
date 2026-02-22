@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3821806,
-  "last": 98173128,
-  "latest": 98173128,
+  "packages": 3822790,
+  "last": 98204456,
+  "latest": 98204456,
   "runs": {
-    "total": 428,
+    "total": 429,
     "status": {
       "killed": 2,
-      "init": 424,
+      "init": 425,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1517836,
-    "github": 2265391,
+    "unsets": 1518132,
+    "github": 2266079,
     "gitlab": 6691,
     "bitbucket": 1337,
     "others": 30551
   },
   "stats": {
-    "changes": 9982628,
-    "inserts": 3822371,
-    "updates": 4032856,
+    "changes": 9989573,
+    "inserts": 3823355,
+    "updates": 4038677,
     "deletes": 1995906,
-    "invalid": 131495,
+    "invalid": 131635,
     "ignored": 0,
     "notFound": 27952
   },
   "batch": {
     "status": "init",
-    "limit": 30348,
-    "since": 98142780,
-    "index": 98173128,
-    "until": 98173128,
-    "started": "2026-02-22T00:29:51.654Z",
-    "finished": "2026-02-22T00:32:03.674Z",
-    "took_ms": 132020,
-    "found": 7159
+    "limit": 31328,
+    "since": 98173128,
+    "index": 98204456,
+    "until": 98204456,
+    "started": "2026-02-22T12:10:12.375Z",
+    "finished": "2026-02-22T12:12:38.899Z",
+    "took_ms": 146524,
+    "found": 6945
   },
   "notFound": [
     [
@@ -167734,12 +167734,6 @@
       ]
     ],
     [
-      "@bvbmz/local-proxy",
-      [
-        98173045
-      ]
-    ],
-    [
       "@upbiit/eslint-config",
       [
         98173067
@@ -167749,6 +167743,12 @@
       "@adi-family/sdk-parts-css",
       [
         98173072
+      ]
+    ],
+    [
+      "@forkzz/asaas",
+      [
+        98204071
       ]
     ]
   ]
