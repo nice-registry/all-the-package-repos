@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3824191,
-  "last": 98252255,
-  "latest": 98252255,
+  "packages": 3825206,
+  "last": 98320349,
+  "latest": 98320349,
   "runs": {
-    "total": 430,
+    "total": 431,
     "status": {
       "killed": 2,
-      "init": 426,
+      "init": 427,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1518605,
-    "github": 2267003,
+    "unsets": 1518992,
+    "github": 2267629,
     "gitlab": 6691,
     "bitbucket": 1337,
-    "others": 30555
+    "others": 30557
   },
   "stats": {
-    "changes": 9997646,
-    "inserts": 3824756,
-    "updates": 4045150,
-    "deletes": 1995908,
-    "invalid": 131832,
+    "changes": 10011235,
+    "inserts": 3825771,
+    "updates": 4057216,
+    "deletes": 1995914,
+    "invalid": 132334,
     "ignored": 0,
-    "notFound": 27951
+    "notFound": 27952
   },
   "batch": {
     "status": "init",
-    "limit": 47799,
-    "since": 98204456,
-    "index": 98252255,
-    "until": 98252255,
-    "started": "2026-02-23T00:30:17.392Z",
-    "finished": "2026-02-23T00:32:43.965Z",
-    "took_ms": 146573,
-    "found": 8073
+    "limit": 68094,
+    "since": 98252255,
+    "index": 98320349,
+    "until": 98320349,
+    "started": "2026-02-23T12:16:43.100Z",
+    "finished": "2026-02-23T12:22:35.582Z",
+    "took_ms": 352482,
+    "found": 13589
   },
   "notFound": [
     [
@@ -167743,6 +167743,12 @@
       "@adi-family/sdk-parts-css",
       [
         98173072
+      ]
+    ],
+    [
+      "@myx0m0p/feed2md",
+      [
+        98301195
       ]
     ]
   ]
