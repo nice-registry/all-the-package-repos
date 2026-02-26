@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3830312,
-  "last": 98654648,
-  "latest": 98654648,
+  "packages": 3831605,
+  "last": 98751402,
+  "latest": 98751402,
   "runs": {
-    "total": 435,
+    "total": 436,
     "status": {
       "killed": 2,
-      "init": 431,
+      "init": 432,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1521150,
-    "github": 2270537,
-    "gitlab": 6696,
+    "unsets": 1521674,
+    "github": 2271300,
+    "gitlab": 6697,
     "bitbucket": 1337,
-    "others": 30592
+    "others": 30597
   },
   "stats": {
-    "changes": 10076504,
-    "inserts": 3830877,
-    "updates": 4116634,
-    "deletes": 1995923,
-    "invalid": 133070,
+    "changes": 10094322,
+    "inserts": 3832170,
+    "updates": 4132871,
+    "deletes": 1995927,
+    "invalid": 133354,
     "ignored": 0,
-    "notFound": 27952
+    "notFound": 27955
   },
   "batch": {
     "status": "init",
-    "limit": 69233,
-    "since": 98585415,
-    "index": 98654648,
-    "until": 98654648,
-    "started": "2026-02-25T12:16:34.661Z",
-    "finished": "2026-02-25T12:22:41.502Z",
-    "took_ms": 366841,
-    "found": 14227
+    "limit": 96754,
+    "since": 98654648,
+    "index": 98751402,
+    "until": 98751402,
+    "started": "2026-02-26T00:27:08.195Z",
+    "finished": "2026-02-26T00:37:15.338Z",
+    "took_ms": 607143,
+    "found": 17818
   },
   "notFound": [
     [
@@ -167749,6 +167749,24 @@
       "@myx0m0p/feed2md",
       [
         98301195
+      ]
+    ],
+    [
+      "@bridgebasehq/core",
+      [
+        98702928
+      ]
+    ],
+    [
+      "@bridgebasehq/redis",
+      [
+        98702989
+      ]
+    ],
+    [
+      "@bridgebasehq/tigerbeetle",
+      [
+        98703062
       ]
     ]
   ]
