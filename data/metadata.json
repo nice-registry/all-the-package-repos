@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3837255,
-  "last": 99080535,
-  "latest": 99080535,
+  "packages": 3838484,
+  "last": 99116841,
+  "latest": 99116841,
   "runs": {
-    "total": 440,
+    "total": 441,
     "status": {
       "killed": 2,
-      "init": 436,
+      "init": 437,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1523929,
-    "github": 2274646,
+    "unsets": 1524471,
+    "github": 2275325,
     "gitlab": 6706,
     "bitbucket": 1337,
-    "others": 30637
+    "others": 30645
   },
   "stats": {
-    "changes": 10157497,
-    "inserts": 3837822,
-    "updates": 4189367,
-    "deletes": 1995937,
-    "invalid": 134371,
+    "changes": 10166663,
+    "inserts": 3839053,
+    "updates": 4197218,
+    "deletes": 1995940,
+    "invalid": 134452,
     "ignored": 0,
-    "notFound": 27955
+    "notFound": 27956
   },
   "batch": {
     "status": "init",
-    "limit": 88851,
-    "since": 98991684,
-    "index": 99080535,
-    "until": 99080535,
-    "started": "2026-02-28T00:25:45.724Z",
-    "finished": "2026-02-28T00:34:22.771Z",
-    "took_ms": 517047,
-    "found": 15858
+    "limit": 36306,
+    "since": 99080535,
+    "index": 99116841,
+    "until": 99116841,
+    "started": "2026-02-28T12:09:48.601Z",
+    "finished": "2026-02-28T12:13:30.832Z",
+    "took_ms": 222231,
+    "found": 9166
   },
   "notFound": [
     [
@@ -167767,6 +167767,12 @@
       "@bridgebasehq/tigerbeetle",
       [
         98703062
+      ]
+    ],
+    [
+      "@khalilbenaz/mdan",
+      [
+        99115719
       ]
     ]
   ]
