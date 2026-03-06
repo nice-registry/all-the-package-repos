@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3853747,
-  "last": 99907403,
-  "latest": 99907403,
+  "packages": 3855241,
+  "last": 99977221,
+  "latest": 99977221,
   "runs": {
-    "total": 452,
+    "total": 453,
     "status": {
       "killed": 2,
-      "init": 448,
+      "init": 449,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1530841,
-    "github": 2284143,
+    "unsets": 1531521,
+    "github": 2284948,
     "gitlab": 6717,
     "bitbucket": 1337,
-    "others": 30709
+    "others": 30718
   },
   "stats": {
-    "changes": 10320545,
-    "inserts": 3854328,
-    "updates": 4333847,
-    "deletes": 1996012,
-    "invalid": 136358,
+    "changes": 10335518,
+    "inserts": 3855823,
+    "updates": 4347092,
+    "deletes": 1996019,
+    "invalid": 136584,
     "ignored": 0,
-    "notFound": 28051
+    "notFound": 28045
   },
   "batch": {
     "status": "init",
-    "limit": 102572,
-    "since": 99804831,
-    "index": 99907403,
-    "until": 99907403,
-    "started": "2026-03-06T00:33:23.315Z",
-    "finished": "2026-03-06T00:42:08.345Z",
-    "took_ms": 525030,
-    "found": 17706
+    "limit": 69818,
+    "since": 99907403,
+    "index": 99977221,
+    "until": 99977221,
+    "started": "2026-03-06T12:13:16.901Z",
+    "finished": "2026-03-06T12:21:21.654Z",
+    "took_ms": 484753,
+    "found": 14973
   },
   "notFound": [
     [
@@ -167788,12 +167788,6 @@
       ]
     ],
     [
-      "@thinkingcat/subscription-utils",
-      [
-        99791420
-      ]
-    ],
-    [
       "fxxk",
       [
         99791743
@@ -167821,12 +167815,6 @@
       "@reus-able/theme",
       [
         99793077
-      ]
-    ],
-    [
-      "@claudemini/ses-cli",
-      [
-        99793548
       ]
     ],
     [
@@ -167920,12 +167908,6 @@
       ]
     ],
     [
-      "@checkvibe123/mcp-server",
-      [
-        99796149
-      ]
-    ],
-    [
       "@frameless/strapi-plugin-open-forms-embed",
       [
         99796598
@@ -167965,12 +167947,6 @@
       "@iflow-mcp/rn1024-creatoria-miniapp-mcp",
       [
         99797506
-      ]
-    ],
-    [
-      "@checkvibe/mcp-server",
-      [
-        99797570
       ]
     ],
     [
@@ -168322,12 +168298,6 @@
       ]
     ],
     [
-      "@matvp91/ham",
-      [
-        99804505
-      ]
-    ],
-    [
       "miui-react",
       [
         99804564
@@ -168337,12 +168307,6 @@
       "@iflow-mcp/jdorfman-cleanshot-mcp",
       [
         99804633
-      ]
-    ],
-    [
-      "@blastoiseomg/playwright-pom-mcp",
-      [
-        99804711
       ]
     ]
   ]
