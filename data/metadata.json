@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3860398,
-  "last": 100168375,
-  "latest": 100168375,
+  "packages": 3861807,
+  "last": 100206184,
+  "latest": 100206184,
   "runs": {
-    "total": 457,
+    "total": 458,
     "status": {
       "killed": 2,
-      "init": 453,
+      "init": 454,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1533526,
-    "github": 2288078,
+    "unsets": 1533971,
+    "github": 2289034,
     "gitlab": 6720,
     "bitbucket": 1337,
-    "others": 30737
+    "others": 30745
   },
   "stats": {
-    "changes": 10376830,
-    "inserts": 3860985,
-    "updates": 4382804,
-    "deletes": 1996036,
-    "invalid": 137005,
+    "changes": 10385672,
+    "inserts": 3862394,
+    "updates": 4390076,
+    "deletes": 1996039,
+    "invalid": 137163,
     "ignored": 0,
-    "notFound": 28046
+    "notFound": 28044
   },
   "batch": {
     "status": "init",
-    "limit": 31930,
-    "since": 100136445,
-    "index": 100168375,
-    "until": 100168375,
-    "started": "2026-03-08T12:11:02.335Z",
-    "finished": "2026-03-08T12:14:55.699Z",
-    "took_ms": 233364,
-    "found": 7709
+    "limit": 37809,
+    "since": 100168375,
+    "index": 100206184,
+    "until": 100206184,
+    "started": "2026-03-09T00:29:28.353Z",
+    "finished": "2026-03-09T00:32:31.989Z",
+    "took_ms": 183636,
+    "found": 8842
   },
   "notFound": [
     [
@@ -168301,18 +168301,6 @@
       "@arlioz/js",
       [
         100096012
-      ]
-    ],
-    [
-      "@l4dybird/nuxt-ui-preset-unocss-core",
-      [
-        100168328
-      ]
-    ],
-    [
-      "@l4dybird/nuxt-ui-preset-unocss-unplugin",
-      [
-        100168329
       ]
     ]
   ]
