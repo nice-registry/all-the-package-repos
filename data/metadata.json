@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3868310,
-  "last": 100540775,
-  "latest": 100540775,
+  "packages": 3869757,
+  "last": 100620177,
+  "latest": 100620177,
   "runs": {
-    "total": 462,
+    "total": 463,
     "status": {
       "killed": 2,
-      "init": 458,
+      "init": 459,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1536500,
-    "github": 2292967,
+    "unsets": 1537112,
+    "github": 2293785,
     "gitlab": 6724,
     "bitbucket": 1342,
-    "others": 30777
+    "others": 30794
   },
   "stats": {
-    "changes": 10452940,
-    "inserts": 3868902,
-    "updates": 4450069,
-    "deletes": 1996051,
-    "invalid": 137918,
+    "changes": 10469080,
+    "inserts": 3870351,
+    "updates": 4464600,
+    "deletes": 1996054,
+    "invalid": 138075,
     "ignored": 0,
-    "notFound": 28041
+    "notFound": 28040
   },
   "batch": {
     "status": "init",
-    "limit": 98636,
-    "since": 100442139,
-    "index": 100540775,
-    "until": 100540775,
-    "started": "2026-03-11T00:26:43.174Z",
-    "finished": "2026-03-11T00:37:03.224Z",
-    "took_ms": 620050,
-    "found": 19055
+    "limit": 79402,
+    "since": 100540775,
+    "index": 100620177,
+    "until": 100620177,
+    "started": "2026-03-11T12:15:13.162Z",
+    "finished": "2026-03-11T12:23:40.291Z",
+    "took_ms": 507129,
+    "found": 16140
   },
   "notFound": [
     [
@@ -168121,12 +168121,6 @@
       "@spanory/cli",
       [
         99802240
-      ]
-    ],
-    [
-      "claude-opt",
-      [
-        99802271
       ]
     ],
     [
