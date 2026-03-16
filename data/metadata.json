@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3882884,
-  "last": 101196425,
-  "latest": 101196425,
+  "packages": 3884380,
+  "last": 101269235,
+  "latest": 101269235,
   "runs": {
-    "total": 472,
+    "total": 473,
     "status": {
       "killed": 2,
-      "init": 468,
+      "init": 469,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1542538,
-    "github": 2301430,
-    "gitlab": 6729,
+    "unsets": 1542726,
+    "github": 2302709,
+    "gitlab": 6744,
     "bitbucket": 1343,
-    "others": 30844
+    "others": 30858
   },
   "stats": {
-    "changes": 10589501,
-    "inserts": 3883492,
-    "updates": 4570501,
-    "deletes": 1996095,
-    "invalid": 139413,
+    "changes": 10605094,
+    "inserts": 3884994,
+    "updates": 4584221,
+    "deletes": 1996107,
+    "invalid": 139772,
     "ignored": 0,
-    "notFound": 28056
+    "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 42980,
-    "since": 101153445,
-    "index": 101196425,
-    "until": 101196425,
-    "started": "2026-03-16T00:34:10.201Z",
-    "finished": "2026-03-16T00:38:09.770Z",
-    "took_ms": 239569,
-    "found": 9675
+    "limit": 72810,
+    "since": 101196425,
+    "index": 101269235,
+    "until": 101269235,
+    "started": "2026-03-16T12:21:01.570Z",
+    "finished": "2026-03-16T12:27:45.880Z",
+    "took_ms": 404310,
+    "found": 15593
   },
   "notFound": [
     [
@@ -168373,6 +168373,12 @@
       "@3stripes/toolkit",
       [
         101190921
+      ]
+    ],
+    [
+      "@daxiongmeizi/cursor-acp-miniapp",
+      [
+        101220022
       ]
     ]
   ]
