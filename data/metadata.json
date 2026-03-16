@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3881334,
-  "last": 101153445,
-  "latest": 101153445,
+  "packages": 3882884,
+  "last": 101196425,
+  "latest": 101196425,
   "runs": {
-    "total": 471,
+    "total": 472,
     "status": {
       "killed": 2,
-      "init": 467,
+      "init": 468,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1541946,
-    "github": 2300479,
+    "unsets": 1542538,
+    "github": 2301430,
     "gitlab": 6729,
     "bitbucket": 1343,
-    "others": 30837
+    "others": 30844
   },
   "stats": {
-    "changes": 10579826,
-    "inserts": 3881940,
-    "updates": 4562474,
-    "deletes": 1996091,
-    "invalid": 139321,
+    "changes": 10589501,
+    "inserts": 3883492,
+    "updates": 4570501,
+    "deletes": 1996095,
+    "invalid": 139413,
     "ignored": 0,
-    "notFound": 28054
+    "notFound": 28056
   },
   "batch": {
     "status": "init",
-    "limit": 28237,
-    "since": 101125208,
-    "index": 101153445,
-    "until": 101153445,
-    "started": "2026-03-15T12:12:26.096Z",
-    "finished": "2026-03-15T12:14:36.672Z",
-    "took_ms": 130576,
-    "found": 6732
+    "limit": 42980,
+    "since": 101153445,
+    "index": 101196425,
+    "until": 101196425,
+    "started": "2026-03-16T00:34:10.201Z",
+    "finished": "2026-03-16T00:38:09.770Z",
+    "took_ms": 239569,
+    "found": 9675
   },
   "notFound": [
     [
@@ -168361,6 +168361,18 @@
       "@withsol/sol",
       [
         101125016
+      ]
+    ],
+    [
+      "@3stripes/api-client",
+      [
+        101190845
+      ]
+    ],
+    [
+      "@3stripes/toolkit",
+      [
+        101190921
       ]
     ]
   ]
