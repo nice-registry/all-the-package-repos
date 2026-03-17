@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3884380,
-  "last": 101269235,
-  "latest": 101269235,
+  "packages": 3886195,
+  "last": 101376087,
+  "latest": 101376087,
   "runs": {
-    "total": 473,
+    "total": 474,
     "status": {
       "killed": 2,
-      "init": 469,
+      "init": 470,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1542726,
-    "github": 2302709,
-    "gitlab": 6744,
-    "bitbucket": 1343,
-    "others": 30858
+    "unsets": 1543327,
+    "github": 2303916,
+    "gitlab": 6745,
+    "bitbucket": 1344,
+    "others": 30863
   },
   "stats": {
-    "changes": 10605094,
-    "inserts": 3884994,
-    "updates": 4584221,
-    "deletes": 1996107,
-    "invalid": 139772,
+    "changes": 10623910,
+    "inserts": 3886810,
+    "updates": 4600988,
+    "deletes": 1996110,
+    "invalid": 140002,
     "ignored": 0,
     "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 72810,
-    "since": 101196425,
-    "index": 101269235,
-    "until": 101269235,
-    "started": "2026-03-16T12:21:01.570Z",
-    "finished": "2026-03-16T12:27:45.880Z",
-    "took_ms": 404310,
-    "found": 15593
+    "limit": 106852,
+    "since": 101269235,
+    "index": 101376087,
+    "until": 101376087,
+    "started": "2026-03-17T00:29:37.260Z",
+    "finished": "2026-03-17T00:39:04.792Z",
+    "took_ms": 567532,
+    "found": 18816
   },
   "notFound": [
     [
@@ -168376,9 +168376,9 @@
       ]
     ],
     [
-      "@daxiongmeizi/cursor-acp-miniapp",
+      "@ebowwa/claudecodehistory-rs",
       [
-        101220022
+        101375759
       ]
     ]
   ]
