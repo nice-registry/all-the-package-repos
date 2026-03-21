@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3899034,
-  "last": 102010882,
-  "latest": 102010882,
+  "packages": 3900539,
+  "last": 102096413,
+  "latest": 102096413,
   "runs": {
-    "total": 481,
+    "total": 482,
     "status": {
       "killed": 2,
-      "init": 477,
+      "init": 478,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1547668,
-    "github": 2312339,
-    "gitlab": 6756,
+    "unsets": 1548255,
+    "github": 2313245,
+    "gitlab": 6758,
     "bitbucket": 1347,
-    "others": 30924
+    "others": 30934
   },
   "stats": {
-    "changes": 10747021,
-    "inserts": 3899658,
-    "updates": 4709374,
-    "deletes": 1996155,
-    "invalid": 141834,
+    "changes": 10763958,
+    "inserts": 3901164,
+    "updates": 4724509,
+    "deletes": 1996161,
+    "invalid": 142124,
     "ignored": 0,
-    "notFound": 28057
+    "notFound": 28058
   },
   "batch": {
     "status": "init",
-    "limit": 73606,
-    "since": 101937276,
-    "index": 102010882,
-    "until": 102010882,
-    "started": "2026-03-20T12:14:23.949Z",
-    "finished": "2026-03-20T12:21:27.361Z",
-    "took_ms": 423412,
-    "found": 14641
+    "limit": 85531,
+    "since": 102010882,
+    "index": 102096413,
+    "until": 102096413,
+    "started": "2026-03-21T00:28:25.362Z",
+    "finished": "2026-03-21T00:37:00.893Z",
+    "took_ms": 515531,
+    "found": 16937
   },
   "notFound": [
     [
@@ -168379,6 +168379,12 @@
       "@ebowwa/claudecodehistory-rs",
       [
         101375759
+      ]
+    ],
+    [
+      "@genui-a3/a3-create",
+      [
+        102069922
       ]
     ]
   ]
