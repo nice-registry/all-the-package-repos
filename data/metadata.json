@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3909579,
-  "last": 102418549,
-  "latest": 102418549,
+  "packages": 3911175,
+  "last": 102502536,
+  "latest": 102502536,
   "runs": {
-    "total": 488,
+    "total": 489,
     "status": {
       "killed": 2,
-      "init": 484,
+      "init": 485,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1551728,
-    "github": 2318762,
-    "gitlab": 6761,
+    "unsets": 1552387,
+    "github": 2319679,
+    "gitlab": 6760,
     "bitbucket": 1347,
-    "others": 30981
+    "others": 31002
   },
   "stats": {
-    "changes": 10833622,
-    "inserts": 3910217,
-    "updates": 4783990,
-    "deletes": 1996192,
-    "invalid": 143223,
+    "changes": 10850814,
+    "inserts": 3911816,
+    "updates": 4799236,
+    "deletes": 1996199,
+    "invalid": 143563,
     "ignored": 0,
-    "notFound": 28060
+    "notFound": 28059
   },
   "batch": {
     "status": "init",
-    "limit": 100915,
-    "since": 102317634,
-    "index": 102418549,
-    "until": 102418549,
-    "started": "2026-03-24T00:27:25.909Z",
-    "finished": "2026-03-24T00:38:58.994Z",
-    "took_ms": 693085,
-    "found": 19988
+    "limit": 83987,
+    "since": 102418549,
+    "index": 102502536,
+    "until": 102502536,
+    "started": "2026-03-24T12:20:25.425Z",
+    "finished": "2026-03-24T12:29:35.160Z",
+    "took_ms": 549735,
+    "found": 17192
   },
   "notFound": [
     [
@@ -168259,12 +168259,6 @@
       "jly-cr",
       [
         99804469
-      ]
-    ],
-    [
-      "miui-react",
-      [
-        99804564
       ]
     ],
     [
