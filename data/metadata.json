@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3907878,
-  "last": 102317634,
-  "latest": 102317634,
+  "packages": 3909579,
+  "last": 102418549,
+  "latest": 102418549,
   "runs": {
-    "total": 487,
+    "total": 488,
     "status": {
       "killed": 2,
-      "init": 483,
+      "init": 484,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1551110,
-    "github": 2317689,
+    "unsets": 1551728,
+    "github": 2318762,
     "gitlab": 6761,
     "bitbucket": 1347,
-    "others": 30971
+    "others": 30981
   },
   "stats": {
-    "changes": 10813634,
-    "inserts": 3908515,
-    "updates": 4766212,
-    "deletes": 1996189,
-    "invalid": 142718,
+    "changes": 10833622,
+    "inserts": 3910217,
+    "updates": 4783990,
+    "deletes": 1996192,
+    "invalid": 143223,
     "ignored": 0,
-    "notFound": 28059
+    "notFound": 28060
   },
   "batch": {
     "status": "init",
-    "limit": 73821,
-    "since": 102243813,
-    "index": 102317634,
-    "until": 102317634,
-    "started": "2026-03-23T12:19:51.365Z",
-    "finished": "2026-03-23T12:26:59.913Z",
-    "took_ms": 428548,
-    "found": 14997
+    "limit": 100915,
+    "since": 102317634,
+    "index": 102418549,
+    "until": 102418549,
+    "started": "2026-03-24T00:27:25.909Z",
+    "finished": "2026-03-24T00:38:58.994Z",
+    "took_ms": 693085,
+    "found": 19988
   },
   "notFound": [
     [
@@ -168391,6 +168391,12 @@
       "@orisign/bot-sdk",
       [
         102198684
+      ]
+    ],
+    [
+      "@thiagoemmanuell/unhandledrejection",
+      [
+        102331022
       ]
     ]
   ]
