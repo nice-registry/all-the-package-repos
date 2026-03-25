@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3913269,
-  "last": 102607027,
-  "latest": 102607027,
+  "packages": 3914780,
+  "last": 102687472,
+  "latest": 102687472,
   "runs": {
-    "total": 490,
+    "total": 491,
     "status": {
       "killed": 2,
-      "init": 486,
+      "init": 487,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1553266,
-    "github": 2320888,
+    "unsets": 1553880,
+    "github": 2321776,
     "gitlab": 6760,
     "bitbucket": 1347,
-    "others": 31008
+    "others": 31017
   },
   "stats": {
-    "changes": 10870020,
-    "inserts": 3913910,
-    "updates": 4816136,
-    "deletes": 1996203,
-    "invalid": 143771,
+    "changes": 10886326,
+    "inserts": 3915421,
+    "updates": 4830595,
+    "deletes": 1996210,
+    "invalid": 144100,
     "ignored": 0,
-    "notFound": 28059
+    "notFound": 28058
   },
   "batch": {
     "status": "init",
-    "limit": 104491,
-    "since": 102502536,
-    "index": 102607027,
-    "until": 102607027,
-    "started": "2026-03-25T00:31:08.643Z",
-    "finished": "2026-03-25T00:40:11.029Z",
-    "took_ms": 542386,
-    "found": 19206
+    "limit": 80445,
+    "since": 102607027,
+    "index": 102687472,
+    "until": 102687472,
+    "started": "2026-03-25T12:19:45.690Z",
+    "finished": "2026-03-25T12:27:05.656Z",
+    "took_ms": 439966,
+    "found": 16306
   },
   "notFound": [
     [
@@ -168253,12 +168253,6 @@
       "@iflow-mcp/darknoah-feishu-mcp",
       [
         99804311
-      ]
-    ],
-    [
-      "jly-cr",
-      [
-        99804469
       ]
     ],
     [
