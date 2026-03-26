@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3916678,
-  "last": 102798990,
-  "latest": 102798990,
+  "packages": 3918133,
+  "last": 102876823,
+  "latest": 102876823,
   "runs": {
-    "total": 492,
+    "total": 493,
     "status": {
       "killed": 2,
-      "init": 488,
+      "init": 489,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1554804,
-    "github": 2322745,
-    "gitlab": 6760,
+    "unsets": 1555453,
+    "github": 2323534,
+    "gitlab": 6761,
     "bitbucket": 1347,
-    "others": 31022
+    "others": 31038
   },
   "stats": {
-    "changes": 10906243,
-    "inserts": 3917320,
-    "updates": 4848318,
-    "deletes": 1996216,
-    "invalid": 144389,
+    "changes": 10922810,
+    "inserts": 3918777,
+    "updates": 4863152,
+    "deletes": 1996219,
+    "invalid": 144662,
     "ignored": 0,
-    "notFound": 28058
+    "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 111518,
-    "since": 102687472,
-    "index": 102798990,
-    "until": 102798990,
-    "started": "2026-03-26T00:33:28.497Z",
-    "finished": "2026-03-26T00:42:51.365Z",
-    "took_ms": 562868,
-    "found": 19917
+    "limit": 77833,
+    "since": 102798990,
+    "index": 102876823,
+    "until": 102876823,
+    "started": "2026-03-26T12:23:00.844Z",
+    "finished": "2026-03-26T12:31:46.615Z",
+    "took_ms": 525771,
+    "found": 16567
   },
   "notFound": [
     [
@@ -168331,12 +168331,6 @@
       "@micromint1npm/tempore-nisi-veniam",
       [
         100891598
-      ]
-    ],
-    [
-      "@principal-ai/file-city-server",
-      [
-        101103710
       ]
     ],
     [
