@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3922948,
-  "last": 103137176,
-  "latest": 103137176,
+  "packages": 3924215,
+  "last": 103172091,
+  "latest": 103172091,
   "runs": {
-    "total": 496,
+    "total": 497,
     "status": {
       "killed": 2,
-      "init": 492,
+      "init": 493,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1557358,
-    "github": 2326424,
+    "unsets": 1558009,
+    "github": 2327017,
     "gitlab": 6762,
     "bitbucket": 1347,
-    "others": 31057
+    "others": 31080
   },
   "stats": {
-    "changes": 10974780,
-    "inserts": 3923598,
-    "updates": 4909581,
-    "deletes": 1996235,
-    "invalid": 145366,
+    "changes": 10983796,
+    "inserts": 3924868,
+    "updates": 4917273,
+    "deletes": 1996244,
+    "invalid": 145411,
     "ignored": 0,
-    "notFound": 28057
+    "notFound": 28061
   },
   "batch": {
     "status": "init",
-    "limit": 89241,
-    "since": 103047935,
-    "index": 103137176,
-    "until": 103137176,
-    "started": "2026-03-28T00:31:04.039Z",
-    "finished": "2026-03-28T00:40:45.599Z",
-    "took_ms": 581560,
-    "found": 16945
+    "limit": 34915,
+    "since": 103137176,
+    "index": 103172091,
+    "until": 103172091,
+    "started": "2026-03-28T12:13:53.324Z",
+    "finished": "2026-03-28T12:18:11.570Z",
+    "took_ms": 258246,
+    "found": 9016
   },
   "notFound": [
     [
@@ -168379,6 +168379,30 @@
       "@thiagoemmanuell/unhandledrejection",
       [
         102331022
+      ]
+    ],
+    [
+      "@matrix-view/core",
+      [
+        103172045
+      ]
+    ],
+    [
+      "@rrwebcloud/openclaw-session-recording",
+      [
+        103172062
+      ]
+    ],
+    [
+      "@redker56/agentforge",
+      [
+        103172089
+      ]
+    ],
+    [
+      "@matrix-view/plus",
+      [
+        103172090
       ]
     ]
   ]
