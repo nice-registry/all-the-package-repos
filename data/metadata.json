@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3924215,
-  "last": 103172091,
-  "latest": 103172091,
+  "packages": 3925661,
+  "last": 103219449,
+  "latest": 103219449,
   "runs": {
-    "total": 497,
+    "total": 498,
     "status": {
       "killed": 2,
-      "init": 493,
+      "init": 494,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1558009,
-    "github": 2327017,
-    "gitlab": 6762,
+    "unsets": 1558584,
+    "github": 2327884,
+    "gitlab": 6763,
     "bitbucket": 1347,
-    "others": 31080
+    "others": 31083
   },
   "stats": {
-    "changes": 10983796,
-    "inserts": 3924868,
-    "updates": 4917273,
-    "deletes": 1996244,
-    "invalid": 145411,
+    "changes": 10994797,
+    "inserts": 3926316,
+    "updates": 4926748,
+    "deletes": 1996249,
+    "invalid": 145484,
     "ignored": 0,
-    "notFound": 28061
+    "notFound": 28060
   },
   "batch": {
     "status": "init",
-    "limit": 34915,
-    "since": 103137176,
-    "index": 103172091,
-    "until": 103172091,
-    "started": "2026-03-28T12:13:53.324Z",
-    "finished": "2026-03-28T12:18:11.570Z",
-    "took_ms": 258246,
-    "found": 9016
+    "limit": 47358,
+    "since": 103172091,
+    "index": 103219449,
+    "until": 103219449,
+    "started": "2026-03-29T00:35:20.118Z",
+    "finished": "2026-03-29T00:39:26.275Z",
+    "took_ms": 246157,
+    "found": 11001
   },
   "notFound": [
     [
@@ -168385,12 +168385,6 @@
       "@matrix-view/core",
       [
         103172045
-      ]
-    ],
-    [
-      "@rrwebcloud/openclaw-session-recording",
-      [
-        103172062
       ]
     ],
     [
