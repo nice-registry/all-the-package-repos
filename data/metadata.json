@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3927869,
-  "last": 103295989,
-  "latest": 103295989,
+  "packages": 3929421,
+  "last": 103370821,
+  "latest": 103370819,
   "runs": {
-    "total": 500,
+    "total": 501,
     "status": {
       "killed": 2,
-      "init": 496,
+      "init": 497,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1559378,
-    "github": 2329293,
-    "gitlab": 6764,
+    "unsets": 1560034,
+    "github": 2330180,
+    "gitlab": 6765,
     "bitbucket": 1347,
-    "others": 31087
+    "others": 31095
   },
   "stats": {
-    "changes": 11012104,
-    "inserts": 3928526,
-    "updates": 4941673,
-    "deletes": 1996260,
-    "invalid": 145645,
+    "changes": 11027033,
+    "inserts": 3930083,
+    "updates": 4954590,
+    "deletes": 1996269,
+    "invalid": 146091,
     "ignored": 0,
-    "notFound": 28060
+    "notFound": 28059
   },
   "batch": {
     "status": "init",
-    "limit": 44681,
-    "since": 103251308,
-    "index": 103295989,
-    "until": 103295989,
-    "started": "2026-03-30T00:35:14.707Z",
-    "finished": "2026-03-30T00:39:10.626Z",
-    "took_ms": 235919,
-    "found": 9603
+    "limit": 74830,
+    "since": 103295989,
+    "index": 103370821,
+    "until": 103370819,
+    "started": "2026-03-30T12:23:05.124Z",
+    "finished": "2026-03-30T12:30:15.459Z",
+    "took_ms": 430335,
+    "found": 14929
   },
   "notFound": [
     [
@@ -168385,12 +168385,6 @@
       "@matrix-view/core",
       [
         103172045
-      ]
-    ],
-    [
-      "@redker56/agentforge",
-      [
-        103172089
       ]
     ],
     [
