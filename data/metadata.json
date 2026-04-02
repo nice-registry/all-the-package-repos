@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3936979,
-  "last": 103852604,
-  "latest": 103852604,
+  "packages": 3938588,
+  "last": 103936933,
+  "latest": 103936933,
   "runs": {
-    "total": 506,
+    "total": 507,
     "status": {
       "killed": 2,
-      "init": 502,
+      "init": 503,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1563048,
-    "github": 2334681,
-    "gitlab": 6769,
+    "unsets": 1563729,
+    "github": 2335591,
+    "gitlab": 6773,
     "bitbucket": 1347,
-    "others": 31134
+    "others": 31148
   },
   "stats": {
-    "changes": 11118623,
-    "inserts": 3937648,
-    "updates": 5037443,
-    "deletes": 1996301,
-    "invalid": 147231,
+    "changes": 11135891,
+    "inserts": 3939257,
+    "updates": 5052554,
+    "deletes": 1996305,
+    "invalid": 147775,
     "ignored": 0,
     "notFound": 28059
   },
   "batch": {
     "status": "init",
-    "limit": 106066,
-    "since": 103746538,
-    "index": 103852604,
-    "until": 103852604,
-    "started": "2026-04-02T00:31:33.294Z",
-    "finished": "2026-04-02T00:42:53.368Z",
-    "took_ms": 680074,
-    "found": 20026
+    "limit": 84329,
+    "since": 103852604,
+    "index": 103936933,
+    "until": 103936933,
+    "started": "2026-04-02T12:22:48.752Z",
+    "finished": "2026-04-02T12:31:31.740Z",
+    "took_ms": 522988,
+    "found": 17268
   },
   "notFound": [
     [
@@ -168100,12 +168100,6 @@
       ]
     ],
     [
-      "rm-connector-js",
-      [
-        99801344
-      ]
-    ],
-    [
       "test-0305",
       [
         99801698
@@ -168391,6 +168385,12 @@
       "@matrix-view/plus",
       [
         103172090
+      ]
+    ],
+    [
+      "@buglab/pino-pretty-logger",
+      [
+        103930653
       ]
     ]
   ]
