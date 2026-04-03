@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3938588,
-  "last": 103936933,
-  "latest": 103936933,
+  "packages": 3940034,
+  "last": 104024411,
+  "latest": 104024411,
   "runs": {
-    "total": 507,
+    "total": 508,
     "status": {
       "killed": 2,
-      "init": 503,
+      "init": 504,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1563729,
-    "github": 2335591,
-    "gitlab": 6773,
+    "unsets": 1564340,
+    "github": 2336417,
+    "gitlab": 6774,
     "bitbucket": 1347,
-    "others": 31148
+    "others": 31156
   },
   "stats": {
-    "changes": 11135891,
-    "inserts": 3939257,
-    "updates": 5052554,
-    "deletes": 1996305,
-    "invalid": 147775,
+    "changes": 11152656,
+    "inserts": 3940707,
+    "updates": 5067729,
+    "deletes": 1996317,
+    "invalid": 147903,
     "ignored": 0,
-    "notFound": 28059
+    "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 84329,
-    "since": 103852604,
-    "index": 103936933,
-    "until": 103936933,
-    "started": "2026-04-02T12:22:48.752Z",
-    "finished": "2026-04-02T12:31:31.740Z",
-    "took_ms": 522988,
-    "found": 17268
+    "limit": 87478,
+    "since": 103936933,
+    "index": 104024411,
+    "until": 104024411,
+    "started": "2026-04-03T00:33:23.829Z",
+    "finished": "2026-04-03T00:41:59.435Z",
+    "took_ms": 515606,
+    "found": 16765
   },
   "notFound": [
     [
@@ -168373,18 +168373,6 @@
       "@thiagoemmanuell/unhandledrejection",
       [
         102331022
-      ]
-    ],
-    [
-      "@matrix-view/core",
-      [
-        103172045
-      ]
-    ],
-    [
-      "@matrix-view/plus",
-      [
-        103172090
       ]
     ],
     [
