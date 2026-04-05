@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3944275,
-  "last": 104195245,
-  "latest": 104195245,
+  "packages": 3945620,
+  "last": 104235108,
+  "latest": 104235108,
   "runs": {
-    "total": 511,
+    "total": 512,
     "status": {
       "killed": 2,
-      "init": 507,
+      "init": 508,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1566002,
-    "github": 2338936,
-    "gitlab": 6774,
+    "unsets": 1566434,
+    "github": 2339843,
+    "gitlab": 6775,
     "bitbucket": 1347,
-    "others": 31216
+    "others": 31221
   },
   "stats": {
-    "changes": 11190347,
-    "inserts": 3944950,
-    "updates": 5100765,
-    "deletes": 1996328,
-    "invalid": 148304,
+    "changes": 11198556,
+    "inserts": 3946297,
+    "updates": 5107545,
+    "deletes": 1996332,
+    "invalid": 148382,
     "ignored": 0,
-    "notFound": 28060
+    "notFound": 28058
   },
   "batch": {
     "status": "init",
-    "limit": 33359,
-    "since": 104161886,
-    "index": 104195245,
-    "until": 104195245,
-    "started": "2026-04-04T12:13:24.734Z",
-    "finished": "2026-04-04T12:17:17.435Z",
-    "took_ms": 232701,
-    "found": 8797
+    "limit": 39863,
+    "since": 104195245,
+    "index": 104235108,
+    "until": 104235108,
+    "started": "2026-04-05T00:35:06.953Z",
+    "finished": "2026-04-05T00:38:10.443Z",
+    "took_ms": 183490,
+    "found": 8209
   },
   "notFound": [
     [
@@ -168382,21 +168382,9 @@
       ]
     ],
     [
-      "@decido/api-keys",
+      "@ariaui/colors",
       [
-        104194635
-      ]
-    ],
-    [
-      "@decido/data-engine",
-      [
-        104194638
-      ]
-    ],
-    [
-      "@decido/websocket-relay",
-      [
-        104194668
+        104223685
       ]
     ]
   ]
