@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3951141,
-  "last": 104438929,
-  "latest": 104438929,
+  "packages": 3952512,
+  "last": 104522112,
+  "latest": 104522110,
   "runs": {
-    "total": 516,
+    "total": 517,
     "status": {
       "killed": 2,
-      "init": 512,
+      "init": 513,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1568584,
-    "github": 2343180,
-    "gitlab": 6778,
+    "unsets": 1569139,
+    "github": 2343981,
+    "gitlab": 6780,
     "bitbucket": 1347,
-    "others": 31252
+    "others": 31265
   },
   "stats": {
-    "changes": 11239625,
-    "inserts": 3951822,
-    "updates": 5142589,
-    "deletes": 1996347,
-    "invalid": 148867,
+    "changes": 11256592,
+    "inserts": 3953195,
+    "updates": 5157829,
+    "deletes": 1996355,
+    "invalid": 149213,
     "ignored": 0,
-    "notFound": 28058
+    "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 79601,
-    "since": 104359328,
-    "index": 104438929,
-    "until": 104438929,
-    "started": "2026-04-07T00:35:19.714Z",
-    "finished": "2026-04-07T00:42:48.925Z",
-    "took_ms": 449211,
-    "found": 14258
+    "limit": 83181,
+    "since": 104438929,
+    "index": 104522112,
+    "until": 104522110,
+    "started": "2026-04-07T12:23:42.992Z",
+    "finished": "2026-04-07T12:32:27.908Z",
+    "took_ms": 524916,
+    "found": 16967
   },
   "notFound": [
     [
@@ -7207,12 +7207,6 @@
       "@ooxx87/famsun-ui",
       [
         10036208
-      ]
-    ],
-    [
-      "@openculinary/jquery-feedback",
-      [
-        10036866
       ]
     ],
     [
