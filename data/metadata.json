@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3974512,
-  "last": 105704807,
-  "latest": 105704807,
+  "packages": 3976053,
+  "last": 105793510,
+  "latest": 105793510,
   "runs": {
-    "total": 532,
+    "total": 533,
     "status": {
       "killed": 2,
-      "init": 528,
+      "init": 529,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1576834,
-    "github": 2358141,
-    "gitlab": 6786,
+    "unsets": 1577492,
+    "github": 2359009,
+    "gitlab": 6787,
     "bitbucket": 1347,
-    "others": 31404
+    "others": 31418
   },
   "stats": {
-    "changes": 11491051,
-    "inserts": 3975217,
-    "updates": 5366437,
-    "deletes": 1996436,
-    "invalid": 152961,
+    "changes": 11508204,
+    "inserts": 3976758,
+    "updates": 5381779,
+    "deletes": 1996439,
+    "invalid": 153228,
     "ignored": 0,
     "notFound": 28057
   },
   "batch": {
     "status": "init",
-    "limit": 106440,
-    "since": 105598367,
-    "index": 105704807,
-    "until": 105704807,
-    "started": "2026-04-15T00:39:47.285Z",
-    "finished": "2026-04-15T00:49:03.275Z",
-    "took_ms": 555990,
-    "found": 18914
+    "limit": 88703,
+    "since": 105704807,
+    "index": 105793510,
+    "until": 105793510,
+    "started": "2026-04-15T12:25:45.504Z",
+    "finished": "2026-04-15T12:34:23.863Z",
+    "took_ms": 518359,
+    "found": 17153
   },
   "notFound": [
     [
@@ -167908,12 +167908,6 @@
       ]
     ],
     [
-      "@frameless/strapi-plugin-env-label",
-      [
-        99796599
-      ]
-    ],
-    [
       "@frameless/strapi-plugin-flo-legal-embed",
       [
         99796600
@@ -168379,6 +168373,12 @@
       "@ariaui/colors",
       [
         104223685
+      ]
+    ],
+    [
+      "@optell/finder",
+      [
+        105752470
       ]
     ]
   ]
