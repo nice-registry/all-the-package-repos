@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3976053,
-  "last": 105793510,
-  "latest": 105793510,
+  "packages": 3977624,
+  "last": 105897336,
+  "latest": 105897336,
   "runs": {
-    "total": 533,
+    "total": 534,
     "status": {
       "killed": 2,
-      "init": 529,
+      "init": 530,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1577492,
-    "github": 2359009,
+    "unsets": 1577944,
+    "github": 2360118,
     "gitlab": 6787,
     "bitbucket": 1347,
-    "others": 31418
+    "others": 31428
   },
   "stats": {
-    "changes": 11508204,
-    "inserts": 3976758,
-    "updates": 5381779,
-    "deletes": 1996439,
-    "invalid": 153228,
+    "changes": 11528039,
+    "inserts": 3978329,
+    "updates": 5399813,
+    "deletes": 1996448,
+    "invalid": 153449,
     "ignored": 0,
-    "notFound": 28057
+    "notFound": 28055
   },
   "batch": {
     "status": "init",
-    "limit": 88703,
-    "since": 105704807,
-    "index": 105793510,
-    "until": 105793510,
-    "started": "2026-04-15T12:25:45.504Z",
-    "finished": "2026-04-15T12:34:23.863Z",
-    "took_ms": 518359,
-    "found": 17153
+    "limit": 103826,
+    "since": 105793510,
+    "index": 105897336,
+    "until": 105897336,
+    "started": "2026-04-16T00:40:36.136Z",
+    "finished": "2026-04-16T00:50:39.843Z",
+    "took_ms": 603707,
+    "found": 19835
   },
   "notFound": [
     [
@@ -168220,12 +168220,6 @@
       ]
     ],
     [
-      "@binaryjack/formular.dev",
-      [
-        99804251
-      ]
-    ],
-    [
       "tinker-white-noise",
       [
         99804281
@@ -168373,12 +168367,6 @@
       "@ariaui/colors",
       [
         104223685
-      ]
-    ],
-    [
-      "@optell/finder",
-      [
-        105752470
       ]
     ]
   ]
