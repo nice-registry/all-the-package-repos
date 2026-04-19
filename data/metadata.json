@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3984424,
-  "last": 106287528,
-  "latest": 106287528,
+  "packages": 3985602,
+  "last": 106324611,
+  "latest": 106324611,
   "runs": {
-    "total": 539,
+    "total": 540,
     "status": {
       "killed": 2,
-      "init": 535,
+      "init": 536,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1580377,
-    "github": 2364433,
-    "gitlab": 6788,
+    "unsets": 1580751,
+    "github": 2365231,
+    "gitlab": 6789,
     "bitbucket": 1347,
-    "others": 31479
+    "others": 31484
   },
   "stats": {
-    "changes": 11606729,
-    "inserts": 3985134,
-    "updates": 5470235,
-    "deletes": 1996467,
-    "invalid": 154893,
+    "changes": 11615457,
+    "inserts": 3986314,
+    "updates": 5477710,
+    "deletes": 1996472,
+    "invalid": 154961,
     "ignored": 0,
-    "notFound": 28056
+    "notFound": 28055
   },
   "batch": {
     "status": "init",
-    "limit": 35494,
-    "since": 106252034,
-    "index": 106287528,
-    "until": 106287528,
-    "started": "2026-04-18T12:15:46.164Z",
-    "finished": "2026-04-18T12:20:11.027Z",
-    "took_ms": 264863,
-    "found": 9197
+    "limit": 37083,
+    "since": 106287528,
+    "index": 106324611,
+    "until": 106324611,
+    "started": "2026-04-19T00:38:41.595Z",
+    "finished": "2026-04-19T00:42:26.425Z",
+    "took_ms": 224830,
+    "found": 8728
   },
   "notFound": [
     [
@@ -168367,12 +168367,6 @@
       "@ariaui/colors",
       [
         104223685
-      ]
-    ],
-    [
-      "@thiagoprazeres/local-first-workbench-engine-prompt-executor",
-      [
-        106251759
       ]
     ]
   ]
