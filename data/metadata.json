@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 3995510,
-  "last": 106858130,
-  "latest": 106858130,
+  "packages": 3997046,
+  "last": 106954275,
+  "latest": 106954273,
   "runs": {
-    "total": 547,
+    "total": 548,
     "status": {
       "killed": 2,
-      "init": 543,
+      "init": 544,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1584049,
-    "github": 2371795,
+    "unsets": 1584535,
+    "github": 2372833,
     "gitlab": 6794,
     "bitbucket": 1347,
-    "others": 31525
+    "others": 31537
   },
   "stats": {
-    "changes": 11720650,
-    "inserts": 3996230,
-    "updates": 5571699,
-    "deletes": 1996501,
-    "invalid": 156220,
+    "changes": 11739718,
+    "inserts": 3997768,
+    "updates": 5588922,
+    "deletes": 1996506,
+    "invalid": 156522,
     "ignored": 0,
-    "notFound": 28058
+    "notFound": 28059
   },
   "batch": {
     "status": "init",
-    "limit": 91245,
-    "since": 106766885,
-    "index": 106858130,
-    "until": 106858130,
-    "started": "2026-04-22T12:26:00.270Z",
-    "finished": "2026-04-22T12:34:54.269Z",
-    "took_ms": 533999,
-    "found": 17280
+    "limit": 96143,
+    "since": 106858130,
+    "index": 106954275,
+    "until": 106954273,
+    "started": "2026-04-23T00:40:51.017Z",
+    "finished": "2026-04-23T00:52:49.599Z",
+    "took_ms": 718582,
+    "found": 19068
   },
   "notFound": [
     [
@@ -168385,6 +168385,12 @@
       "@bmg-web/bmg-review-basket",
       [
         106579097
+      ]
+    ],
+    [
+      "@vmo-community/video-player",
+      [
+        106881006
       ]
     ]
   ]
