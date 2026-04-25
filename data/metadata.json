@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4001321,
-  "last": 107212968,
-  "latest": 107212968,
+  "packages": 4002740,
+  "last": 107290304,
+  "latest": 107290304,
   "runs": {
-    "total": 551,
+    "total": 552,
     "status": {
       "killed": 2,
-      "init": 547,
+      "init": 548,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1586027,
-    "github": 2375584,
-    "gitlab": 6795,
+    "unsets": 1586468,
+    "github": 2376559,
+    "gitlab": 6794,
     "bitbucket": 1347,
-    "others": 31568
+    "others": 31572
   },
   "stats": {
-    "changes": 11791324,
-    "inserts": 4002044,
-    "updates": 5635585,
-    "deletes": 1996515,
-    "invalid": 157180,
+    "changes": 11807598,
+    "inserts": 4003464,
+    "updates": 5650200,
+    "deletes": 1996517,
+    "invalid": 157417,
     "ignored": 0,
-    "notFound": 28059
+    "notFound": 28060
   },
   "batch": {
     "status": "init",
-    "limit": 79945,
-    "since": 107133023,
-    "index": 107212968,
-    "until": 107212968,
-    "started": "2026-04-24T12:25:58.475Z",
-    "finished": "2026-04-24T12:34:17.751Z",
-    "took_ms": 499276,
-    "found": 16143
+    "limit": 77336,
+    "since": 107212968,
+    "index": 107290304,
+    "until": 107290304,
+    "started": "2026-04-25T00:37:00.022Z",
+    "finished": "2026-04-25T00:45:14.166Z",
+    "took_ms": 494144,
+    "found": 16274
   },
   "notFound": [
     [
@@ -168391,6 +168391,12 @@
       "@vmo-community/video-player",
       [
         106881006
+      ]
+    ],
+    [
+      "@watershed256/demiurge",
+      [
+        107287996
       ]
     ]
   ]
