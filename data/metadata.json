@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4007318,
-  "last": 107440404,
-  "latest": 107440404,
+  "packages": 4009003,
+  "last": 107515703,
+  "latest": 107515703,
   "runs": {
-    "total": 556,
+    "total": 557,
     "status": {
       "killed": 2,
-      "init": 552,
+      "init": 553,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1587820,
-    "github": 2379731,
-    "gitlab": 6798,
+    "unsets": 1588504,
+    "github": 2380725,
+    "gitlab": 6803,
     "bitbucket": 1347,
-    "others": 31622
+    "others": 31624
   },
   "stats": {
-    "changes": 11842627,
-    "inserts": 4008045,
-    "updates": 5680186,
-    "deletes": 1996526,
-    "invalid": 157870,
+    "changes": 11858609,
+    "inserts": 4009731,
+    "updates": 5694225,
+    "deletes": 1996527,
+    "invalid": 158126,
     "ignored": 0,
-    "notFound": 28065
+    "notFound": 28066
   },
   "batch": {
     "status": "init",
-    "limit": 44365,
-    "since": 107396039,
-    "index": 107440404,
-    "until": 107440404,
-    "started": "2026-04-27T00:41:32.085Z",
-    "finished": "2026-04-27T00:45:06.322Z",
-    "took_ms": 214237,
-    "found": 9754
+    "limit": 75299,
+    "since": 107440404,
+    "index": 107515703,
+    "until": 107515703,
+    "started": "2026-04-27T12:37:05.139Z",
+    "finished": "2026-04-27T12:45:33.854Z",
+    "took_ms": 508715,
+    "found": 15982
   },
   "notFound": [
     [
@@ -168427,6 +168427,12 @@
       "@jeremyfellaz/maximus",
       [
         107396031
+      ]
+    ],
+    [
+      "@tostringtag/nsettostringtag",
+      [
+        107461722
       ]
     ]
   ]
