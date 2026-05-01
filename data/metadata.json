@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4017936,
-  "last": 108050473,
-  "latest": 108050469,
+  "packages": 4019374,
+  "last": 108153748,
+  "latest": 108153748,
   "runs": {
-    "total": 563,
+    "total": 564,
     "status": {
       "killed": 2,
-      "init": 559,
+      "init": 560,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1591690,
-    "github": 2386427,
+    "unsets": 1592116,
+    "github": 2387435,
     "gitlab": 6806,
     "bitbucket": 1347,
-    "others": 31666
+    "others": 31670
   },
   "stats": {
-    "changes": 11966952,
-    "inserts": 4018671,
-    "updates": 5791795,
-    "deletes": 1996555,
-    "invalid": 159931,
+    "changes": 11986003,
+    "inserts": 4020109,
+    "updates": 5809145,
+    "deletes": 1996560,
+    "invalid": 160189,
     "ignored": 0,
-    "notFound": 28066
+    "notFound": 28061
   },
   "batch": {
     "status": "init",
-    "limit": 89167,
-    "since": 107961302,
-    "index": 108050473,
-    "until": 108050469,
-    "started": "2026-04-30T12:36:46.543Z",
-    "finished": "2026-04-30T12:45:50.180Z",
-    "took_ms": 543637,
-    "found": 18246
+    "limit": 103275,
+    "since": 108050473,
+    "index": 108153748,
+    "until": 108153748,
+    "started": "2026-05-01T00:47:43.228Z",
+    "finished": "2026-05-01T00:54:56.592Z",
+    "took_ms": 433364,
+    "found": 19051
   },
   "notFound": [
     [
@@ -168397,36 +168397,6 @@
       "@watershed256/demiurge",
       [
         107287996
-      ]
-    ],
-    [
-      "@jeremyfellaz/maximus-darwin-x64",
-      [
-        107395994
-      ]
-    ],
-    [
-      "@jeremyfellaz/maximus-linux-x64-gnu",
-      [
-        107395995
-      ]
-    ],
-    [
-      "@jeremyfellaz/maximus-darwin-arm64",
-      [
-        107395999
-      ]
-    ],
-    [
-      "@jeremyfellaz/maximus-linux-arm64-gnu",
-      [
-        107396006
-      ]
-    ],
-    [
-      "@jeremyfellaz/maximus",
-      [
-        107396031
       ]
     ],
     [
