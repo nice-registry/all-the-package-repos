@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4021712,
-  "last": 108271954,
-  "latest": 108271954,
+  "packages": 4022756,
+  "last": 108305967,
+  "latest": 108305967,
   "runs": {
-    "total": 566,
+    "total": 567,
     "status": {
       "killed": 2,
-      "init": 562,
+      "init": 563,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1593050,
-    "github": 2388797,
-    "gitlab": 6806,
+    "unsets": 1593372,
+    "github": 2389509,
+    "gitlab": 6807,
     "bitbucket": 1347,
-    "others": 31712
+    "others": 31721
   },
   "stats": {
-    "changes": 12010492,
-    "inserts": 4022451,
-    "updates": 5830991,
-    "deletes": 1996568,
-    "invalid": 160482,
+    "changes": 12018023,
+    "inserts": 4023495,
+    "updates": 5837431,
+    "deletes": 1996570,
+    "invalid": 160527,
     "ignored": 0,
-    "notFound": 28061
+    "notFound": 28064
   },
   "batch": {
     "status": "init",
-    "limit": 67702,
-    "since": 108204252,
-    "index": 108271954,
-    "until": 108271954,
-    "started": "2026-05-02T00:42:59.492Z",
-    "finished": "2026-05-02T00:51:09.511Z",
-    "took_ms": 490019,
-    "found": 14038
+    "limit": 34013,
+    "since": 108271954,
+    "index": 108305967,
+    "until": 108305967,
+    "started": "2026-05-02T12:22:33.489Z",
+    "finished": "2026-05-02T12:25:58.562Z",
+    "took_ms": 205073,
+    "found": 7531
   },
   "notFound": [
     [
@@ -168403,6 +168403,24 @@
       "@tostringtag/nsettostringtag",
       [
         107461722
+      ]
+    ],
+    [
+      "@audiencemd/parser",
+      [
+        108305944
+      ]
+    ],
+    [
+      "@audiencemd/validator",
+      [
+        108305945
+      ]
+    ],
+    [
+      "@audiencemd/cli",
+      [
+        108305946
       ]
     ]
   ]
