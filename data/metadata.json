@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4023880,
-  "last": 108343490,
-  "latest": 108343490,
+  "packages": 4025063,
+  "last": 108376279,
+  "latest": 108376279,
   "runs": {
-    "total": 568,
+    "total": 569,
     "status": {
       "killed": 2,
-      "init": 564,
+      "init": 565,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1593647,
-    "github": 2390349,
+    "unsets": 1593965,
+    "github": 2391210,
     "gitlab": 6807,
-    "bitbucket": 1347,
-    "others": 31730
+    "bitbucket": 1348,
+    "others": 31733
   },
   "stats": {
-    "changes": 12026150,
-    "inserts": 4024620,
-    "updates": 5844368,
-    "deletes": 1996575,
-    "invalid": 160587,
+    "changes": 12034249,
+    "inserts": 4025806,
+    "updates": 5851255,
+    "deletes": 1996579,
+    "invalid": 160609,
     "ignored": 0,
-    "notFound": 28063
+    "notFound": 28064
   },
   "batch": {
     "status": "init",
-    "limit": 37523,
-    "since": 108305967,
-    "index": 108343490,
-    "until": 108343490,
-    "started": "2026-05-03T00:45:56.004Z",
-    "finished": "2026-05-03T00:48:14.406Z",
-    "took_ms": 138402,
-    "found": 8127
+    "limit": 32789,
+    "since": 108343490,
+    "index": 108376279,
+    "until": 108376279,
+    "started": "2026-05-03T12:21:26.625Z",
+    "finished": "2026-05-03T12:24:28.820Z",
+    "took_ms": 182195,
+    "found": 8099
   },
   "notFound": [
     [
@@ -168406,15 +168406,21 @@
       ]
     ],
     [
-      "@paladinfi/agentkit-actions",
-      [
-        108343451
-      ]
-    ],
-    [
       "@auriko/ai-sdk-provider",
       [
         108343476
+      ]
+    ],
+    [
+      "@iocmd/alma",
+      [
+        108376221
+      ]
+    ],
+    [
+      "@programmingonmars/forge",
+      [
+        108376232
       ]
     ]
   ]
