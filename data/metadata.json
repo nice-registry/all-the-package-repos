@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4022756,
-  "last": 108305967,
-  "latest": 108305967,
+  "packages": 4023880,
+  "last": 108343490,
+  "latest": 108343490,
   "runs": {
-    "total": 567,
+    "total": 568,
     "status": {
       "killed": 2,
-      "init": 563,
+      "init": 564,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1593372,
-    "github": 2389509,
+    "unsets": 1593647,
+    "github": 2390349,
     "gitlab": 6807,
     "bitbucket": 1347,
-    "others": 31721
+    "others": 31730
   },
   "stats": {
-    "changes": 12018023,
-    "inserts": 4023495,
-    "updates": 5837431,
-    "deletes": 1996570,
-    "invalid": 160527,
+    "changes": 12026150,
+    "inserts": 4024620,
+    "updates": 5844368,
+    "deletes": 1996575,
+    "invalid": 160587,
     "ignored": 0,
-    "notFound": 28064
+    "notFound": 28063
   },
   "batch": {
     "status": "init",
-    "limit": 34013,
-    "since": 108271954,
-    "index": 108305967,
-    "until": 108305967,
-    "started": "2026-05-02T12:22:33.489Z",
-    "finished": "2026-05-02T12:25:58.562Z",
-    "took_ms": 205073,
-    "found": 7531
+    "limit": 37523,
+    "since": 108305967,
+    "index": 108343490,
+    "until": 108343490,
+    "started": "2026-05-03T00:45:56.004Z",
+    "finished": "2026-05-03T00:48:14.406Z",
+    "took_ms": 138402,
+    "found": 8127
   },
   "notFound": [
     [
@@ -168406,21 +168406,15 @@
       ]
     ],
     [
-      "@audiencemd/parser",
+      "@paladinfi/agentkit-actions",
       [
-        108305944
+        108343451
       ]
     ],
     [
-      "@audiencemd/validator",
+      "@auriko/ai-sdk-provider",
       [
-        108305945
-      ]
-    ],
-    [
-      "@audiencemd/cli",
-      [
-        108305946
+        108343476
       ]
     ]
   ]
