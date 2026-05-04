@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4025063,
-  "last": 108376279,
-  "latest": 108376279,
+  "packages": 4026323,
+  "last": 108419667,
+  "latest": 108419667,
   "runs": {
-    "total": 569,
+    "total": 570,
     "status": {
       "killed": 2,
-      "init": 565,
+      "init": 566,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1593965,
-    "github": 2391210,
-    "gitlab": 6807,
-    "bitbucket": 1348,
-    "others": 31733
+    "unsets": 1594422,
+    "github": 2391999,
+    "gitlab": 6806,
+    "bitbucket": 1349,
+    "others": 31747
   },
   "stats": {
-    "changes": 12034249,
-    "inserts": 4025806,
-    "updates": 5851255,
-    "deletes": 1996579,
-    "invalid": 160609,
+    "changes": 12043462,
+    "inserts": 4027068,
+    "updates": 5859147,
+    "deletes": 1996583,
+    "invalid": 160664,
     "ignored": 0,
-    "notFound": 28064
+    "notFound": 28063
   },
   "batch": {
     "status": "init",
-    "limit": 32789,
-    "since": 108343490,
-    "index": 108376279,
-    "until": 108376279,
-    "started": "2026-05-03T12:21:26.625Z",
-    "finished": "2026-05-03T12:24:28.820Z",
-    "took_ms": 182195,
-    "found": 8099
+    "limit": 43388,
+    "since": 108376279,
+    "index": 108419667,
+    "until": 108419667,
+    "started": "2026-05-04T00:44:43.477Z",
+    "finished": "2026-05-04T00:48:06.662Z",
+    "took_ms": 203185,
+    "found": 9213
   },
   "notFound": [
     [
@@ -168409,12 +168409,6 @@
       "@auriko/ai-sdk-provider",
       [
         108343476
-      ]
-    ],
-    [
-      "@iocmd/alma",
-      [
-        108376221
       ]
     ],
     [
