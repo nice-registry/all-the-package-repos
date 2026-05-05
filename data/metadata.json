@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4027673,
-  "last": 108498625,
-  "latest": 108498625,
+  "packages": 4029238,
+  "last": 108589980,
+  "latest": 108589980,
   "runs": {
-    "total": 571,
+    "total": 572,
     "status": {
       "killed": 2,
-      "init": 567,
+      "init": 568,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1594791,
-    "github": 2392966,
+    "unsets": 1595194,
+    "github": 2394123,
     "gitlab": 6805,
     "bitbucket": 1349,
-    "others": 31762
+    "others": 31767
   },
   "stats": {
-    "changes": 12057805,
-    "inserts": 4028419,
-    "updates": 5872007,
-    "deletes": 1996586,
-    "invalid": 160793,
+    "changes": 12075415,
+    "inserts": 4029984,
+    "updates": 5887919,
+    "deletes": 1996587,
+    "invalid": 160925,
     "ignored": 0,
-    "notFound": 28063
+    "notFound": 28061
   },
   "batch": {
     "status": "init",
-    "limit": 78958,
-    "since": 108419667,
-    "index": 108498625,
-    "until": 108498625,
-    "started": "2026-05-04T12:38:50.802Z",
-    "finished": "2026-05-04T12:45:50.201Z",
-    "took_ms": 419399,
-    "found": 14343
+    "limit": 91355,
+    "since": 108498625,
+    "index": 108589980,
+    "until": 108589980,
+    "started": "2026-05-05T00:41:51.560Z",
+    "finished": "2026-05-05T00:50:00.037Z",
+    "took_ms": 488477,
+    "found": 17610
   },
   "notFound": [
     [
@@ -168403,18 +168403,6 @@
       "@tostringtag/nsettostringtag",
       [
         107461722
-      ]
-    ],
-    [
-      "@auriko/ai-sdk-provider",
-      [
-        108343476
-      ]
-    ],
-    [
-      "@programmingonmars/forge",
-      [
-        108376232
       ]
     ]
   ]
