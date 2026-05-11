@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4045909,
-  "last": 109487201,
-  "latest": 109487201,
+  "packages": 4047419,
+  "last": 109577579,
+  "latest": 109577579,
   "runs": {
-    "total": 584,
+    "total": 585,
     "status": {
       "killed": 2,
-      "init": 580,
+      "init": 581,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1600814,
-    "github": 2404270,
-    "gitlab": 6817,
+    "unsets": 1601456,
+    "github": 2405131,
+    "gitlab": 6819,
     "bitbucket": 1347,
-    "others": 32661
+    "others": 32666
   },
   "stats": {
-    "changes": 12260647,
-    "inserts": 4046659,
-    "updates": 6054167,
-    "deletes": 1996623,
-    "invalid": 163198,
+    "changes": 12278674,
+    "inserts": 4048170,
+    "updates": 6070113,
+    "deletes": 1996626,
+    "invalid": 163765,
     "ignored": 0,
-    "notFound": 28063
+    "notFound": 28061
   },
   "batch": {
     "status": "init",
-    "limit": 43259,
-    "since": 109443942,
-    "index": 109487201,
-    "until": 109487201,
-    "started": "2026-05-11T00:47:29.753Z",
-    "finished": "2026-05-11T00:51:38.316Z",
-    "took_ms": 248563,
-    "found": 9654
+    "limit": 90378,
+    "since": 109487201,
+    "index": 109577579,
+    "until": 109577579,
+    "started": "2026-05-11T13:04:39.370Z",
+    "finished": "2026-05-11T13:13:55.299Z",
+    "took_ms": 555929,
+    "found": 18027
   },
   "notFound": [
     [
@@ -168133,18 +168133,6 @@
       "@ondrej_burval/fenix-npm-package-test",
       [
         99802588
-      ]
-    ],
-    [
-      "@onecx/angular-linter-rules",
-      [
-        99802611
-      ]
-    ],
-    [
-      "@onecx/ngrx-linter-rules",
-      [
-        99802630
       ]
     ],
     [
