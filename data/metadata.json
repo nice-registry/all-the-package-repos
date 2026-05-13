@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4050461,
-  "last": 109770405,
-  "latest": 109770401,
+  "packages": 4051957,
+  "last": 109874089,
+  "latest": 109874089,
   "runs": {
-    "total": 587,
+    "total": 588,
     "status": {
       "killed": 2,
-      "init": 583,
+      "init": 584,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1602569,
-    "github": 2407040,
-    "gitlab": 6823,
+    "unsets": 1602986,
+    "github": 2408115,
+    "gitlab": 6822,
     "bitbucket": 1348,
-    "others": 32681
+    "others": 32686
   },
   "stats": {
-    "changes": 12314977,
-    "inserts": 4051216,
-    "updates": 6102799,
-    "deletes": 1996647,
-    "invalid": 164315,
+    "changes": 12334657,
+    "inserts": 4052715,
+    "updates": 6120796,
+    "deletes": 1996652,
+    "invalid": 164494,
     "ignored": 0,
-    "notFound": 28061
+    "notFound": 28064
   },
   "batch": {
     "status": "init",
-    "limit": 94154,
-    "since": 109676247,
-    "index": 109770405,
-    "until": 109770401,
-    "started": "2026-05-12T12:45:32.022Z",
-    "finished": "2026-05-12T12:54:58.043Z",
-    "took_ms": 566021,
-    "found": 18342
+    "limit": 103684,
+    "since": 109770405,
+    "index": 109874089,
+    "until": 109874089,
+    "started": "2026-05-13T00:47:48.474Z",
+    "finished": "2026-05-13T00:57:02.937Z",
+    "took_ms": 554463,
+    "found": 19680
   },
   "notFound": [
     [
@@ -168403,6 +168403,24 @@
       "@ojesusmp/silex",
       [
         109412448
+      ]
+    ],
+    [
+      "@easynet/stable-harness",
+      [
+        109870748
+      ]
+    ],
+    [
+      "@wcag-audit/next-plugin",
+      [
+        109873421
+      ]
+    ],
+    [
+      "@wcag-audit/cli",
+      [
+        109873832
       ]
     ]
   ]
