@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4053574,
-  "last": 109979810,
-  "latest": 109979810,
+  "packages": 4055350,
+  "last": 110085843,
+  "latest": 110085843,
   "runs": {
-    "total": 589,
+    "total": 590,
     "status": {
       "killed": 2,
-      "init": 585,
+      "init": 586,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1603666,
-    "github": 2409039,
+    "unsets": 1604304,
+    "github": 2410169,
     "gitlab": 6824,
     "bitbucket": 1348,
-    "others": 32697
+    "others": 32705
   },
   "stats": {
-    "changes": 12356177,
-    "inserts": 4054334,
-    "updates": 6140390,
-    "deletes": 1996656,
-    "invalid": 164797,
+    "changes": 12375817,
+    "inserts": 4056111,
+    "updates": 6157723,
+    "deletes": 1996658,
+    "invalid": 165325,
     "ignored": 0,
-    "notFound": 28065
+    "notFound": 28064
   },
   "batch": {
     "status": "init",
-    "limit": 105721,
-    "since": 109874089,
-    "index": 109979810,
-    "until": 109979810,
-    "started": "2026-05-13T12:48:37.865Z",
-    "finished": "2026-05-13T12:58:16.588Z",
-    "took_ms": 578723,
-    "found": 21520
+    "limit": 106033,
+    "since": 109979810,
+    "index": 110085843,
+    "until": 110085843,
+    "started": "2026-05-14T00:49:43.463Z",
+    "finished": "2026-05-14T00:59:28.214Z",
+    "took_ms": 584751,
+    "found": 19640
   },
   "notFound": [
     [
@@ -168421,12 +168421,6 @@
       "@wcag-audit/cli",
       [
         109873832
-      ]
-    ],
-    [
-      "@aaravpos/appointment-booking-plugin",
-      [
-        109962432
       ]
     ]
   ]
