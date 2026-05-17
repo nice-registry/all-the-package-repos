@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4064363,
-  "last": 110510829,
-  "latest": 110510827,
+  "packages": 4065252,
+  "last": 110546217,
+  "latest": 110546217,
   "runs": {
-    "total": 596,
+    "total": 597,
     "status": {
       "killed": 2,
-      "init": 592,
+      "init": 593,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1607629,
-    "github": 2415762,
-    "gitlab": 6830,
+    "unsets": 1607929,
+    "github": 2416336,
+    "gitlab": 6835,
     "bitbucket": 1348,
-    "others": 32794
+    "others": 32804
   },
   "stats": {
-    "changes": 12467823,
-    "inserts": 4065130,
-    "updates": 6239823,
-    "deletes": 1996681,
-    "invalid": 166189,
+    "changes": 12475973,
+    "inserts": 4066022,
+    "updates": 6247033,
+    "deletes": 1996684,
+    "invalid": 166234,
     "ignored": 0,
-    "notFound": 28071
+    "notFound": 28075
   },
   "batch": {
     "status": "init",
-    "limit": 41131,
-    "since": 110469696,
-    "index": 110510829,
-    "until": 110510827,
-    "started": "2026-05-17T00:48:40.162Z",
-    "finished": "2026-05-17T00:51:42.729Z",
-    "took_ms": 182567,
-    "found": 9531
+    "limit": 35388,
+    "since": 110510829,
+    "index": 110546217,
+    "until": 110546217,
+    "started": "2026-05-17T12:24:43.183Z",
+    "finished": "2026-05-17T12:27:43.161Z",
+    "took_ms": 179978,
+    "found": 8150
   },
   "notFound": [
     [
@@ -168442,12 +168442,6 @@
       ]
     ],
     [
-      "@tker-react/vite-config",
-      [
-        110510801
-      ]
-    ],
-    [
       "@tker-react/eslint-config",
       [
         110510802
@@ -168463,6 +168457,36 @@
       "@fluch/signal-store-devtools",
       [
         110510827
+      ]
+    ],
+    [
+      "@answerable-kit/core",
+      [
+        110546060
+      ]
+    ],
+    [
+      "@answerable-kit/schemas",
+      [
+        110546171
+      ]
+    ],
+    [
+      "@answerable-kit/metadata",
+      [
+        110546186
+      ]
+    ],
+    [
+      "@answerable-kit/sitemap",
+      [
+        110546204
+      ]
+    ],
+    [
+      "@answerable-kit/templates",
+      [
+        110546215
       ]
     ]
   ]
