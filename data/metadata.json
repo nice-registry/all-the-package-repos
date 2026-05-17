@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4062930,
-  "last": 110469696,
-  "latest": 110469696,
+  "packages": 4064363,
+  "last": 110510829,
+  "latest": 110510827,
   "runs": {
-    "total": 595,
+    "total": 596,
     "status": {
       "killed": 2,
-      "init": 591,
+      "init": 592,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1607178,
-    "github": 2414782,
+    "unsets": 1607629,
+    "github": 2415762,
     "gitlab": 6830,
     "bitbucket": 1348,
-    "others": 32792
+    "others": 32794
   },
   "stats": {
-    "changes": 12458292,
-    "inserts": 4063695,
-    "updates": 6231793,
-    "deletes": 1996679,
-    "invalid": 166125,
+    "changes": 12467823,
+    "inserts": 4065130,
+    "updates": 6239823,
+    "deletes": 1996681,
+    "invalid": 166189,
     "ignored": 0,
-    "notFound": 28064
+    "notFound": 28071
   },
   "batch": {
     "status": "init",
-    "limit": 37993,
-    "since": 110431703,
-    "index": 110469696,
-    "until": 110469696,
-    "started": "2026-05-16T12:25:33.512Z",
-    "finished": "2026-05-16T12:29:59.108Z",
-    "took_ms": 265596,
-    "found": 9590
+    "limit": 41131,
+    "since": 110469696,
+    "index": 110510829,
+    "until": 110510827,
+    "started": "2026-05-17T00:48:40.162Z",
+    "finished": "2026-05-17T00:51:42.729Z",
+    "took_ms": 182567,
+    "found": 9531
   },
   "notFound": [
     [
@@ -168421,6 +168421,48 @@
       "@wcag-audit/cli",
       [
         109873832
+      ]
+    ],
+    [
+      "@tker-react/node-utils",
+      [
+        110510798
+      ]
+    ],
+    [
+      "@tker-react/prettier-config",
+      [
+        110510799
+      ]
+    ],
+    [
+      "@tker-react/tsconfig",
+      [
+        110510800
+      ]
+    ],
+    [
+      "@tker-react/vite-config",
+      [
+        110510801
+      ]
+    ],
+    [
+      "@tker-react/eslint-config",
+      [
+        110510802
+      ]
+    ],
+    [
+      "@tker-react/check",
+      [
+        110510803
+      ]
+    ],
+    [
+      "@fluch/signal-store-devtools",
+      [
+        110510827
       ]
     ]
   ]
