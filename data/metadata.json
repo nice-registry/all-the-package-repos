@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4086735,
-  "last": 111567083,
-  "latest": 111567078,
+  "packages": 4087782,
+  "last": 111600114,
+  "latest": 111600114,
   "runs": {
-    "total": 610,
+    "total": 611,
     "status": {
       "killed": 2,
-      "init": 606,
+      "init": 607,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1614721,
-    "github": 2430929,
+    "unsets": 1615038,
+    "github": 2431655,
     "gitlab": 6846,
     "bitbucket": 1349,
-    "others": 32890
+    "others": 32894
   },
   "stats": {
-    "changes": 12688023,
-    "inserts": 4087529,
-    "updates": 6434304,
-    "deletes": 1996749,
-    "invalid": 169441,
+    "changes": 12695626,
+    "inserts": 4088576,
+    "updates": 6440818,
+    "deletes": 1996751,
+    "invalid": 169481,
     "ignored": 0,
-    "notFound": 28081
+    "notFound": 28072
   },
   "batch": {
     "status": "init",
-    "limit": 40738,
-    "since": 111526340,
-    "index": 111567083,
-    "until": 111567078,
-    "started": "2026-05-24T00:50:53.407Z",
-    "finished": "2026-05-24T00:53:34.941Z",
-    "took_ms": 161534,
-    "found": 9337
+    "limit": 33031,
+    "since": 111567083,
+    "index": 111600114,
+    "until": 111600114,
+    "started": "2026-05-24T12:27:46.016Z",
+    "finished": "2026-05-24T12:30:00.257Z",
+    "took_ms": 134241,
+    "found": 7603
   },
   "notFound": [
     [
@@ -168460,69 +168460,15 @@
       ]
     ],
     [
-      "@aiftp-tools/core",
+      "@navasanganakah/nava-astro-sdk",
       [
-        111567023
+        111599849
       ]
     ],
     [
-      "@aiftp-tools/mcp",
+      "@hustlerx99/synth-ui-musicnavbar",
       [
-        111567024
-      ]
-    ],
-    [
-      "@codefireapp/agent-darwin-arm64",
-      [
-        111567073
-      ]
-    ],
-    [
-      "@codefireapp/agent-darwin-x64",
-      [
-        111567074
-      ]
-    ],
-    [
-      "@codefireapp/agent-darwin-x64-baseline",
-      [
-        111567075
-      ]
-    ],
-    [
-      "@codefireapp/agent-linux-x64",
-      [
-        111567076
-      ]
-    ],
-    [
-      "@codefireapp/agent-linux-arm64-musl",
-      [
-        111567077
-      ]
-    ],
-    [
-      "@codefireapp/agent-linux-x64-baseline-musl",
-      [
-        111567078
-      ]
-    ],
-    [
-      "@codefireapp/agent-linux-x64-musl",
-      [
-        111567079
-      ]
-    ],
-    [
-      "@codefireapp/agent-windows-arm64",
-      [
-        111567080
-      ]
-    ],
-    [
-      "@codefireapp/agent-linux-x64-baseline",
-      [
-        111567081
+        111600056
       ]
     ]
   ]
