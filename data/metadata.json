@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4084475,
-  "last": 111526340,
-  "latest": 111526340,
+  "packages": 4086735,
+  "last": 111567083,
+  "latest": 111567078,
   "runs": {
-    "total": 609,
+    "total": 610,
     "status": {
       "killed": 2,
-      "init": 605,
+      "init": 606,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1614414,
-    "github": 2428980,
+    "unsets": 1614721,
+    "github": 2430929,
     "gitlab": 6846,
     "bitbucket": 1349,
-    "others": 32886
+    "others": 32890
   },
   "stats": {
-    "changes": 12678686,
-    "inserts": 4085266,
-    "updates": 6427490,
-    "deletes": 1996743,
-    "invalid": 169187,
+    "changes": 12688023,
+    "inserts": 4087529,
+    "updates": 6434304,
+    "deletes": 1996749,
+    "invalid": 169441,
     "ignored": 0,
-    "notFound": 28070
+    "notFound": 28081
   },
   "batch": {
     "status": "init",
-    "limit": 32486,
-    "since": 111493854,
-    "index": 111526340,
-    "until": 111526340,
-    "started": "2026-05-23T12:24:42.702Z",
-    "finished": "2026-05-23T12:27:54.155Z",
-    "took_ms": 191453,
-    "found": 8398
+    "limit": 40738,
+    "since": 111526340,
+    "index": 111567083,
+    "until": 111567078,
+    "started": "2026-05-24T00:50:53.407Z",
+    "finished": "2026-05-24T00:53:34.941Z",
+    "took_ms": 161534,
+    "found": 9337
   },
   "notFound": [
     [
@@ -168457,6 +168457,72 @@
       "@lls/offline",
       [
         111415401
+      ]
+    ],
+    [
+      "@aiftp-tools/core",
+      [
+        111567023
+      ]
+    ],
+    [
+      "@aiftp-tools/mcp",
+      [
+        111567024
+      ]
+    ],
+    [
+      "@codefireapp/agent-darwin-arm64",
+      [
+        111567073
+      ]
+    ],
+    [
+      "@codefireapp/agent-darwin-x64",
+      [
+        111567074
+      ]
+    ],
+    [
+      "@codefireapp/agent-darwin-x64-baseline",
+      [
+        111567075
+      ]
+    ],
+    [
+      "@codefireapp/agent-linux-x64",
+      [
+        111567076
+      ]
+    ],
+    [
+      "@codefireapp/agent-linux-arm64-musl",
+      [
+        111567077
+      ]
+    ],
+    [
+      "@codefireapp/agent-linux-x64-baseline-musl",
+      [
+        111567078
+      ]
+    ],
+    [
+      "@codefireapp/agent-linux-x64-musl",
+      [
+        111567079
+      ]
+    ],
+    [
+      "@codefireapp/agent-windows-arm64",
+      [
+        111567080
+      ]
+    ],
+    [
+      "@codefireapp/agent-linux-x64-baseline",
+      [
+        111567081
       ]
     ]
   ]
