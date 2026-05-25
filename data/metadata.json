@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4089077,
-  "last": 111640627,
-  "latest": 111640627,
+  "packages": 4090544,
+  "last": 111716191,
+  "latest": 111716191,
   "runs": {
-    "total": 612,
+    "total": 613,
     "status": {
       "killed": 2,
-      "init": 608,
+      "init": 609,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1615511,
-    "github": 2432475,
-    "gitlab": 6846,
-    "bitbucket": 1349,
-    "others": 32896
+    "unsets": 1616026,
+    "github": 2433417,
+    "gitlab": 6847,
+    "bitbucket": 1350,
+    "others": 32904
   },
   "stats": {
-    "changes": 12705285,
-    "inserts": 4089873,
-    "updates": 6449130,
-    "deletes": 1996758,
-    "invalid": 169524,
+    "changes": 12720233,
+    "inserts": 4091341,
+    "updates": 6462198,
+    "deletes": 1996760,
+    "invalid": 169934,
     "ignored": 0,
-    "notFound": 28072
+    "notFound": 28073
   },
   "batch": {
     "status": "init",
-    "limit": 40513,
-    "since": 111600114,
-    "index": 111640627,
-    "until": 111640627,
-    "started": "2026-05-25T00:52:16.747Z",
-    "finished": "2026-05-25T00:55:33.837Z",
-    "took_ms": 197090,
-    "found": 9659
+    "limit": 75564,
+    "since": 111640627,
+    "index": 111716191,
+    "until": 111716191,
+    "started": "2026-05-25T13:13:43.593Z",
+    "finished": "2026-05-25T13:20:30.551Z",
+    "took_ms": 406958,
+    "found": 14948
   },
   "notFound": [
     [
@@ -168469,6 +168469,12 @@
       "@hustlerx99/synth-ui-musicnavbar",
       [
         111600056
+      ]
+    ],
+    [
+      "@eduardoepc/svdx",
+      [
+        111715388
       ]
     ]
   ]
