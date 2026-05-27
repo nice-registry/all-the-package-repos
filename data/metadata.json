@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4093600,
-  "last": 111855745,
-  "latest": 111855745,
+  "packages": 4094918,
+  "last": 111943067,
+  "latest": 111943067,
   "runs": {
-    "total": 615,
+    "total": 616,
     "status": {
       "killed": 2,
-      "init": 611,
+      "init": 612,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1616931,
-    "github": 2435547,
-    "gitlab": 6849,
+    "unsets": 1617346,
+    "github": 2436440,
+    "gitlab": 6850,
     "bitbucket": 1350,
-    "others": 32923
+    "others": 32932
   },
   "stats": {
-    "changes": 12751445,
-    "inserts": 4094399,
-    "updates": 6489992,
-    "deletes": 1996772,
-    "invalid": 170282,
+    "changes": 12770016,
+    "inserts": 4095718,
+    "updates": 6507096,
+    "deletes": 1996773,
+    "invalid": 170429,
     "ignored": 0,
-    "notFound": 28072
+    "notFound": 28071
   },
   "batch": {
     "status": "init",
-    "limit": 82071,
-    "since": 111773674,
-    "index": 111855745,
-    "until": 111855745,
-    "started": "2026-05-26T13:04:25.823Z",
-    "finished": "2026-05-26T13:13:00.703Z",
-    "took_ms": 514880,
-    "found": 18518
+    "limit": 87322,
+    "since": 111855745,
+    "index": 111943067,
+    "until": 111943067,
+    "started": "2026-05-27T00:51:37.597Z",
+    "finished": "2026-05-27T01:01:02.357Z",
+    "took_ms": 564760,
+    "found": 18571
   },
   "notFound": [
     [
@@ -162097,12 +162097,6 @@
       "@npmtuanmap/ex-vel-expedita-impedit",
       [
         36786781
-      ]
-    ],
-    [
-      "@elliemae/business-rules",
-      [
-        36794371
       ]
     ],
     [
