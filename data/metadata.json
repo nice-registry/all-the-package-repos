@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4098999,
-  "last": 112213374,
-  "latest": 112213374,
+  "packages": 4100645,
+  "last": 112297899,
+  "latest": 112297899,
   "runs": {
-    "total": 617,
+    "total": 618,
     "status": {
       "killed": 2,
-      "init": 613,
+      "init": 614,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1618885,
-    "github": 2438964,
-    "gitlab": 6850,
+    "unsets": 1619358,
+    "github": 2440122,
+    "gitlab": 6849,
     "bitbucket": 1350,
-    "others": 32950
+    "others": 32966
   },
   "stats": {
-    "changes": 12812090,
-    "inserts": 4099812,
-    "updates": 6544329,
-    "deletes": 1996795,
-    "invalid": 171154,
+    "changes": 12831477,
+    "inserts": 4101461,
+    "updates": 6561885,
+    "deletes": 1996800,
+    "invalid": 171331,
     "ignored": 0,
-    "notFound": 28072
+    "notFound": 28071
   },
   "batch": {
     "status": "init",
-    "limit": 270307,
-    "since": 111943067,
-    "index": 112213374,
-    "until": 112213374,
-    "started": "2026-05-28T13:19:41.370Z",
-    "finished": "2026-05-28T13:37:42.451Z",
-    "took_ms": 1081081,
-    "found": 42074
+    "limit": 84525,
+    "since": 112213374,
+    "index": 112297899,
+    "until": 112297899,
+    "started": "2026-05-29T00:54:02.547Z",
+    "finished": "2026-05-29T01:03:51.148Z",
+    "took_ms": 588601,
+    "found": 19387
   },
   "notFound": [
     [
@@ -168463,12 +168463,6 @@
       "@hustlerx99/synth-ui-musicnavbar",
       [
         111600056
-      ]
-    ],
-    [
-      "@cloudplatform-single-spa/document-db",
-      [
-        112098189
       ]
     ]
   ]
