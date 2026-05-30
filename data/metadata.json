@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4103703,
-  "last": 112459622,
-  "latest": 112459622,
+  "packages": 4104607,
+  "last": 112493882,
+  "latest": 112493880,
   "runs": {
-    "total": 620,
+    "total": 621,
     "status": {
       "killed": 2,
-      "init": 616,
+      "init": 617,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1620308,
-    "github": 2442199,
+    "unsets": 1620602,
+    "github": 2442806,
     "gitlab": 6851,
     "bitbucket": 1350,
-    "others": 32995
+    "others": 32998
   },
   "stats": {
-    "changes": 12865809,
-    "inserts": 4104522,
-    "updates": 6592795,
-    "deletes": 1996812,
-    "invalid": 171680,
+    "changes": 12874359,
+    "inserts": 4105428,
+    "updates": 6600390,
+    "deletes": 1996815,
+    "invalid": 171726,
     "ignored": 0,
-    "notFound": 28071
+    "notFound": 28073
   },
   "batch": {
     "status": "init",
-    "limit": 79688,
-    "since": 112379934,
-    "index": 112459622,
-    "until": 112459622,
-    "started": "2026-05-30T00:50:26.766Z",
-    "finished": "2026-05-30T00:58:36.814Z",
-    "took_ms": 490048,
-    "found": 16969
+    "limit": 34258,
+    "since": 112459622,
+    "index": 112493882,
+    "until": 112493880,
+    "started": "2026-05-30T12:29:48.196Z",
+    "finished": "2026-05-30T12:32:58.682Z",
+    "took_ms": 190486,
+    "found": 8550
   },
   "notFound": [
     [
@@ -168463,6 +168463,18 @@
       "@hustlerx99/synth-ui-musicnavbar",
       [
         111600056
+      ]
+    ],
+    [
+      "@otrocadev/orbital-spacetraders-ds",
+      [
+        112493851
+      ]
+    ],
+    [
+      "@queryeer/api",
+      [
+        112493880
       ]
     ]
   ]
