@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4114455,
-  "last": 112983992,
-  "latest": 112983992,
+  "packages": 4116479,
+  "last": 113079662,
+  "latest": 113079662,
   "runs": {
-    "total": 628,
+    "total": 629,
     "status": {
       "killed": 2,
-      "init": 624,
+      "init": 625,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1623903,
-    "github": 2449297,
+    "unsets": 1624694,
+    "github": 2450521,
     "gitlab": 6867,
     "bitbucket": 1350,
-    "others": 33038
+    "others": 33047
   },
   "stats": {
-    "changes": 12976940,
-    "inserts": 4115280,
-    "updates": 6691771,
-    "deletes": 1996832,
-    "invalid": 173057,
+    "changes": 12996425,
+    "inserts": 4117305,
+    "updates": 6708943,
+    "deletes": 1996839,
+    "invalid": 173338,
     "ignored": 0,
-    "notFound": 28074
+    "notFound": 28073
   },
   "batch": {
     "status": "init",
-    "limit": 95783,
-    "since": 112888209,
-    "index": 112983992,
-    "until": 112983992,
-    "started": "2026-06-03T01:02:28.506Z",
-    "finished": "2026-06-03T01:11:52.290Z",
-    "took_ms": 563784,
-    "found": 18061
+    "limit": 95670,
+    "since": 112983992,
+    "index": 113079662,
+    "until": 113079662,
+    "started": "2026-06-03T13:43:11.328Z",
+    "finished": "2026-06-03T13:50:21.552Z",
+    "took_ms": 430224,
+    "found": 19485
   },
   "notFound": [
     [
@@ -168475,12 +168475,6 @@
       "@iyulab/unpdf",
       [
         112567123
-      ]
-    ],
-    [
-      "@jolli.ai/space-cli",
-      [
-        112831495
       ]
     ]
   ]
