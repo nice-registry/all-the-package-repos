@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4118771,
-  "last": 113182633,
-  "latest": 113182633,
+  "packages": 4120590,
+  "last": 113275228,
+  "latest": 113275228,
   "runs": {
-    "total": 630,
+    "total": 631,
     "status": {
       "killed": 2,
-      "init": 626,
+      "init": 627,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1625137,
-    "github": 2452353,
-    "gitlab": 6866,
+    "unsets": 1625882,
+    "github": 2453415,
+    "gitlab": 6867,
     "bitbucket": 1350,
-    "others": 33065
+    "others": 33076
   },
   "stats": {
-    "changes": 13016237,
-    "inserts": 4119600,
-    "updates": 6726197,
-    "deletes": 1996843,
-    "invalid": 173597,
+    "changes": 13035812,
+    "inserts": 4121421,
+    "updates": 6743680,
+    "deletes": 1996849,
+    "invalid": 173862,
     "ignored": 0,
-    "notFound": 28073
+    "notFound": 28069
   },
   "batch": {
     "status": "init",
-    "limit": 102971,
-    "since": 113079662,
-    "index": 113182633,
-    "until": 113182633,
-    "started": "2026-06-04T01:02:31.117Z",
-    "finished": "2026-06-04T01:13:50.910Z",
-    "took_ms": 679793,
-    "found": 19812
+    "limit": 92595,
+    "since": 113182633,
+    "index": 113275228,
+    "until": 113275228,
+    "started": "2026-06-04T13:10:20.018Z",
+    "finished": "2026-06-04T13:19:58.609Z",
+    "took_ms": 578591,
+    "found": 19575
   },
   "notFound": [
     [
@@ -167893,30 +167893,6 @@
       "v-file-viewer",
       [
         99796112
-      ]
-    ],
-    [
-      "@frameless/strapi-plugin-open-forms-embed",
-      [
-        99796598
-      ]
-    ],
-    [
-      "@frameless/strapi-plugin-flo-legal-embed",
-      [
-        99796600
-      ]
-    ],
-    [
-      "@frameless/strapi-plugin-language",
-      [
-        99796601
-      ]
-    ],
-    [
-      "@frameless/strapi-plugin-old-slugs",
-      [
-        99796604
       ]
     ],
     [
