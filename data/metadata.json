@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4125997,
-  "last": 113579835,
-  "latest": 113579835,
+  "packages": 4127237,
+  "last": 113621775,
+  "latest": 113621775,
   "runs": {
-    "total": 635,
+    "total": 636,
     "status": {
       "killed": 2,
-      "init": 631,
+      "init": 632,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1627911,
-    "github": 2456759,
+    "unsets": 1628316,
+    "github": 2457579,
     "gitlab": 6874,
     "bitbucket": 1350,
-    "others": 33103
+    "others": 33118
   },
   "stats": {
-    "changes": 13099606,
-    "inserts": 4126831,
-    "updates": 6801233,
-    "deletes": 1996860,
-    "invalid": 174682,
+    "changes": 13108983,
+    "inserts": 4128072,
+    "updates": 6809301,
+    "deletes": 1996864,
+    "invalid": 174746,
     "ignored": 0,
-    "notFound": 28069
+    "notFound": 28070
   },
   "batch": {
     "status": "init",
-    "limit": 40755,
-    "since": 113539080,
-    "index": 113579835,
-    "until": 113579835,
-    "started": "2026-06-06T12:32:01.410Z",
-    "finished": "2026-06-06T12:36:19.408Z",
-    "took_ms": 257998,
-    "found": 9529
+    "limit": 41940,
+    "since": 113579835,
+    "index": 113621775,
+    "until": 113621775,
+    "started": "2026-06-07T00:56:28.644Z",
+    "finished": "2026-06-07T00:59:31.016Z",
+    "took_ms": 182372,
+    "found": 9377
   },
   "notFound": [
     [
@@ -168451,6 +168451,12 @@
       "@iyulab/unpdf",
       [
         112567123
+      ]
+    ],
+    [
+      "@evolith/cli",
+      [
+        113600082
       ]
     ]
   ]
