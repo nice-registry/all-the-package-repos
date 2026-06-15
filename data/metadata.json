@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4150755,
-  "last": 114828564,
-  "latest": 114828564,
+  "packages": 4152175,
+  "last": 114870113,
+  "latest": 114870113,
   "runs": {
-    "total": 651,
+    "total": 652,
     "status": {
       "killed": 2,
-      "init": 647,
+      "init": 648,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1635512,
-    "github": 2473773,
+    "unsets": 1635931,
+    "github": 2474769,
     "gitlab": 6885,
     "bitbucket": 1350,
-    "others": 33235
+    "others": 33240
   },
   "stats": {
-    "changes": 13353950,
-    "inserts": 4151607,
-    "updates": 7028008,
-    "deletes": 1996905,
-    "invalid": 177430,
+    "changes": 13364323,
+    "inserts": 4153028,
+    "updates": 7036913,
+    "deletes": 1996907,
+    "invalid": 177475,
     "ignored": 0,
-    "notFound": 28071
+    "notFound": 28070
   },
   "batch": {
     "status": "init",
-    "limit": 35975,
-    "since": 114792589,
-    "index": 114828564,
-    "until": 114828564,
-    "started": "2026-06-14T12:43:48.854Z",
-    "finished": "2026-06-14T12:47:22.397Z",
-    "took_ms": 213543,
-    "found": 8972
+    "limit": 41549,
+    "since": 114828564,
+    "index": 114870113,
+    "until": 114870113,
+    "started": "2026-06-15T00:59:58.769Z",
+    "finished": "2026-06-15T01:04:20.171Z",
+    "took_ms": 261402,
+    "found": 10373
   },
   "notFound": [
     [
@@ -168457,12 +168457,6 @@
       "@evolith/cli",
       [
         113600082
-      ]
-    ],
-    [
-      "@meld-ts/create-bun",
-      [
-        114828561
       ]
     ]
   ]
