@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4166859,
-  "last": 115766342,
-  "latest": 115766342,
+  "packages": 4167714,
+  "last": 115801186,
+  "latest": 115801186,
   "runs": {
-    "total": 662,
+    "total": 663,
     "status": {
       "killed": 2,
-      "init": 658,
+      "init": 659,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1641019,
-    "github": 2484300,
-    "gitlab": 6889,
+    "unsets": 1641307,
+    "github": 2484862,
+    "gitlab": 6890,
     "bitbucket": 1350,
-    "others": 33301
+    "others": 33305
   },
   "stats": {
-    "changes": 13552347,
-    "inserts": 4167719,
-    "updates": 7207127,
-    "deletes": 1996938,
-    "invalid": 180563,
+    "changes": 13560839,
+    "inserts": 4168574,
+    "updates": 7214667,
+    "deletes": 1996940,
+    "invalid": 180658,
     "ignored": 0,
-    "notFound": 28070
+    "notFound": 28074
   },
   "batch": {
     "status": "init",
-    "limit": 63948,
-    "since": 115702394,
-    "index": 115766342,
-    "until": 115766342,
-    "started": "2026-06-20T00:53:53.971Z",
-    "finished": "2026-06-20T01:00:52.225Z",
-    "took_ms": 418254,
-    "found": 14094
+    "limit": 34844,
+    "since": 115766342,
+    "index": 115801186,
+    "until": 115801186,
+    "started": "2026-06-20T12:41:16.595Z",
+    "finished": "2026-06-20T12:44:44.033Z",
+    "took_ms": 207438,
+    "found": 8492
   },
   "notFound": [
     [
@@ -168457,6 +168457,30 @@
       "@evolith/cli",
       [
         113600082
+      ]
+    ],
+    [
+      "@three-ws/page-agent",
+      [
+        115801073
+      ]
+    ],
+    [
+      "@three-ws/walk",
+      [
+        115801092
+      ]
+    ],
+    [
+      "@three-ws/x402-modal",
+      [
+        115801123
+      ]
+    ],
+    [
+      "@three-ws/x402-payment-modal",
+      [
+        115801142
       ]
     ]
   ]
