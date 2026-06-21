@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4169042,
-  "last": 115839051,
-  "latest": 115839051,
+  "packages": 4170284,
+  "last": 115876661,
+  "latest": 115876661,
   "runs": {
-    "total": 664,
+    "total": 665,
     "status": {
       "killed": 2,
-      "init": 660,
+      "init": 661,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1641720,
-    "github": 2485775,
+    "unsets": 1642238,
+    "github": 2486498,
     "gitlab": 6890,
     "bitbucket": 1350,
-    "others": 33307
+    "others": 33308
   },
   "stats": {
-    "changes": 13570334,
-    "inserts": 4169903,
-    "updates": 7222774,
-    "deletes": 1996942,
-    "invalid": 180715,
+    "changes": 13579676,
+    "inserts": 4171147,
+    "updates": 7230813,
+    "deletes": 1996948,
+    "invalid": 180768,
     "ignored": 0,
-    "notFound": 28074
+    "notFound": 28076
   },
   "batch": {
     "status": "init",
-    "limit": 37865,
-    "since": 115801186,
-    "index": 115839051,
-    "until": 115839051,
-    "started": "2026-06-21T00:59:29.393Z",
-    "finished": "2026-06-21T01:02:46.201Z",
-    "took_ms": 196808,
-    "found": 9495
+    "limit": 37610,
+    "since": 115839051,
+    "index": 115876661,
+    "until": 115876661,
+    "started": "2026-06-21T12:44:39.652Z",
+    "finished": "2026-06-21T12:47:57.354Z",
+    "took_ms": 197702,
+    "found": 9342
   },
   "notFound": [
     [
@@ -168481,6 +168481,18 @@
       "@three-ws/x402-payment-modal",
       [
         115801142
+      ]
+    ],
+    [
+      "@soapjs/soap-otel",
+      [
+        115876291
+      ]
+    ],
+    [
+      "@alakipalaki/winston-logger",
+      [
+        115876458
       ]
     ]
   ]
