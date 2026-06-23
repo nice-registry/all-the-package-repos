@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4173605,
-  "last": 116012202,
-  "latest": 116012202,
+  "packages": 4175545,
+  "last": 116094690,
+  "latest": 116094690,
   "runs": {
-    "total": 667,
+    "total": 668,
     "status": {
       "killed": 2,
-      "init": 663,
+      "init": 664,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1643393,
-    "github": 2488646,
-    "gitlab": 6891,
+    "unsets": 1643772,
+    "github": 2490201,
+    "gitlab": 6893,
     "bitbucket": 1350,
-    "others": 33325
+    "others": 33329
   },
   "stats": {
-    "changes": 13610340,
-    "inserts": 4174471,
-    "updates": 7257798,
-    "deletes": 1996958,
-    "invalid": 181113,
+    "changes": 13628205,
+    "inserts": 4176412,
+    "updates": 7273567,
+    "deletes": 1996965,
+    "invalid": 181261,
     "ignored": 0,
-    "notFound": 28076
+    "notFound": 28075
   },
   "batch": {
     "status": "init",
-    "limit": 93886,
-    "since": 115918316,
-    "index": 116012202,
-    "until": 116012202,
-    "started": "2026-06-22T13:56:07.739Z",
-    "finished": "2026-06-22T14:21:01.627Z",
-    "took_ms": 1493888,
-    "found": 19777
+    "limit": 82488,
+    "since": 116012202,
+    "index": 116094690,
+    "until": 116094690,
+    "started": "2026-06-23T00:51:28.497Z",
+    "finished": "2026-06-23T01:01:13.977Z",
+    "took_ms": 585480,
+    "found": 17865
   },
   "notFound": [
     [
@@ -168487,12 +168487,6 @@
       "@soapjs/soap-otel",
       [
         115876291
-      ]
-    ],
-    [
-      "@alakipalaki/winston-logger",
-      [
-        115876458
       ]
     ]
   ]
