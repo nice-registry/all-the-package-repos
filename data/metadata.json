@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4186047,
-  "last": 116676091,
-  "latest": 116676091,
+  "packages": 4187433,
+  "last": 116758102,
+  "latest": 116758102,
   "runs": {
-    "total": 674,
+    "total": 675,
     "status": {
       "killed": 2,
-      "init": 670,
+      "init": 671,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1646664,
-    "github": 2497758,
+    "unsets": 1647154,
+    "github": 2498645,
     "gitlab": 6904,
     "bitbucket": 1350,
-    "others": 33371
+    "others": 33380
   },
   "stats": {
-    "changes": 13748713,
-    "inserts": 4186926,
-    "updates": 7381705,
-    "deletes": 1996996,
-    "invalid": 183086,
+    "changes": 13765798,
+    "inserts": 4188315,
+    "updates": 7397064,
+    "deletes": 1997000,
+    "invalid": 183419,
     "ignored": 0,
-    "notFound": 28075
+    "notFound": 28076
   },
   "batch": {
     "status": "init",
-    "limit": 97021,
-    "since": 116579070,
-    "index": 116676091,
-    "until": 116676091,
-    "started": "2026-06-26T00:54:22.232Z",
-    "finished": "2026-06-26T01:05:38.540Z",
-    "took_ms": 676308,
-    "found": 21516
+    "limit": 82011,
+    "since": 116676091,
+    "index": 116758102,
+    "until": 116758102,
+    "started": "2026-06-26T12:48:39.193Z",
+    "finished": "2026-06-26T12:58:45.635Z",
+    "took_ms": 606442,
+    "found": 17085
   },
   "notFound": [
     [
@@ -168487,6 +168487,12 @@
       "@soapjs/soap-otel",
       [
         115876291
+      ]
+    ],
+    [
+      "@carnot-ai/cli",
+      [
+        116710886
       ]
     ]
   ]
