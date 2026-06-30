@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4196764,
-  "last": 117168979,
-  "latest": 117168979,
+  "packages": 4198158,
+  "last": 117258157,
+  "latest": 117258157,
   "runs": {
-    "total": 682,
+    "total": 683,
     "status": {
       "killed": 2,
-      "init": 678,
+      "init": 679,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1650354,
-    "github": 2504725,
-    "gitlab": 6904,
+    "unsets": 1650969,
+    "github": 2505499,
+    "gitlab": 6906,
     "bitbucket": 1350,
-    "others": 33431
+    "others": 33434
   },
   "stats": {
-    "changes": 13861309,
-    "inserts": 4197655,
-    "updates": 7482386,
-    "deletes": 1997035,
-    "invalid": 184233,
+    "changes": 13879834,
+    "inserts": 4199052,
+    "updates": 7499125,
+    "deletes": 1997039,
+    "invalid": 184618,
     "ignored": 0,
-    "notFound": 28076
+    "notFound": 28077
   },
   "batch": {
     "status": "init",
-    "limit": 93778,
-    "since": 117075201,
-    "index": 117168979,
-    "until": 117168979,
-    "started": "2026-06-30T00:52:39.692Z",
-    "finished": "2026-06-30T01:01:34.510Z",
-    "took_ms": 534818,
-    "found": 20841
+    "limit": 89178,
+    "since": 117168979,
+    "index": 117258157,
+    "until": 117258157,
+    "started": "2026-06-30T12:45:45.483Z",
+    "finished": "2026-06-30T12:55:58.661Z",
+    "took_ms": 613178,
+    "found": 18525
   },
   "notFound": [
     [
@@ -168493,6 +168493,12 @@
       "@carnot-ai/cli",
       [
         116710886
+      ]
+    ],
+    [
+      "@poirazis/bb-component-superbutton",
+      [
+        117250424
       ]
     ]
   ]
