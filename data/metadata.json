@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4198158,
-  "last": 117258157,
-  "latest": 117258157,
+  "packages": 4199559,
+  "last": 117354384,
+  "latest": 117354384,
   "runs": {
-    "total": 683,
+    "total": 684,
     "status": {
       "killed": 2,
-      "init": 679,
+      "init": 680,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1650969,
-    "github": 2505499,
+    "unsets": 1651470,
+    "github": 2506337,
     "gitlab": 6906,
     "bitbucket": 1350,
-    "others": 33434
+    "others": 33496
   },
   "stats": {
-    "changes": 13879834,
-    "inserts": 4199052,
-    "updates": 7499125,
-    "deletes": 1997039,
-    "invalid": 184618,
+    "changes": 13900038,
+    "inserts": 4200454,
+    "updates": 7517704,
+    "deletes": 1997043,
+    "invalid": 184837,
     "ignored": 0,
-    "notFound": 28077
+    "notFound": 28075
   },
   "batch": {
     "status": "init",
-    "limit": 89178,
-    "since": 117168979,
-    "index": 117258157,
-    "until": 117258157,
-    "started": "2026-06-30T12:45:45.483Z",
-    "finished": "2026-06-30T12:55:58.661Z",
-    "took_ms": 613178,
-    "found": 18525
+    "limit": 96227,
+    "since": 117258157,
+    "index": 117354384,
+    "until": 117354384,
+    "started": "2026-07-01T00:55:15.092Z",
+    "finished": "2026-07-01T01:06:15.721Z",
+    "took_ms": 660629,
+    "found": 20204
   },
   "notFound": [
     [
@@ -168469,18 +168469,6 @@
       "@three-ws/walk",
       [
         115801092
-      ]
-    ],
-    [
-      "@three-ws/x402-modal",
-      [
-        115801123
-      ]
-    ],
-    [
-      "@three-ws/x402-payment-modal",
-      [
-        115801142
       ]
     ],
     [
