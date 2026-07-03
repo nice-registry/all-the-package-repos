@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4205742,
-  "last": 117733307,
-  "latest": 117733307,
+  "packages": 4207662,
+  "last": 117821963,
+  "latest": 117821963,
   "runs": {
-    "total": 688,
+    "total": 689,
     "status": {
       "killed": 2,
-      "init": 684,
+      "init": 685,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1653580,
-    "github": 2510348,
-    "gitlab": 6910,
+    "unsets": 1654288,
+    "github": 2511552,
+    "gitlab": 6913,
     "bitbucket": 1350,
-    "others": 33554
+    "others": 33559
   },
   "stats": {
-    "changes": 13980940,
-    "inserts": 4206641,
-    "updates": 7590860,
-    "deletes": 1997057,
-    "invalid": 186382,
+    "changes": 13999947,
+    "inserts": 4208562,
+    "updates": 7607600,
+    "deletes": 1997064,
+    "invalid": 186721,
     "ignored": 0,
-    "notFound": 28075
+    "notFound": 28076
   },
   "batch": {
     "status": "init",
-    "limit": 104479,
-    "since": 117628828,
-    "index": 117733307,
-    "until": 117733307,
-    "started": "2026-07-03T00:42:06.263Z",
-    "finished": "2026-07-03T01:05:48.699Z",
-    "took_ms": 1422436,
-    "found": 21781
+    "limit": 88656,
+    "since": 117733307,
+    "index": 117821963,
+    "until": 117821963,
+    "started": "2026-07-03T12:41:45.315Z",
+    "finished": "2026-07-03T12:50:54.939Z",
+    "took_ms": 549624,
+    "found": 19007
   },
   "notFound": [
     [
@@ -168487,6 +168487,12 @@
       "@poirazis/bb-component-superbutton",
       [
         117250424
+      ]
+    ],
+    [
+      "@birdcall/cli",
+      [
+        117820376
       ]
     ]
   ]
