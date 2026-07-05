@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4211454,
-  "last": 117973850,
-  "latest": 117973850,
+  "packages": 4212737,
+  "last": 118008616,
+  "latest": 118008616,
   "runs": {
-    "total": 692,
+    "total": 693,
     "status": {
       "killed": 2,
-      "init": 688,
+      "init": 689,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1655222,
-    "github": 2514391,
-    "gitlab": 6913,
+    "unsets": 1655611,
+    "github": 2515270,
+    "gitlab": 6914,
     "bitbucket": 1350,
-    "others": 33578
+    "others": 33592
   },
   "stats": {
-    "changes": 14036063,
-    "inserts": 4212361,
-    "updates": 7639671,
-    "deletes": 1997078,
-    "invalid": 186953,
+    "changes": 14045406,
+    "inserts": 4213649,
+    "updates": 7647658,
+    "deletes": 1997088,
+    "invalid": 187011,
     "ignored": 0,
-    "notFound": 28075
+    "notFound": 28073
   },
   "batch": {
     "status": "init",
-    "limit": 42377,
-    "since": 117931473,
-    "index": 117973850,
-    "until": 117973850,
-    "started": "2026-07-05T00:44:35.874Z",
-    "finished": "2026-07-05T00:48:02.894Z",
-    "took_ms": 207020,
-    "found": 10253
+    "limit": 34766,
+    "since": 117973850,
+    "index": 118008616,
+    "until": 118008616,
+    "started": "2026-07-05T12:31:42.029Z",
+    "finished": "2026-07-05T12:34:40.645Z",
+    "took_ms": 178616,
+    "found": 9343
   },
   "notFound": [
     [
@@ -168448,12 +168448,6 @@
       ]
     ],
     [
-      "@iyulab/unpdf",
-      [
-        112567123
-      ]
-    ],
-    [
       "@evolith/cli",
       [
         113600082
@@ -168481,12 +168475,6 @@
       "@birdcall/cli",
       [
         117820376
-      ]
-    ],
-    [
-      "@victor00128/nexus-cli",
-      [
-        117973803
       ]
     ]
   ]
