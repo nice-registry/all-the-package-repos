@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4210194,
-  "last": 117931473,
-  "latest": 117931473,
+  "packages": 4211454,
+  "last": 117973850,
+  "latest": 117973850,
   "runs": {
-    "total": 691,
+    "total": 692,
     "status": {
       "killed": 2,
-      "init": 687,
+      "init": 688,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1654898,
-    "github": 2513462,
+    "unsets": 1655222,
+    "github": 2514391,
     "gitlab": 6913,
     "bitbucket": 1350,
-    "others": 33571
+    "others": 33578
   },
   "stats": {
-    "changes": 14025810,
-    "inserts": 4211100,
-    "updates": 7630757,
-    "deletes": 1997075,
-    "invalid": 186878,
+    "changes": 14036063,
+    "inserts": 4212361,
+    "updates": 7639671,
+    "deletes": 1997078,
+    "invalid": 186953,
     "ignored": 0,
-    "notFound": 28076
+    "notFound": 28075
   },
   "batch": {
     "status": "init",
-    "limit": 38217,
-    "since": 117893256,
-    "index": 117931473,
-    "until": 117931473,
-    "started": "2026-07-04T12:28:26.118Z",
-    "finished": "2026-07-04T12:32:41.888Z",
-    "took_ms": 255770,
-    "found": 10038
+    "limit": 42377,
+    "since": 117931473,
+    "index": 117973850,
+    "until": 117973850,
+    "started": "2026-07-05T00:44:35.874Z",
+    "finished": "2026-07-05T00:48:02.894Z",
+    "took_ms": 207020,
+    "found": 10253
   },
   "notFound": [
     [
@@ -168460,18 +168460,6 @@
       ]
     ],
     [
-      "@three-ws/page-agent",
-      [
-        115801073
-      ]
-    ],
-    [
-      "@three-ws/walk",
-      [
-        115801092
-      ]
-    ],
-    [
       "@soapjs/soap-otel",
       [
         115876291
@@ -168493,6 +168481,12 @@
       "@birdcall/cli",
       [
         117820376
+      ]
+    ],
+    [
+      "@victor00128/nexus-cli",
+      [
+        117973803
       ]
     ]
   ]
