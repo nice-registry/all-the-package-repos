@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4220681,
-  "last": 118449934,
-  "latest": 118449932,
+  "packages": 4222226,
+  "last": 118547381,
+  "latest": 118547381,
   "runs": {
-    "total": 698,
+    "total": 699,
     "status": {
       "killed": 2,
-      "init": 694,
+      "init": 695,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1657951,
-    "github": 2520786,
+    "unsets": 1658627,
+    "github": 2521643,
     "gitlab": 6919,
     "bitbucket": 1350,
-    "others": 33675
+    "others": 33687
   },
   "stats": {
-    "changes": 14140470,
-    "inserts": 4221601,
-    "updates": 7733510,
-    "deletes": 1997112,
-    "invalid": 188247,
+    "changes": 14161540,
+    "inserts": 4223148,
+    "updates": 7752710,
+    "deletes": 1997118,
+    "invalid": 188564,
     "ignored": 0,
-    "notFound": 28073
+    "notFound": 28072
   },
   "batch": {
     "status": "init",
-    "limit": 106383,
-    "since": 118343549,
-    "index": 118449934,
-    "until": 118449932,
-    "started": "2026-07-08T00:37:05.124Z",
-    "finished": "2026-07-08T00:47:02.261Z",
-    "took_ms": 597137,
-    "found": 22691
+    "limit": 97447,
+    "since": 118449934,
+    "index": 118547381,
+    "until": 118547381,
+    "started": "2026-07-08T12:37:39.355Z",
+    "finished": "2026-07-08T12:46:50.279Z",
+    "took_ms": 550924,
+    "found": 21070
   },
   "notFound": [
     [
@@ -168175,12 +168175,6 @@
       "typescript-strict-plugin-own-need",
       [
         99803959
-      ]
-    ],
-    [
-      "tinker-white-noise",
-      [
-        99804281
       ]
     ],
     [
