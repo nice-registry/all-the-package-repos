@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4242728,
-  "last": 119596775,
-  "latest": 119596775,
+  "packages": 4244322,
+  "last": 119691748,
+  "latest": 119691748,
   "runs": {
-    "total": 712,
+    "total": 713,
     "status": {
       "killed": 2,
-      "init": 708,
+      "init": 709,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1664182,
-    "github": 2536475,
+    "unsets": 1664789,
+    "github": 2537457,
     "gitlab": 6930,
     "bitbucket": 1350,
-    "others": 33791
+    "others": 33796
   },
   "stats": {
-    "changes": 14393634,
-    "inserts": 4243665,
-    "updates": 7960961,
-    "deletes": 1997161,
-    "invalid": 191847,
+    "changes": 14413644,
+    "inserts": 4245259,
+    "updates": 7979081,
+    "deletes": 1997163,
+    "invalid": 192141,
     "ignored": 0,
-    "notFound": 28071
+    "notFound": 28072
   },
   "batch": {
     "status": "init",
-    "limit": 102962,
-    "since": 119493813,
-    "index": 119596775,
-    "until": 119596775,
-    "started": "2026-07-15T00:31:31.646Z",
-    "finished": "2026-07-15T00:41:44.539Z",
-    "took_ms": 612893,
-    "found": 21120
+    "limit": 94973,
+    "since": 119596775,
+    "index": 119691748,
+    "until": 119691748,
+    "started": "2026-07-15T12:32:16.818Z",
+    "finished": "2026-07-15T12:41:58.618Z",
+    "took_ms": 581800,
+    "found": 20010
   },
   "notFound": [
     [
@@ -168463,6 +168463,12 @@
       "@birdcall/cli",
       [
         117820376
+      ]
+    ],
+    [
+      "@legioncli/cli",
+      [
+        119677299
       ]
     ]
   ]
