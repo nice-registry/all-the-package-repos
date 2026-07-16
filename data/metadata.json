@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4246095,
-  "last": 119797720,
-  "latest": 119797720,
+  "packages": 4247861,
+  "last": 119903537,
+  "latest": 119903537,
   "runs": {
-    "total": 714,
+    "total": 715,
     "status": {
       "killed": 2,
-      "init": 710,
+      "init": 711,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1665192,
-    "github": 2538819,
-    "gitlab": 6930,
+    "unsets": 1665757,
+    "github": 2540015,
+    "gitlab": 6929,
     "bitbucket": 1350,
-    "others": 33804
+    "others": 33810
   },
   "stats": {
-    "changes": 14435935,
-    "inserts": 4247033,
-    "updates": 7999288,
-    "deletes": 1997166,
-    "invalid": 192448,
+    "changes": 14460066,
+    "inserts": 4248801,
+    "updates": 8021170,
+    "deletes": 1997168,
+    "invalid": 192927,
     "ignored": 0,
-    "notFound": 28072
+    "notFound": 28077
   },
   "batch": {
     "status": "init",
-    "limit": 105972,
-    "since": 119691748,
-    "index": 119797720,
-    "until": 119797720,
-    "started": "2026-07-16T00:34:53.562Z",
-    "finished": "2026-07-16T00:45:01.604Z",
-    "took_ms": 608042,
-    "found": 22291
+    "limit": 105817,
+    "since": 119797720,
+    "index": 119903537,
+    "until": 119903537,
+    "started": "2026-07-16T12:36:26.250Z",
+    "finished": "2026-07-16T12:47:16.623Z",
+    "took_ms": 650373,
+    "found": 24131
   },
   "notFound": [
     [
@@ -168469,6 +168469,36 @@
       "@legioncli/cli",
       [
         119677299
+      ]
+    ],
+    [
+      "@hibachi-xyz/common",
+      [
+        119884619
+      ]
+    ],
+    [
+      "@hibachi-xyz/config",
+      [
+        119884785
+      ]
+    ],
+    [
+      "@hibachi-xyz/ui",
+      [
+        119884852
+      ]
+    ],
+    [
+      "@hibachi-xyz/sdk",
+      [
+        119885022
+      ]
+    ],
+    [
+      "@hibachi-xyz/types",
+      [
+        119885155
       ]
     ]
   ]
