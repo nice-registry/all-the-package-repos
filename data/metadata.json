@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4275571,
-  "last": 121476845,
-  "latest": 121476845,
+  "packages": 4278055,
+  "last": 121534411,
+  "latest": 121534411,
   "runs": {
-    "total": 732,
+    "total": 733,
     "status": {
       "killed": 2,
-      "init": 728,
+      "init": 729,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1673448,
-    "github": 2559904,
-    "gitlab": 6938,
+    "unsets": 1673652,
+    "github": 2562183,
+    "gitlab": 6939,
     "bitbucket": 1350,
     "others": 33931
   },
   "stats": {
-    "changes": 14789690,
-    "inserts": 4276525,
-    "updates": 8318357,
-    "deletes": 1997232,
-    "invalid": 197576,
+    "changes": 14803484,
+    "inserts": 4279010,
+    "updates": 8329550,
+    "deletes": 1997235,
+    "invalid": 197689,
     "ignored": 0,
-    "notFound": 28079
+    "notFound": 28080
   },
   "batch": {
     "status": "init",
-    "limit": 49944,
-    "since": 121426901,
-    "index": 121476845,
-    "until": 121476845,
-    "started": "2026-07-25T12:22:37.705Z",
-    "finished": "2026-07-25T12:28:17.851Z",
-    "took_ms": 340146,
-    "found": 11966
+    "limit": 57566,
+    "since": 121476845,
+    "index": 121534411,
+    "until": 121534411,
+    "started": "2026-07-26T00:40:51.656Z",
+    "finished": "2026-07-26T00:45:06.126Z",
+    "took_ms": 254470,
+    "found": 13794
   },
   "notFound": [
     [
@@ -168511,6 +168511,12 @@
       "@lyxa.ai/types",
       [
         121269097
+      ]
+    ],
+    [
+      "@tslite/format",
+      [
+        121534393
       ]
     ]
   ]
