@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4281302,
-  "last": 121649068,
-  "latest": 121649068,
+  "packages": 4283305,
+  "last": 121749271,
+  "latest": 121749271,
   "runs": {
-    "total": 735,
+    "total": 736,
     "status": {
       "killed": 2,
-      "init": 731,
+      "init": 732,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1674211,
-    "github": 2564842,
-    "gitlab": 6946,
+    "unsets": 1674674,
+    "github": 2566383,
+    "gitlab": 6947,
     "bitbucket": 1350,
-    "others": 33953
+    "others": 33951
   },
   "stats": {
-    "changes": 14829953,
-    "inserts": 4282258,
-    "updates": 8352546,
-    "deletes": 1997237,
-    "invalid": 197912,
+    "changes": 14851372,
+    "inserts": 4284262,
+    "updates": 8371446,
+    "deletes": 1997240,
+    "invalid": 198424,
     "ignored": 0,
-    "notFound": 28080
+    "notFound": 28079
   },
   "batch": {
     "status": "init",
-    "limit": 59780,
-    "since": 121589288,
-    "index": 121649068,
-    "until": 121649068,
-    "started": "2026-07-27T00:40:20.492Z",
-    "finished": "2026-07-27T00:45:21.940Z",
-    "took_ms": 301448,
-    "found": 13232
+    "limit": 100203,
+    "since": 121649068,
+    "index": 121749271,
+    "until": 121749271,
+    "started": "2026-07-27T13:06:27.284Z",
+    "finished": "2026-07-27T13:15:50.296Z",
+    "took_ms": 563012,
+    "found": 21419
   },
   "notFound": [
     [
@@ -168505,12 +168505,6 @@
       "@copilot-mcp/apex",
       [
         120973625
-      ]
-    ],
-    [
-      "@lyxa.ai/types",
-      [
-        121269097
       ]
     ],
     [
