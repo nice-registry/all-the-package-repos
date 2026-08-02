@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4302267,
-  "last": 122789675,
-  "latest": 122789675,
+  "packages": 4303894,
+  "last": 122833043,
+  "latest": 122833043,
   "runs": {
-    "total": 747,
+    "total": 748,
     "status": {
       "killed": 2,
-      "init": 743,
+      "init": 744,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1679002,
-    "github": 2580910,
-    "gitlab": 6962,
+    "unsets": 1679470,
+    "github": 2582051,
+    "gitlab": 6963,
     "bitbucket": 1350,
-    "others": 34043
+    "others": 34060
   },
   "stats": {
-    "changes": 15075912,
-    "inserts": 4303234,
-    "updates": 8574160,
+    "changes": 15087131,
+    "inserts": 4304861,
+    "updates": 8583650,
     "deletes": 1997282,
-    "invalid": 201236,
+    "invalid": 201338,
     "ignored": 0,
-    "notFound": 28079
+    "notFound": 28078
   },
   "batch": {
     "status": "init",
-    "limit": 51024,
-    "since": 122738651,
-    "index": 122789675,
-    "until": 122789675,
-    "started": "2026-08-02T00:39:02.162Z",
-    "finished": "2026-08-02T00:43:46.861Z",
-    "took_ms": 284699,
-    "found": 11792
+    "limit": 43368,
+    "since": 122789675,
+    "index": 122833043,
+    "until": 122833043,
+    "started": "2026-08-02T12:25:43.551Z",
+    "finished": "2026-08-02T12:30:11.062Z",
+    "took_ms": 267511,
+    "found": 11219
   },
   "notFound": [
     [
@@ -168505,12 +168505,6 @@
       "@copilot-mcp/apex",
       [
         120973625
-      ]
-    ],
-    [
-      "@turbobase/cli",
-      [
-        122789661
       ]
     ]
   ]
