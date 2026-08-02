@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4301018,
-  "last": 122738651,
-  "latest": 122738651,
+  "packages": 4302267,
+  "last": 122789675,
+  "latest": 122789675,
   "runs": {
-    "total": 746,
+    "total": 747,
     "status": {
       "killed": 2,
-      "init": 742,
+      "init": 743,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1678684,
-    "github": 2579981,
+    "unsets": 1679002,
+    "github": 2580910,
     "gitlab": 6962,
     "bitbucket": 1350,
-    "others": 34041
+    "others": 34043
   },
   "stats": {
-    "changes": 15064120,
-    "inserts": 4301984,
-    "updates": 8563696,
-    "deletes": 1997278,
-    "invalid": 201162,
+    "changes": 15075912,
+    "inserts": 4303234,
+    "updates": 8574160,
+    "deletes": 1997282,
+    "invalid": 201236,
     "ignored": 0,
     "notFound": 28079
   },
   "batch": {
     "status": "init",
-    "limit": 51981,
-    "since": 122686670,
-    "index": 122738651,
-    "until": 122738651,
-    "started": "2026-08-01T12:24:36.538Z",
-    "finished": "2026-08-01T12:29:44.259Z",
-    "took_ms": 307721,
-    "found": 13202
+    "limit": 51024,
+    "since": 122738651,
+    "index": 122789675,
+    "until": 122789675,
+    "started": "2026-08-02T00:39:02.162Z",
+    "finished": "2026-08-02T00:43:46.861Z",
+    "took_ms": 284699,
+    "found": 11792
   },
   "notFound": [
     [
@@ -168508,9 +168508,9 @@
       ]
     ],
     [
-      "@tslite/format",
+      "@turbobase/cli",
       [
-        121534393
+        122789661
       ]
     ]
   ]
