@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4309808,
-  "last": 123100216,
-  "latest": 123100215,
+  "packages": 4311801,
+  "last": 123204147,
+  "latest": 123204147,
   "runs": {
-    "total": 751,
+    "total": 752,
     "status": {
       "killed": 2,
-      "init": 747,
+      "init": 748,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1681254,
-    "github": 2586132,
-    "gitlab": 6965,
+    "unsets": 1681871,
+    "github": 2587495,
+    "gitlab": 6967,
     "bitbucket": 1350,
-    "others": 34107
+    "others": 34118
   },
   "stats": {
-    "changes": 15144093,
-    "inserts": 4310777,
-    "updates": 8633570,
-    "deletes": 1997298,
-    "invalid": 202448,
+    "changes": 15166590,
+    "inserts": 4312773,
+    "updates": 8653827,
+    "deletes": 1997301,
+    "invalid": 202689,
     "ignored": 0,
-    "notFound": 28077
+    "notFound": 28080
   },
   "batch": {
     "status": "init",
-    "limit": 99006,
-    "since": 123001209,
-    "index": 123100216,
-    "until": 123100215,
-    "started": "2026-08-04T00:37:46.376Z",
-    "finished": "2026-08-04T00:47:22.705Z",
-    "took_ms": 576329,
-    "found": 22217
+    "limit": 103931,
+    "since": 123100216,
+    "index": 123204147,
+    "until": 123204147,
+    "started": "2026-08-04T12:41:03.076Z",
+    "finished": "2026-08-04T12:51:16.092Z",
+    "took_ms": 613016,
+    "found": 22497
   },
   "notFound": [
     [
@@ -168499,6 +168499,24 @@
       "@copilot-mcp/apex",
       [
         120973625
+      ]
+    ],
+    [
+      "@zzzgenesis00/bitcoin-lib",
+      [
+        123112818
+      ]
+    ],
+    [
+      "@zzzgenesis00/near-api",
+      [
+        123112873
+      ]
+    ],
+    [
+      "@zzzgenesis00/spl-token-utils",
+      [
+        123112910
       ]
     ]
   ]
