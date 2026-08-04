@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4307250,
-  "last": 123001209,
-  "latest": 123001209,
+  "packages": 4309808,
+  "last": 123100216,
+  "latest": 123100215,
   "runs": {
-    "total": 750,
+    "total": 751,
     "status": {
       "killed": 2,
-      "init": 746,
+      "init": 747,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1680394,
-    "github": 2584445,
-    "gitlab": 6963,
+    "unsets": 1681254,
+    "github": 2586132,
+    "gitlab": 6965,
     "bitbucket": 1350,
-    "others": 34098
+    "others": 34107
   },
   "stats": {
-    "changes": 15121876,
-    "inserts": 4308219,
-    "updates": 8614447,
-    "deletes": 1997296,
-    "invalid": 201914,
+    "changes": 15144093,
+    "inserts": 4310777,
+    "updates": 8633570,
+    "deletes": 1997298,
+    "invalid": 202448,
     "ignored": 0,
-    "notFound": 28078
+    "notFound": 28077
   },
   "batch": {
     "status": "init",
-    "limit": 103557,
-    "since": 122897652,
-    "index": 123001209,
-    "until": 123001209,
-    "started": "2026-08-03T13:06:00.352Z",
-    "finished": "2026-08-03T13:15:35.038Z",
-    "took_ms": 574686,
-    "found": 21488
+    "limit": 99006,
+    "since": 123001209,
+    "index": 123100216,
+    "until": 123100215,
+    "started": "2026-08-04T00:37:46.376Z",
+    "finished": "2026-08-04T00:47:22.705Z",
+    "took_ms": 576329,
+    "found": 22217
   },
   "notFound": [
     [
@@ -149827,12 +149827,6 @@
       "@malware-test-swage-ephor-biped-filmy/test-mlw3-swage-ephor-biped-filmy",
       [
         32997711
-      ]
-    ],
-    [
-      "@fca.gg/injector",
-      [
-        33051885
       ]
     ],
     [
