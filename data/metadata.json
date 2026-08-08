@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4321471,
-  "last": 123808593,
-  "latest": 123808593,
+  "packages": 4323045,
+  "last": 123912050,
+  "latest": 123912048,
   "runs": {
-    "total": 758,
+    "total": 759,
     "status": {
       "killed": 2,
-      "init": 754,
+      "init": 755,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1683744,
-    "github": 2595198,
+    "unsets": 1684044,
+    "github": 2596456,
     "gitlab": 6971,
-    "bitbucket": 1350,
-    "others": 34208
+    "bitbucket": 1352,
+    "others": 34222
   },
   "stats": {
-    "changes": 15291415,
-    "inserts": 4322450,
-    "updates": 8766771,
-    "deletes": 1997332,
-    "invalid": 204862,
+    "changes": 15312488,
+    "inserts": 4324041,
+    "updates": 8786057,
+    "deletes": 1997353,
+    "invalid": 205037,
     "ignored": 0,
-    "notFound": 28080
+    "notFound": 28081
   },
   "batch": {
     "status": "init",
-    "limit": 93853,
-    "since": 123714740,
-    "index": 123808593,
-    "until": 123808593,
-    "started": "2026-08-07T12:18:11.381Z",
-    "finished": "2026-08-07T12:27:43.820Z",
-    "took_ms": 572439,
-    "found": 19952
+    "limit": 103455,
+    "since": 123808593,
+    "index": 123912050,
+    "until": 123912048,
+    "started": "2026-08-08T00:19:47.571Z",
+    "finished": "2026-08-08T00:30:55.099Z",
+    "took_ms": 667528,
+    "found": 21073
   },
   "notFound": [
     [
@@ -168517,6 +168517,12 @@
       "@zzzgenesis00/spl-token-utils",
       [
         123112910
+      ]
+    ],
+    [
+      "@rbxst/services",
+      [
+        123867000
       ]
     ]
   ]
