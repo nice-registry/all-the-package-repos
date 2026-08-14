@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4342128,
-  "last": 124911007,
-  "latest": 124911007,
+  "packages": 4344281,
+  "last": 125006111,
+  "latest": 125006111,
   "runs": {
-    "total": 771,
+    "total": 772,
     "status": {
       "killed": 2,
-      "init": 767,
+      "init": 768,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1688942,
-    "github": 2610475,
-    "gitlab": 7033,
+    "unsets": 1689508,
+    "github": 2612053,
+    "gitlab": 7032,
     "bitbucket": 1352,
-    "others": 34326
+    "others": 34336
   },
   "stats": {
-    "changes": 15532781,
-    "inserts": 4343137,
-    "updates": 8984442,
-    "deletes": 1997398,
-    "invalid": 207804,
+    "changes": 15553674,
+    "inserts": 4345290,
+    "updates": 9002827,
+    "deletes": 1997402,
+    "invalid": 208155,
     "ignored": 0,
-    "notFound": 28081
+    "notFound": 28082
   },
   "batch": {
     "status": "init",
-    "limit": 106122,
-    "since": 124804885,
-    "index": 124911007,
-    "until": 124911007,
-    "started": "2026-08-14T00:26:43.951Z",
-    "finished": "2026-08-14T00:36:53.370Z",
-    "took_ms": 609419,
-    "found": 22049
+    "limit": 95104,
+    "since": 124911007,
+    "index": 125006111,
+    "until": 125006111,
+    "started": "2026-08-14T12:19:17.945Z",
+    "finished": "2026-08-14T12:28:41.986Z",
+    "took_ms": 564041,
+    "found": 20893
   },
   "notFound": [
     [
@@ -168523,6 +168523,12 @@
       "@rbxst/services",
       [
         123867000
+      ]
+    ],
+    [
+      "@lodash-js/lodash-js",
+      [
+        124979073
       ]
     ]
   ]
