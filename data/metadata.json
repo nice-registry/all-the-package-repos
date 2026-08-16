@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4349360,
-  "last": 125194916,
-  "latest": 125194916,
+  "packages": 4350807,
+  "last": 125238465,
+  "latest": 125238465,
   "runs": {
-    "total": 775,
+    "total": 776,
     "status": {
       "killed": 2,
-      "init": 771,
+      "init": 772,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1690948,
-    "github": 2615636,
+    "unsets": 1691383,
+    "github": 2616649,
     "gitlab": 7033,
     "bitbucket": 1352,
-    "others": 34391
+    "others": 34390
   },
   "stats": {
-    "changes": 15599858,
-    "inserts": 4350369,
-    "updates": 9043600,
-    "deletes": 1997411,
-    "invalid": 208478,
+    "changes": 15611230,
+    "inserts": 4351819,
+    "updates": 9053465,
+    "deletes": 1997416,
+    "invalid": 208530,
     "ignored": 0,
-    "notFound": 28082
+    "notFound": 28083
   },
   "batch": {
     "status": "init",
-    "limit": 46028,
-    "since": 125148888,
-    "index": 125194916,
-    "until": 125194916,
-    "started": "2026-08-16T00:15:03.304Z",
-    "finished": "2026-08-16T00:18:18.751Z",
-    "took_ms": 195447,
-    "found": 12331
+    "limit": 43549,
+    "since": 125194916,
+    "index": 125238465,
+    "until": 125238465,
+    "started": "2026-08-16T12:06:32.689Z",
+    "finished": "2026-08-16T12:09:42.356Z",
+    "took_ms": 189667,
+    "found": 11372
   },
   "notFound": [
     [
@@ -168529,6 +168529,12 @@
       "@lodash-js/lodash-js",
       [
         124979073
+      ]
+    ],
+    [
+      "@effect-uai/chat-completions",
+      [
+        125238375
       ]
     ]
   ]
