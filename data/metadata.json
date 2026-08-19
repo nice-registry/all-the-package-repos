@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4361181,
-  "last": 125697732,
-  "latest": 125697732,
+  "packages": 4363128,
+  "last": 125798885,
+  "latest": 125798885,
   "runs": {
-    "total": 781,
+    "total": 782,
     "status": {
       "killed": 2,
-      "init": 777,
+      "init": 778,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1694323,
-    "github": 2624018,
-    "gitlab": 7003,
+    "unsets": 1694838,
+    "github": 2625426,
+    "gitlab": 7004,
     "bitbucket": 1352,
-    "others": 34485
+    "others": 34508
   },
   "stats": {
-    "changes": 15713086,
-    "inserts": 4362223,
-    "updates": 9143754,
-    "deletes": 1997462,
-    "invalid": 209647,
+    "changes": 15734034,
+    "inserts": 4364171,
+    "updates": 9162384,
+    "deletes": 1997464,
+    "invalid": 210015,
     "ignored": 0,
-    "notFound": 28082
+    "notFound": 28081
   },
   "batch": {
     "status": "init",
-    "limit": 114506,
-    "since": 125583226,
-    "index": 125697732,
-    "until": 125697732,
-    "started": "2026-08-19T00:13:49.859Z",
-    "finished": "2026-08-19T00:27:02.980Z",
-    "took_ms": 793121,
-    "found": 23443
+    "limit": 101153,
+    "since": 125697732,
+    "index": 125798885,
+    "until": 125798885,
+    "started": "2026-08-19T12:09:23.473Z",
+    "finished": "2026-08-19T12:17:53.709Z",
+    "took_ms": 510236,
+    "found": 20948
   },
   "notFound": [
     [
@@ -14479,12 +14479,6 @@
       "@stoe/uebersicht-calendar-private",
       [
         13361924
-      ]
-    ],
-    [
-      "@wisdomgarden/capacitor-updater",
-      [
-        13363284
       ]
     ],
     [
