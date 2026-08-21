@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4366914,
-  "last": 125997966,
-  "latest": 125997966,
+  "packages": 4368634,
+  "last": 126108801,
+  "latest": 126108801,
   "runs": {
-    "total": 784,
+    "total": 785,
     "status": {
       "killed": 2,
-      "init": 780,
+      "init": 781,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1695633,
-    "github": 2628402,
+    "unsets": 1696040,
+    "github": 2629700,
     "gitlab": 7004,
     "bitbucket": 1352,
-    "others": 34523
+    "others": 34538
   },
   "stats": {
-    "changes": 15778195,
-    "inserts": 4367960,
-    "updates": 9202139,
-    "deletes": 1997476,
-    "invalid": 210620,
+    "changes": 15801966,
+    "inserts": 4369680,
+    "updates": 9223994,
+    "deletes": 1997481,
+    "invalid": 210811,
     "ignored": 0,
-    "notFound": 28082
+    "notFound": 28083
   },
   "batch": {
     "status": "init",
-    "limit": 96281,
-    "since": 125901685,
-    "index": 125997966,
-    "until": 125997966,
-    "started": "2026-08-20T12:09:48.857Z",
-    "finished": "2026-08-20T12:19:18.352Z",
-    "took_ms": 569495,
-    "found": 21487
+    "limit": 110835,
+    "since": 125997966,
+    "index": 126108801,
+    "until": 126108801,
+    "started": "2026-08-21T00:15:12.470Z",
+    "finished": "2026-08-21T00:23:45.796Z",
+    "took_ms": 513326,
+    "found": 23771
   },
   "notFound": [
     [
@@ -168529,6 +168529,12 @@
       "@oss-core-eng/template",
       [
         125840521
+      ]
+    ],
+    [
+      "@js-lib-team/object-utils",
+      [
+        126044659
       ]
     ]
   ]
