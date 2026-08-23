@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4375361,
-  "last": 126417521,
-  "latest": 126417521,
+  "packages": 4376736,
+  "last": 126463174,
+  "latest": 126463174,
   "runs": {
-    "total": 789,
+    "total": 790,
     "status": {
       "killed": 2,
-      "init": 785,
+      "init": 786,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1697510,
-    "github": 2634932,
+    "unsets": 1697906,
+    "github": 2635906,
     "gitlab": 7013,
     "bitbucket": 1353,
-    "others": 34553
+    "others": 34558
   },
   "stats": {
-    "changes": 15870858,
-    "inserts": 4376409,
-    "updates": 9285446,
-    "deletes": 1997495,
-    "invalid": 211508,
+    "changes": 15882462,
+    "inserts": 4377785,
+    "updates": 9295587,
+    "deletes": 1997496,
+    "invalid": 211594,
     "ignored": 0,
-    "notFound": 28084
+    "notFound": 28083
   },
   "batch": {
     "status": "init",
-    "limit": 52087,
-    "since": 126365434,
-    "index": 126417521,
-    "until": 126417521,
-    "started": "2026-08-23T00:14:48.507Z",
-    "finished": "2026-08-23T00:18:25.573Z",
-    "took_ms": 217066,
-    "found": 13139
+    "limit": 45653,
+    "since": 126417521,
+    "index": 126463174,
+    "until": 126463174,
+    "started": "2026-08-23T12:07:01.338Z",
+    "finished": "2026-08-23T12:10:41.423Z",
+    "took_ms": 220085,
+    "found": 11604
   },
   "notFound": [
     [
@@ -168535,12 +168535,6 @@
       "@js-lib-team/object-utils",
       [
         126044659
-      ]
-    ],
-    [
-      "@evolving2code/agent-trace",
-      [
-        126417347
       ]
     ]
   ]
