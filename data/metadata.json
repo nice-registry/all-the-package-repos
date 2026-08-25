@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4380478,
-  "last": 126605950,
-  "latest": 126605950,
+  "packages": 4382515,
+  "last": 126714717,
+  "latest": 126714717,
   "runs": {
-    "total": 792,
+    "total": 793,
     "status": {
       "killed": 2,
-      "init": 788,
+      "init": 789,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1698822,
-    "github": 2638719,
+    "unsets": 1699159,
+    "github": 2640414,
     "gitlab": 7013,
     "bitbucket": 1353,
-    "others": 34571
+    "others": 34576
   },
   "stats": {
-    "changes": 15915924,
-    "inserts": 4381530,
-    "updates": 9324822,
-    "deletes": 1997500,
-    "invalid": 212072,
+    "changes": 15939549,
+    "inserts": 4383568,
+    "updates": 9346201,
+    "deletes": 1997504,
+    "invalid": 212276,
     "ignored": 0,
-    "notFound": 28084
+    "notFound": 28085
   },
   "batch": {
     "status": "init",
-    "limit": 93300,
-    "since": 126512650,
-    "index": 126605950,
-    "until": 126605950,
-    "started": "2026-08-24T12:10:09.057Z",
-    "finished": "2026-08-24T12:19:14.533Z",
-    "took_ms": 545476,
-    "found": 20011
+    "limit": 108767,
+    "since": 126605950,
+    "index": 126714717,
+    "until": 126714717,
+    "started": "2026-08-25T00:14:27.833Z",
+    "finished": "2026-08-25T00:24:40.439Z",
+    "took_ms": 612606,
+    "found": 23625
   },
   "notFound": [
     [
@@ -168541,6 +168541,12 @@
       "@stillm4ddpocs/token-check",
       [
         126484094
+      ]
+    ],
+    [
+      "@atfm/typeface",
+      [
+        126644238
       ]
     ]
   ]
