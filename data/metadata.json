@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4382515,
-  "last": 126714717,
-  "latest": 126714717,
+  "packages": 4384187,
+  "last": 126817395,
+  "latest": 126817395,
   "runs": {
-    "total": 793,
+    "total": 794,
     "status": {
       "killed": 2,
-      "init": 789,
+      "init": 790,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1699159,
-    "github": 2640414,
-    "gitlab": 7013,
+    "unsets": 1699615,
+    "github": 2641626,
+    "gitlab": 7014,
     "bitbucket": 1353,
-    "others": 34576
+    "others": 34579
   },
   "stats": {
-    "changes": 15939549,
-    "inserts": 4383568,
-    "updates": 9346201,
-    "deletes": 1997504,
-    "invalid": 212276,
+    "changes": 15961741,
+    "inserts": 4385243,
+    "updates": 9366265,
+    "deletes": 1997509,
+    "invalid": 212724,
     "ignored": 0,
-    "notFound": 28085
+    "notFound": 28086
   },
   "batch": {
     "status": "init",
-    "limit": 108767,
-    "since": 126605950,
-    "index": 126714717,
-    "until": 126714717,
-    "started": "2026-08-25T00:14:27.833Z",
-    "finished": "2026-08-25T00:24:40.439Z",
-    "took_ms": 612606,
-    "found": 23625
+    "limit": 102678,
+    "since": 126714717,
+    "index": 126817395,
+    "until": 126817395,
+    "started": "2026-08-25T12:10:31.946Z",
+    "finished": "2026-08-25T12:21:33.051Z",
+    "took_ms": 661105,
+    "found": 22192
   },
   "notFound": [
     [
@@ -168547,6 +168547,12 @@
       "@atfm/typeface",
       [
         126644238
+      ]
+    ],
+    [
+      "@akashlimbani18/story-components",
+      [
+        126815305
       ]
     ]
   ]
