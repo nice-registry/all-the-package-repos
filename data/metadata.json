@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4393220,
-  "last": 127324058,
-  "latest": 127324058,
+  "packages": 4394578,
+  "last": 127415259,
+  "latest": 127415257,
   "runs": {
-    "total": 798,
+    "total": 799,
     "status": {
       "killed": 2,
-      "init": 794,
+      "init": 795,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1701466,
-    "github": 2648769,
-    "gitlab": 7017,
+    "unsets": 1701735,
+    "github": 2649851,
+    "gitlab": 7018,
     "bitbucket": 1353,
-    "others": 34615
+    "others": 34621
   },
   "stats": {
-    "changes": 16063107,
-    "inserts": 4394285,
-    "updates": 9456873,
-    "deletes": 1997533,
-    "invalid": 214416,
+    "changes": 16082942,
+    "inserts": 4395644,
+    "updates": 9475090,
+    "deletes": 1997535,
+    "invalid": 214673,
     "ignored": 0,
-    "notFound": 28086
+    "notFound": 28087
   },
   "batch": {
     "status": "init",
-    "limit": 149067,
-    "since": 127174991,
-    "index": 127324058,
-    "until": 127324058,
-    "started": "2026-08-27T15:45:23.108Z",
-    "finished": "2026-08-27T15:58:57.970Z",
-    "took_ms": 814862,
-    "found": 29378
+    "limit": 91199,
+    "since": 127324058,
+    "index": 127415259,
+    "until": 127415257,
+    "started": "2026-08-28T02:58:37.533Z",
+    "finished": "2026-08-28T03:08:16.256Z",
+    "took_ms": 578723,
+    "found": 19835
   },
   "notFound": [
     [
@@ -168553,6 +168553,12 @@
       "@akashlimbani18/story-components",
       [
         126815305
+      ]
+    ],
+    [
+      "@audix/mcp",
+      [
+        127413529
       ]
     ]
   ]
