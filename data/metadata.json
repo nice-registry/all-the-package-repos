@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4417938,
-  "last": 128674195,
-  "latest": 128674195,
+  "packages": 4419751,
+  "last": 128770687,
+  "latest": 128770687,
   "runs": {
-    "total": 813,
+    "total": 814,
     "status": {
       "killed": 2,
-      "init": 809,
+      "init": 810,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1707665,
-    "github": 2667147,
-    "gitlab": 7024,
+    "unsets": 1708373,
+    "github": 2668231,
+    "gitlab": 7023,
     "bitbucket": 1354,
-    "others": 34748
+    "others": 34770
   },
   "stats": {
-    "changes": 16369802,
-    "inserts": 4419021,
-    "updates": 9734389,
-    "deletes": 1997587,
-    "invalid": 218805,
+    "changes": 16390819,
+    "inserts": 4420837,
+    "updates": 9753225,
+    "deletes": 1997591,
+    "invalid": 219166,
     "ignored": 0,
-    "notFound": 28091
+    "notFound": 28089
   },
   "batch": {
     "status": "init",
-    "limit": 103137,
-    "since": 128571058,
-    "index": 128674195,
-    "until": 128674195,
-    "started": "2026-09-04T00:32:42.897Z",
-    "finished": "2026-09-04T00:44:12.457Z",
-    "took_ms": 689560,
-    "found": 23059
+    "limit": 96492,
+    "since": 128674195,
+    "index": 128770687,
+    "until": 128770687,
+    "started": "2026-09-04T12:17:57.520Z",
+    "finished": "2026-09-04T12:23:12.335Z",
+    "took_ms": 314815,
+    "found": 21017
   },
   "notFound": [
     [
@@ -168571,18 +168571,6 @@
       "@quantixfinance/config",
       [
         128530201
-      ]
-    ],
-    [
-      "smart-mailto",
-      [
-        128658261
-      ]
-    ],
-    [
-      "@rarepops/spektra-cli-linux-x64",
-      [
-        128659038
       ]
     ]
   ]
