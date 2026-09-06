@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4424068,
-  "last": 129002138,
-  "latest": 129002136,
+  "packages": 4425183,
+  "last": 129045540,
+  "latest": 129045540,
   "runs": {
-    "total": 817,
+    "total": 818,
     "status": {
       "killed": 2,
-      "init": 813,
+      "init": 814,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1709076,
-    "github": 2671824,
+    "unsets": 1709323,
+    "github": 2672687,
     "gitlab": 7025,
     "bitbucket": 1354,
-    "others": 34789
+    "others": 34794
   },
   "stats": {
-    "changes": 16443319,
-    "inserts": 4425158,
-    "updates": 9800751,
-    "deletes": 1997599,
-    "invalid": 219811,
+    "changes": 16455013,
+    "inserts": 4426275,
+    "updates": 9811254,
+    "deletes": 1997602,
+    "invalid": 219882,
     "ignored": 0,
-    "notFound": 28089
+    "notFound": 28090
   },
   "batch": {
     "status": "init",
-    "limit": 60683,
-    "since": 128941453,
-    "index": 129002138,
-    "until": 129002136,
-    "started": "2026-09-06T00:36:02.950Z",
-    "finished": "2026-09-06T00:40:43.554Z",
-    "took_ms": 280604,
-    "found": 16098
+    "limit": 43402,
+    "since": 129002138,
+    "index": 129045540,
+    "until": 129045540,
+    "started": "2026-09-06T12:15:24.423Z",
+    "finished": "2026-09-06T12:18:56.981Z",
+    "took_ms": 212558,
+    "found": 11694
   },
   "notFound": [
     [
@@ -168571,6 +168571,12 @@
       "@quantixfinance/config",
       [
         128530201
+      ]
+    ],
+    [
+      "@mieweb/cli",
+      [
+        129045521
       ]
     ]
   ]
