@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4426544,
-  "last": 129099102,
-  "latest": 129099102,
+  "packages": 4428362,
+  "last": 129189882,
+  "latest": 129189882,
   "runs": {
-    "total": 819,
+    "total": 820,
     "status": {
       "killed": 2,
-      "init": 815,
+      "init": 816,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1709619,
-    "github": 2673744,
+    "unsets": 1710024,
+    "github": 2675150,
     "gitlab": 7025,
     "bitbucket": 1354,
-    "others": 34802
+    "others": 34809
   },
   "stats": {
-    "changes": 16469616,
-    "inserts": 4427638,
-    "updates": 9824320,
-    "deletes": 1997607,
-    "invalid": 220051,
+    "changes": 16489772,
+    "inserts": 4429459,
+    "updates": 9842243,
+    "deletes": 1997620,
+    "invalid": 220450,
     "ignored": 0,
-    "notFound": 28089
+    "notFound": 28090
   },
   "batch": {
     "status": "init",
-    "limit": 53562,
-    "since": 129045540,
-    "index": 129099102,
-    "until": 129099102,
-    "started": "2026-09-07T00:35:31.031Z",
-    "finished": "2026-09-07T00:39:26.347Z",
-    "took_ms": 235316,
-    "found": 14603
+    "limit": 90780,
+    "since": 129099102,
+    "index": 129189882,
+    "until": 129189882,
+    "started": "2026-09-07T12:18:07.804Z",
+    "finished": "2026-09-07T12:24:12.618Z",
+    "took_ms": 364814,
+    "found": 20156
   },
   "notFound": [
     [
@@ -168571,6 +168571,12 @@
       "@quantixfinance/config",
       [
         128530201
+      ]
+    ],
+    [
+      "@cronvello/shop-sdk",
+      [
+        129176929
       ]
     ]
   ]
