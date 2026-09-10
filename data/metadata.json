@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4437648,
-  "last": 129739070,
-  "latest": 129739070,
+  "packages": 4439512,
+  "last": 129848385,
+  "latest": 129848385,
   "runs": {
-    "total": 825,
+    "total": 826,
     "status": {
       "killed": 2,
-      "init": 821,
+      "init": 822,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1712082,
-    "github": 2682480,
-    "gitlab": 7025,
+    "unsets": 1712430,
+    "github": 2683982,
+    "gitlab": 7026,
     "bitbucket": 1354,
-    "others": 34707
+    "others": 34720
   },
   "stats": {
-    "changes": 16609192,
-    "inserts": 4438748,
-    "updates": 9950368,
-    "deletes": 1997635,
-    "invalid": 222441,
+    "changes": 16632137,
+    "inserts": 4440614,
+    "updates": 9971079,
+    "deletes": 1997640,
+    "invalid": 222804,
     "ignored": 0,
-    "notFound": 28089
+    "notFound": 28090
   },
   "batch": {
     "status": "init",
-    "limit": 120048,
-    "since": 129619022,
-    "index": 129739070,
-    "until": 129739070,
-    "started": "2026-09-10T00:30:42.991Z",
-    "finished": "2026-09-10T00:42:52.411Z",
-    "took_ms": 729420,
-    "found": 25655
+    "limit": 109315,
+    "since": 129739070,
+    "index": 129848385,
+    "until": 129848385,
+    "started": "2026-09-10T12:17:46.339Z",
+    "finished": "2026-09-10T12:27:28.995Z",
+    "took_ms": 582656,
+    "found": 22945
   },
   "notFound": [
     [
@@ -168571,6 +168571,12 @@
       "@quantixfinance/config",
       [
         128530201
+      ]
+    ],
+    [
+      "@86d-store/doordash",
+      [
+        129762755
       ]
     ]
   ]
