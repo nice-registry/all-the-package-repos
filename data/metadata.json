@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4445274,
-  "last": 130214326,
-  "latest": 130214326,
+  "packages": 4446655,
+  "last": 130267280,
+  "latest": 130267280,
   "runs": {
-    "total": 830,
+    "total": 831,
     "status": {
       "killed": 2,
-      "init": 826,
+      "init": 827,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1713349,
-    "github": 2688794,
+    "unsets": 1713598,
+    "github": 2689917,
     "gitlab": 7029,
     "bitbucket": 1354,
-    "others": 34748
+    "others": 34757
   },
   "stats": {
-    "changes": 16714483,
-    "inserts": 4446387,
-    "updates": 10046287,
-    "deletes": 1997663,
-    "invalid": 224146,
+    "changes": 16728191,
+    "inserts": 4447768,
+    "updates": 10058518,
+    "deletes": 1997664,
+    "invalid": 224241,
     "ignored": 0,
-    "notFound": 28090
+    "notFound": 28095
   },
   "batch": {
     "status": "init",
-    "limit": 45580,
-    "since": 130168746,
-    "index": 130214326,
-    "until": 130214326,
-    "started": "2026-09-12T12:15:28.791Z",
-    "finished": "2026-09-12T12:19:08.443Z",
-    "took_ms": 219652,
-    "found": 12391
+    "limit": 52954,
+    "since": 130214326,
+    "index": 130267280,
+    "until": 130267280,
+    "started": "2026-09-13T00:36:10.929Z",
+    "finished": "2026-09-13T00:40:13.760Z",
+    "took_ms": 242831,
+    "found": 13708
   },
   "notFound": [
     [
@@ -168577,6 +168577,36 @@
       "@86d-store/doordash",
       [
         129762755
+      ]
+    ],
+    [
+      "@stingjs/haptics",
+      [
+        130267252
+      ]
+    ],
+    [
+      "@stingjs/clipboard",
+      [
+        130267255
+      ]
+    ],
+    [
+      "@stingjs/device",
+      [
+        130267268
+      ]
+    ],
+    [
+      "@quotivity/cpq-inventory-core",
+      [
+        130267269
+      ]
+    ],
+    [
+      "@stingjs/filesystem",
+      [
+        130267278
       ]
     ]
   ]
