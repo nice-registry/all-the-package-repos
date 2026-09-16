@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4454677,
-  "last": 130678414,
-  "latest": 130678414,
+  "packages": 4456783,
+  "last": 130794837,
+  "latest": 130794837,
   "runs": {
-    "total": 836,
+    "total": 837,
     "status": {
       "killed": 2,
-      "init": 832,
+      "init": 833,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1715392,
-    "github": 2696105,
-    "gitlab": 7033,
+    "unsets": 1715740,
+    "github": 2697855,
+    "gitlab": 7034,
     "bitbucket": 1354,
-    "others": 34793
+    "others": 34800
   },
   "stats": {
-    "changes": 16824919,
-    "inserts": 4455792,
-    "updates": 10145603,
-    "deletes": 1997685,
-    "invalid": 225839,
+    "changes": 16850998,
+    "inserts": 4457898,
+    "updates": 10169252,
+    "deletes": 1997691,
+    "invalid": 226157,
     "ignored": 0,
-    "notFound": 28096
+    "notFound": 28108
   },
   "batch": {
     "status": "init",
-    "limit": 105277,
-    "since": 130573137,
-    "index": 130678414,
-    "until": 130678414,
-    "started": "2026-09-15T12:17:43.106Z",
-    "finished": "2026-09-15T12:29:57.954Z",
-    "took_ms": 734848,
-    "found": 22650
+    "limit": 116423,
+    "since": 130678414,
+    "index": 130794837,
+    "until": 130794837,
+    "started": "2026-09-16T00:31:37.104Z",
+    "finished": "2026-09-16T00:39:53.107Z",
+    "took_ms": 496003,
+    "found": 26079
   },
   "notFound": [
     [
@@ -168613,6 +168613,78 @@
       "@biz44/id79-client",
       [
         130512031
+      ]
+    ],
+    [
+      "@prime0/eoji-regex",
+      [
+        130728530
+      ]
+    ],
+    [
+      "@prime0/gob-parent",
+      [
+        130728566
+      ]
+    ],
+    [
+      "@prime0/ani-regex",
+      [
+        130728766
+      ]
+    ],
+    [
+      "@prime0/asi-styles",
+      [
+        130728954
+      ]
+    ],
+    [
+      "@prime0/race-expansion",
+      [
+        130728980
+      ]
+    ],
+    [
+      "@prime0/stip-ansi",
+      [
+        130729042
+      ]
+    ],
+    [
+      "@prime0/lu-cache",
+      [
+        130729138
+      ]
+    ],
+    [
+      "@prime0/tye-fest",
+      [
+        130729150
+      ]
+    ],
+    [
+      "@prime0/olor-convert",
+      [
+        130729162
+      ]
+    ],
+    [
+      "@prime0/pcomatch",
+      [
+        130729201
+      ]
+    ],
+    [
+      "@prime0/blanced-match",
+      [
+        130729217
+      ]
+    ],
+    [
+      "@prime0/eadable-stream",
+      [
+        130729383
       ]
     ]
   ]
