@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4471142,
-  "last": 131480237,
-  "latest": 131480237,
+  "packages": 4472547,
+  "last": 131530557,
+  "latest": 131530557,
   "runs": {
-    "total": 845,
+    "total": 846,
     "status": {
       "killed": 2,
-      "init": 841,
+      "init": 842,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1718707,
-    "github": 2709212,
+    "unsets": 1719063,
+    "github": 2710257,
     "gitlab": 7037,
     "bitbucket": 1355,
-    "others": 34831
+    "others": 34835
   },
   "stats": {
-    "changes": 17014151,
-    "inserts": 4472267,
-    "updates": 10315676,
-    "deletes": 1997728,
-    "invalid": 228480,
+    "changes": 17029018,
+    "inserts": 4473672,
+    "updates": 10329026,
+    "deletes": 1997731,
+    "invalid": 228589,
     "ignored": 0,
-    "notFound": 28108
+    "notFound": 28109
   },
   "batch": {
     "status": "init",
-    "limit": 51733,
-    "since": 131428504,
-    "index": 131480237,
-    "until": 131480237,
-    "started": "2026-09-20T00:35:39.732Z",
-    "finished": "2026-09-20T00:39:30.342Z",
-    "took_ms": 230610,
-    "found": 14236
+    "limit": 50320,
+    "since": 131480237,
+    "index": 131530557,
+    "until": 131530557,
+    "started": "2026-09-20T12:16:04.581Z",
+    "finished": "2026-09-20T12:20:50.096Z",
+    "took_ms": 285515,
+    "found": 14867
   },
   "notFound": [
     [
@@ -168685,6 +168685,12 @@
       "@prime0/eadable-stream",
       [
         130729383
+      ]
+    ],
+    [
+      "@salatech/devai",
+      [
+        131530527
       ]
     ]
   ]
