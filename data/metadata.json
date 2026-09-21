@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4474610,
-  "last": 131583992,
-  "latest": 131583992,
+  "packages": 4476118,
+  "last": 131677748,
+  "latest": 131677748,
   "runs": {
-    "total": 847,
+    "total": 848,
     "status": {
       "killed": 2,
-      "init": 843,
+      "init": 844,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1719408,
-    "github": 2711973,
-    "gitlab": 7037,
+    "unsets": 1719869,
+    "github": 2713016,
+    "gitlab": 7039,
     "bitbucket": 1355,
-    "others": 34837
+    "others": 34839
   },
   "stats": {
-    "changes": 17043946,
-    "inserts": 4475736,
-    "updates": 10341788,
-    "deletes": 1997733,
-    "invalid": 228689,
+    "changes": 17065286,
+    "inserts": 4477244,
+    "updates": 10361302,
+    "deletes": 1997737,
+    "invalid": 229003,
     "ignored": 0,
-    "notFound": 28109
+    "notFound": 28111
   },
   "batch": {
     "status": "init",
-    "limit": 53435,
-    "since": 131530557,
-    "index": 131583992,
-    "until": 131583992,
-    "started": "2026-09-21T00:35:05.299Z",
-    "finished": "2026-09-21T00:40:14.138Z",
-    "took_ms": 308839,
-    "found": 14928
+    "limit": 93756,
+    "since": 131583992,
+    "index": 131677748,
+    "until": 131677748,
+    "started": "2026-09-21T12:17:29.383Z",
+    "finished": "2026-09-21T12:26:54.018Z",
+    "took_ms": 564635,
+    "found": 21340
   },
   "notFound": [
     [
@@ -168691,6 +168691,18 @@
       "@salatech/devai",
       [
         131530527
+      ]
+    ],
+    [
+      "@team-ops-org-ornis-rases-prore-sumph/team-ops-pkg-ksars-bajus-deify-siped",
+      [
+        131585912
+      ]
+    ],
+    [
+      "@nimbusedge2/xa",
+      [
+        131609619
       ]
     ]
   ]
