@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4494771,
-  "last": 132856804,
-  "latest": 132856804,
+  "packages": 4496003,
+  "last": 132912493,
+  "latest": 132912493,
   "runs": {
-    "total": 859,
+    "total": 860,
     "status": {
       "killed": 2,
-      "init": 855,
+      "init": 856,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1723418,
-    "github": 2727987,
-    "gitlab": 7046,
+    "unsets": 1723586,
+    "github": 2729036,
+    "gitlab": 7047,
     "bitbucket": 1355,
-    "others": 34965
+    "others": 34979
   },
   "stats": {
-    "changes": 17322167,
-    "inserts": 4495920,
-    "updates": 10595463,
-    "deletes": 1997811,
-    "invalid": 232973,
+    "changes": 17336592,
+    "inserts": 4497153,
+    "updates": 10608547,
+    "deletes": 1997813,
+    "invalid": 233079,
     "ignored": 0,
-    "notFound": 28112
+    "notFound": 28114
   },
   "batch": {
     "status": "init",
-    "limit": 65871,
-    "since": 132790933,
-    "index": 132856804,
-    "until": 132856804,
-    "started": "2026-09-27T00:37:35.473Z",
-    "finished": "2026-09-27T00:42:35.650Z",
-    "took_ms": 300177,
-    "found": 16601
+    "limit": 55689,
+    "since": 132856804,
+    "index": 132912493,
+    "until": 132912493,
+    "started": "2026-09-27T12:17:19.190Z",
+    "finished": "2026-09-27T12:22:25.900Z",
+    "took_ms": 306710,
+    "found": 14425
   },
   "notFound": [
     [
@@ -168709,6 +168709,18 @@
       "@birbalo/aliftech-ui",
       [
         132433377
+      ]
+    ],
+    [
+      "@agent-forge-ham/protocol",
+      [
+        132911467
+      ]
+    ],
+    [
+      "@agent-forge-ham/client",
+      [
+        132911482
       ]
     ]
   ]
