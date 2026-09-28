@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4497956,
-  "last": 132977903,
-  "latest": 132977903,
+  "packages": 4499674,
+  "last": 133090792,
+  "latest": 133090792,
   "runs": {
-    "total": 861,
+    "total": 862,
     "status": {
       "killed": 2,
-      "init": 857,
+      "init": 858,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1723955,
-    "github": 2730608,
-    "gitlab": 7048,
+    "unsets": 1724286,
+    "github": 2731983,
+    "gitlab": 7050,
     "bitbucket": 1355,
-    "others": 34990
+    "others": 35000
   },
   "stats": {
-    "changes": 17353531,
-    "inserts": 4499107,
-    "updates": 10623381,
-    "deletes": 1997814,
-    "invalid": 233229,
+    "changes": 17377106,
+    "inserts": 4500826,
+    "updates": 10644817,
+    "deletes": 1997820,
+    "invalid": 233643,
     "ignored": 0,
-    "notFound": 28114
+    "notFound": 28115
   },
   "batch": {
     "status": "init",
-    "limit": 65410,
-    "since": 132912493,
-    "index": 132977903,
-    "until": 132977903,
-    "started": "2026-09-28T00:37:26.784Z",
-    "finished": "2026-09-28T00:42:46.863Z",
-    "took_ms": 320079,
-    "found": 16939
+    "limit": 112889,
+    "since": 132977903,
+    "index": 133090792,
+    "until": 133090792,
+    "started": "2026-09-28T12:21:03.615Z",
+    "finished": "2026-09-28T12:31:23.269Z",
+    "took_ms": 619654,
+    "found": 23575
   },
   "notFound": [
     [
@@ -168721,6 +168721,12 @@
       "@agent-forge-ham/client",
       [
         132911482
+      ]
+    ],
+    [
+      "@mooskyai/angular",
+      [
+        133029735
       ]
     ]
   ]
