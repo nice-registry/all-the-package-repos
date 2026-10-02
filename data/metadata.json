@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4512153,
-  "last": 133992713,
-  "latest": 133992711,
+  "packages": 4513623,
+  "last": 134085881,
+  "latest": 134085881,
   "runs": {
-    "total": 869,
+    "total": 870,
     "status": {
       "killed": 2,
-      "init": 865,
+      "init": 866,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1726917,
-    "github": 2741765,
-    "gitlab": 7138,
+    "unsets": 1727233,
+    "github": 2742916,
+    "gitlab": 7139,
     "bitbucket": 1367,
-    "others": 34966
+    "others": 34968
   },
   "stats": {
-    "changes": 17564250,
-    "inserts": 4513315,
-    "updates": 10816170,
-    "deletes": 1997855,
-    "invalid": 236910,
+    "changes": 17585771,
+    "inserts": 4514786,
+    "updates": 10835798,
+    "deletes": 1997858,
+    "invalid": 237329,
     "ignored": 0,
-    "notFound": 28115
+    "notFound": 28116
   },
   "batch": {
     "status": "init",
-    "limit": 136987,
-    "since": 133855724,
-    "index": 133992713,
-    "until": 133992711,
-    "started": "2026-10-02T00:34:44.608Z",
-    "finished": "2026-10-02T00:46:30.616Z",
-    "took_ms": 706008,
-    "found": 26900
+    "limit": 93168,
+    "since": 133992713,
+    "index": 134085881,
+    "until": 134085881,
+    "started": "2026-10-02T12:19:57.931Z",
+    "finished": "2026-10-02T12:29:49.555Z",
+    "took_ms": 591624,
+    "found": 21521
   },
   "notFound": [
     [
@@ -168727,6 +168727,12 @@
       "@mooskyai/angular",
       [
         133029735
+      ]
+    ],
+    [
+      "@runjobsai/ai-sdk-provider",
+      [
+        134055937
       ]
     ]
   ]
