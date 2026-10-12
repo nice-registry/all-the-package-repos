@@ -1,42 +1,42 @@
 {
   "error": false,
-  "packages": 4546428,
-  "last": 136093132,
-  "latest": 136093132,
+  "packages": 4548121,
+  "last": 136181962,
+  "latest": 136181962,
   "runs": {
-    "total": 888,
+    "total": 889,
     "status": {
       "killed": 2,
-      "init": 884,
+      "init": 885,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1735245,
-    "github": 2767536,
+    "unsets": 1735633,
+    "github": 2768840,
     "gitlab": 7174,
     "bitbucket": 1367,
-    "others": 35106
+    "others": 35107
   },
   "stats": {
-    "changes": 18003749,
-    "inserts": 4547617,
-    "updates": 11215995,
-    "deletes": 1997910,
-    "invalid": 242227,
+    "changes": 18021519,
+    "inserts": 4549312,
+    "updates": 11231896,
+    "deletes": 1997912,
+    "invalid": 242399,
     "ignored": 0,
-    "notFound": 28117
+    "notFound": 28113
   },
   "batch": {
     "status": "init",
-    "limit": 74022,
-    "since": 136019110,
-    "index": 136093132,
-    "until": 136093132,
-    "started": "2026-10-11T12:18:22.472Z",
-    "finished": "2026-10-11T12:23:16.595Z",
-    "took_ms": 294123,
-    "found": 16397
+    "limit": 88830,
+    "since": 136093132,
+    "index": 136181962,
+    "until": 136181962,
+    "started": "2026-10-12T00:40:07.819Z",
+    "finished": "2026-10-12T00:46:02.848Z",
+    "took_ms": 355029,
+    "found": 17770
   },
   "notFound": [
     [
@@ -168580,33 +168580,9 @@
       ]
     ],
     [
-      "@stingjs/haptics",
-      [
-        130267252
-      ]
-    ],
-    [
-      "@stingjs/clipboard",
-      [
-        130267255
-      ]
-    ],
-    [
-      "@stingjs/device",
-      [
-        130267268
-      ]
-    ],
-    [
       "@quotivity/cpq-inventory-core",
       [
         130267269
-      ]
-    ],
-    [
-      "@stingjs/filesystem",
-      [
-        130267278
       ]
     ],
     [
