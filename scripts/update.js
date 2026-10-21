@@ -36,7 +36,16 @@ const files = {
 
 const packages = new Map(fs.existsSync(files.packages) ? Object.entries(require(files.packages)) : [])
 const metadata = fs.existsSync(files.metadata) ? require(files.metadata) : {}
-metadata.notFound = new Map(metadata.notFound)
+for (const key of ['notFound', 'notFoundExpired']) {
+  metadata[key] = new Map((metadata[key] || []).map(([name, entry]) => [
+    name,
+    {
+      seqs: Array.isArray(entry) ? entry : entry.seqs,
+      // Preserve saved timestamps when migrating older records.
+      lastSeen: entry.lastSeen || entry.firstSeen || new Date().toISOString()
+    }
+  ]))
+}
 
 /**
  * State info about the changes being processed
@@ -61,8 +70,9 @@ const stats = {
   invalid: 0,
   // unable to process
   ignored: 0,
-  // 404 response from the registry; most likely deleted in a later change
-  notFound: 0
+  // packages returning 404, pending retries or past the retry window
+  notFound: 0,
+  notFoundExpired: 0
 }
 
 /**
@@ -112,6 +122,7 @@ const millis = 1
 const seconds = 1000 * millis
 const minutes = 60 * seconds
 const hours = 60 * minutes
+const notFoundRetryWindow = 7 * 24 * hours
 
 /**
  * Maximum allowed run time
@@ -222,8 +233,10 @@ const cache = (change) => {
 /**
  *
  */
-const apply = (change) => {
-  batch.index = change.seq
+const apply = (change, isRetry = false) => {
+  if (!isRetry) {
+    batch.index = change.seq
+  }
   batch.found += 1
 
   stats.changes += 1
@@ -232,10 +245,11 @@ const apply = (change) => {
   const curr = packages.get(name)
 
   // We got a valid change => delete records of any previous errors for the package.
-  if (metadata.notFound.has(change.id)) {
-    stats.notFound -= 1
-    metadata.notFound.delete(change.id)
-    debug('deleting previous error for', name, change)
+  for (const key of ['notFound', 'notFoundExpired']) {
+    if (metadata[key].delete(name)) {
+      stats[key] -= 1
+      debug('deleting previous error for', name, change)
+    }
   }
 
   if (change.deleted) {
@@ -364,7 +378,7 @@ const updateRepoStats = (url, delta) => {
 /**
  * @return {Error} - or `null` on normal exit
  */
-const updateStats = () => {
+const updateStats = (retryingNotFound = false) => {
   batch.finished = new Date()
   batch.took_ms = batch.finished - batch.started
 
@@ -384,7 +398,8 @@ const updateStats = () => {
   metadata.repos = metadata.repos || {}
   metadata.stats = metadata.stats || {}
   metadata.batch = batch
-  metadata.error = Boolean(batch.error)
+  // Only feed failures trigger sequence recovery on the next run.
+  metadata.error = Boolean(batch.error) && !retryingNotFound
 
   for (const key of Object.keys(stats)) {
     metadata.stats[key] = (metadata.stats[key] || 0) + stats[key]
@@ -447,12 +462,16 @@ const printProgress = (() => {
   }
 })()
 
-const writeChanges = (deferred) => {
+const writeChanges = (deferred, retryingNotFound = false) => {
   console.log('writting changes...')
 
-  const err = updateStats()
+  const err = updateStats(retryingNotFound)
 
-  fs.writeFileSync(files.metadata, toJson({ ...metadata, notFound: Array.from(metadata.notFound) }))
+  fs.writeFileSync(files.metadata, toJson({
+    ...metadata,
+    notFound: Array.from(metadata.notFound),
+    notFoundExpired: Array.from(metadata.notFoundExpired)
+  }))
 
   if (batch.found > 0) {
     fs.writeFileSync(files.packages, toJson(toSortedObject(packages)))
@@ -589,6 +608,7 @@ class Follower extends EventEmitter {
     this.since = since
     this.limit = limit
     this.abortController = null
+    this.retryingNotFound = false
   }
 
   start () {
@@ -601,9 +621,55 @@ class Follower extends EventEmitter {
     return this
   }
 
+  async retryNotFound (signal) {
+    const pending = [...metadata.notFound]
+
+    if (!pending.length) {
+      return
+    }
+
+    console.log('retrying %d packages that returned 404...', pending.length)
+
+    const results = asyncQueue(pending, ([id, entry]) => {
+      return got(`${registryUrl}/${id}`, {
+        retry: { limit: 10 },
+        signal
+      }).json().then(doc => ({ id, seq: entry.seqs[entry.seqs.length - 1], doc })).catch(error => ({ id, entry, error }))
+    }, { concurrency: 40 })
+
+    for await (const result of results) {
+      if (signal.aborted) {
+        break
+      }
+
+      if (!result.error) {
+        this.emit('retry', result)
+      } else if (result.error.response?.statusCode === 404) {
+        if (Date.now() - Date.parse(result.entry.lastSeen) >= notFoundRetryWindow) {
+          metadata.notFound.delete(result.id)
+          metadata.notFoundExpired.set(result.id, result.entry)
+          stats.notFound -= 1
+          stats.notFoundExpired += 1
+        }
+      } else {
+        // A transient retry failure must not trigger feed error recovery or expiry.
+        console.warn('unable to retry %s: %s', result.id, result.error.message)
+      }
+    }
+  }
+
   async startInternal () {
     const signal = this.abortController.signal
     let retry = 0
+
+    this.retryingNotFound = true
+    try {
+      await this.retryNotFound(signal)
+    } catch (error) {
+      this.emit('error', error)
+    } finally {
+      this.retryingNotFound = false
+    }
 
     while (!signal.aborted && this.limit > 0) {
       try {
@@ -676,7 +742,7 @@ class Follower extends EventEmitter {
       }
     }
 
-    if (this.limit <= 0) {
+    if (this.limit <= 0 && !signal.aborted) {
       this.emit('catchup')
     }
 
@@ -710,11 +776,16 @@ class Follower extends EventEmitter {
     since: batch.since
   }
 
-  if (batch.limit > 0 && Number.isFinite(batch.limit)) {
+  if (batch.limit >= 0 && Number.isFinite(batch.limit)) {
     request.limit = batch.limit
   }
 
   const feed = new Follower(request)
+
+  feed.on('retry', (change) => {
+    cache(change)
+    apply(change, true)
+  })
 
   feed.on('change', (change) => {
     cache(change)
@@ -735,15 +806,32 @@ class Follower extends EventEmitter {
 
   feed.on('error', (err, maybeChange) => {
     if (err?.response?.statusCode === 404 && maybeChange?.seq && maybeChange?.id) {
-      const seqs = metadata.notFound.get(maybeChange.id) || []
+      const entry = metadata.notFound.get(maybeChange.id) || metadata.notFoundExpired.get(maybeChange.id) || {
+        seqs: [],
+        lastSeen: new Date().toISOString()
+      }
 
-      if (!seqs.length) {
+      if (!metadata.notFound.has(maybeChange.id)) {
         stats.notFound += 1
       }
 
-      seqs.push(maybeChange.seq)
-      metadata.notFound.set(maybeChange.id, seqs)
+      if (metadata.notFoundExpired.delete(maybeChange.id)) {
+        stats.notFoundExpired -= 1
+      }
+
+      if (!entry.seqs.includes(maybeChange.seq)) {
+        entry.seqs.push(maybeChange.seq)
+        entry.lastSeen = new Date().toISOString()
+      }
+
+      metadata.notFound.set(maybeChange.id, entry)
+      batch.index = maybeChange.seq
       debug(`ignoring 404 for ${maybeChange?.id} (${maybeChange?.seq})`)
+
+      if (batch.index >= batch.until) {
+        feed.stop()
+      }
+
       return
     }
 
@@ -772,7 +860,8 @@ class Follower extends EventEmitter {
 
   setTimeout(() => {
     console.log('killed!')
-    batch.error = true
+    // Timing out during retries does not indicate a bad feed change.
+    batch.error = !feed.retryingNotFound
     batch.status = 'killed'
     feed.stop()
   }, killAfter)
@@ -780,7 +869,13 @@ class Follower extends EventEmitter {
   const deferred = {}
 
   feed.once('stop', () => {
-    writeChanges(deferred)
+    const originalError = batch.error
+
+    try {
+      writeChanges(deferred, feed.retryingNotFound)
+    } catch (error) {
+      deferred.reject(originalError instanceof Error ? originalError : error)
+    }
   })
 
   return new Promise((resolve, reject) => {
