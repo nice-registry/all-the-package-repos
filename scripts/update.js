@@ -7,12 +7,17 @@ const EventEmitter = events.EventEmitter
 const debug = require('debug')('update')
 const isUrl = require('is-url')
 
-const got = require('got').default.extend({
+const gotModule = require('got')
+const got = gotModule.default.extend({
   headers: {
     'npm-replication-opt-in': 'true' // See https://github.com/orgs/community/discussions/152515
   },
   timeout: {
     request: 60 * 1000
+  },
+  retry: {
+    // Preserve retries for interrupted responses under Got 16's stricter length checks.
+    errorCodes: [...gotModule.default.defaults.options.retry.errorCodes, 'ERR_HTTP_CONTENT_LENGTH_MISMATCH']
   }
 })
 

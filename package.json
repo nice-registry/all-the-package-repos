@@ -17,17 +17,17 @@
     "test": "mocha && standard"
   },
   "devDependencies": {
-    "all-the-package-names": "^2.0.2129",
+    "all-the-package-names": "^2.0.2600",
     "bitbucket-url-to-object": "^0.3.0",
-    "chai": "^5.2.0",
-    "debug": "^4.4.0",
-    "dedent": "^1.5.3",
-    "github-url-to-object": "^4.0.2",
-    "got": "^14.4.7",
-    "is-url": "^1.2.2",
-    "mocha": "^11.1.0",
-    "ora": "^8.2.0",
-    "package-stream": "^3.0.1",
+    "chai": "^6.3.0",
+    "debug": "^4.4.3",
+    "dedent": "^1.7.2",
+    "github-url-to-object": "^4.0.6",
+    "got": "^16.1.0",
+    "is-url": "^1.2.4",
+    "mocha": "^12.0.3",
+    "ora": "^9.4.1",
+    "package-stream": "^3.1.0",
     "standard": "^17.1.2"
   },
   "dependencies": {
