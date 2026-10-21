@@ -378,7 +378,7 @@ const updateRepoStats = (url, delta) => {
 /**
  * @return {Error} - or `null` on normal exit
  */
-const updateStats = () => {
+const updateStats = (retryingNotFound = false) => {
   batch.finished = new Date()
   batch.took_ms = batch.finished - batch.started
 
@@ -398,7 +398,8 @@ const updateStats = () => {
   metadata.repos = metadata.repos || {}
   metadata.stats = metadata.stats || {}
   metadata.batch = batch
-  metadata.error = Boolean(batch.error)
+  // Only feed failures trigger sequence recovery on the next run.
+  metadata.error = Boolean(batch.error) && !retryingNotFound
 
   for (const key of Object.keys(stats)) {
     metadata.stats[key] = (metadata.stats[key] || 0) + stats[key]
@@ -461,10 +462,10 @@ const printProgress = (() => {
   }
 })()
 
-const writeChanges = (deferred) => {
+const writeChanges = (deferred, retryingNotFound = false) => {
   console.log('writting changes...')
 
-  const err = updateStats()
+  const err = updateStats(retryingNotFound)
 
   fs.writeFileSync(files.metadata, toJson({
     ...metadata,
@@ -662,8 +663,13 @@ class Follower extends EventEmitter {
     let retry = 0
 
     this.retryingNotFound = true
-    await this.retryNotFound(signal)
-    this.retryingNotFound = false
+    try {
+      await this.retryNotFound(signal)
+    } catch (error) {
+      this.emit('error', error)
+    } finally {
+      this.retryingNotFound = false
+    }
 
     while (!signal.aborted && this.limit > 0) {
       try {
@@ -863,7 +869,13 @@ class Follower extends EventEmitter {
   const deferred = {}
 
   feed.once('stop', () => {
-    writeChanges(deferred)
+    const originalError = batch.error
+
+    try {
+      writeChanges(deferred, feed.retryingNotFound)
+    } catch (error) {
+      deferred.reject(originalError instanceof Error ? originalError : error)
+    }
   })
 
   return new Promise((resolve, reject) => {
