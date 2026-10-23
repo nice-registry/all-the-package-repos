@@ -1,43 +1,43 @@
 {
   "error": false,
-  "packages": 4590787,
-  "last": 138847996,
-  "latest": 138847996,
+  "packages": 4593293,
+  "last": 139006331,
+  "latest": 139006331,
   "runs": {
-    "total": 909,
+    "total": 910,
     "status": {
       "killed": 2,
-      "init": 905,
+      "init": 906,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1744254,
-    "github": 2802253,
-    "gitlab": 7182,
+    "unsets": 1744726,
+    "github": 2804274,
+    "gitlab": 7181,
     "bitbucket": 1367,
-    "others": 35731
+    "others": 35745
   },
   "stats": {
-    "changes": 18561665,
-    "inserts": 4592006,
-    "updates": 11722101,
-    "deletes": 1997972,
-    "invalid": 249586,
+    "changes": 18593287,
+    "inserts": 4594512,
+    "updates": 11750919,
+    "deletes": 1997974,
+    "invalid": 249882,
     "ignored": 0,
-    "notFound": 28028,
+    "notFound": 28029,
     "notFoundExpired": 0
   },
   "batch": {
     "status": "init",
-    "limit": 133866,
-    "since": 138714130,
-    "index": 138847996,
-    "until": 138847996,
-    "started": "2026-10-22T12:18:28.739Z",
-    "finished": "2026-10-22T12:37:57.165Z",
-    "took_ms": 1168426,
-    "found": 27873
+    "limit": 158335,
+    "since": 138847996,
+    "index": 139006331,
+    "until": 139006331,
+    "started": "2026-10-23T00:31:35.980Z",
+    "finished": "2026-10-23T00:48:40.038Z",
+    "took_ms": 1024058,
+    "found": 31622
   },
   "notFound": [
     [
@@ -252290,6 +252290,15 @@
           135736256
         ],
         "lastSeen": "2026-10-21T15:06:00.429Z"
+      }
+    ],
+    [
+      "@k.vict1999/pino-std-serializers",
+      {
+        "seqs": [
+          138977113
+        ],
+        "lastSeen": "2026-10-23T00:45:06.683Z"
       }
     ]
   ],
