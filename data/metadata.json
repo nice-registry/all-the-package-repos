@@ -1,45 +1,56 @@
 {
   "error": false,
-  "packages": 4615015,
-  "last": 140311093,
-  "latest": 140311093,
+  "packages": 4617018,
+  "last": 140468263,
+  "latest": 140468263,
   "runs": {
-    "total": 921,
+    "total": 922,
     "status": {
       "killed": 2,
-      "init": 917,
+      "init": 918,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1748549,
-    "github": 2821971,
-    "gitlab": 7177,
+    "unsets": 1748957,
+    "github": 2823554,
+    "gitlab": 7180,
     "bitbucket": 1367,
-    "others": 35951
+    "others": 35960
   },
   "stats": {
-    "changes": 18870214,
-    "inserts": 4616244,
-    "updates": 12002403,
-    "deletes": 1998004,
-    "invalid": 253563,
+    "changes": 18900869,
+    "inserts": 4618249,
+    "updates": 12030608,
+    "deletes": 1998007,
+    "invalid": 254005,
     "ignored": 0,
-    "notFound": 28029,
-    "notFoundExpired": 0
+    "notFound": 1,
+    "notFoundExpired": 28028
   },
   "batch": {
     "status": "init",
-    "limit": 128638,
-    "since": 140182455,
-    "index": 140311093,
-    "until": 140311093,
-    "started": "2026-10-28T12:12:52.480Z",
-    "finished": "2026-10-28T12:45:13.361Z",
-    "took_ms": 1940881,
-    "found": 26517
+    "limit": 157170,
+    "since": 140311093,
+    "index": 140468263,
+    "until": 140468263,
+    "started": "2026-10-29T00:23:40.630Z",
+    "finished": "2026-10-29T00:39:35.839Z",
+    "took_ms": 955209,
+    "found": 30655
   },
   "notFound": [
+    [
+      "@k.vict1999/pino-std-serializers",
+      {
+        "seqs": [
+          138977113
+        ],
+        "lastSeen": "2026-10-23T00:45:06.683Z"
+      }
+    ]
+  ],
+  "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
       {
@@ -252291,16 +252302,6 @@
         ],
         "lastSeen": "2026-10-21T15:06:00.429Z"
       }
-    ],
-    [
-      "@k.vict1999/pino-std-serializers",
-      {
-        "seqs": [
-          138977113
-        ],
-        "lastSeen": "2026-10-23T00:45:06.683Z"
-      }
     ]
-  ],
-  "notFoundExpired": []
+  ]
 }
