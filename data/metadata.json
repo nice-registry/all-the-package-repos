@@ -1,55 +1,45 @@
 {
   "error": false,
-  "packages": 4621286,
-  "last": 140758933,
-  "latest": 140758933,
+  "packages": 4623184,
+  "last": 140882506,
+  "latest": 140882506,
   "runs": {
-    "total": 924,
+    "total": 925,
     "status": {
       "killed": 2,
-      "init": 920,
+      "init": 921,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1749840,
-    "github": 2826899,
-    "gitlab": 7231,
-    "bitbucket": 1367,
-    "others": 35949
+    "unsets": 1750358,
+    "github": 2828275,
+    "gitlab": 7232,
+    "bitbucket": 1366,
+    "others": 35953
   },
   "stats": {
-    "changes": 18961484,
-    "inserts": 4622518,
-    "updates": 12085736,
-    "deletes": 1998011,
-    "invalid": 255219,
+    "changes": 18988816,
+    "inserts": 4624416,
+    "updates": 12110483,
+    "deletes": 1998021,
+    "invalid": 255896,
     "ignored": 0,
-    "notFound": 1,
-    "notFoundExpired": 28028
+    "notFound": 0,
+    "notFoundExpired": 28029
   },
   "batch": {
     "status": "init",
-    "limit": 155799,
-    "since": 140603134,
-    "index": 140758933,
-    "until": 140758933,
-    "started": "2026-10-30T00:23:57.719Z",
-    "finished": "2026-10-30T00:36:42.657Z",
-    "took_ms": 764938,
-    "found": 31782
+    "limit": 123573,
+    "since": 140758933,
+    "index": 140882506,
+    "until": 140882506,
+    "started": "2026-10-30T12:13:26.822Z",
+    "finished": "2026-10-30T12:25:09.101Z",
+    "took_ms": 702279,
+    "found": 27332
   },
-  "notFound": [
-    [
-      "@k.vict1999/pino-std-serializers",
-      {
-        "seqs": [
-          138977113
-        ],
-        "lastSeen": "2026-10-23T00:45:06.683Z"
-      }
-    ]
-  ],
+  "notFound": [],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
@@ -252301,6 +252291,15 @@
           135736256
         ],
         "lastSeen": "2026-10-21T15:06:00.429Z"
+      }
+    ],
+    [
+      "@k.vict1999/pino-std-serializers",
+      {
+        "seqs": [
+          138977113
+        ],
+        "lastSeen": "2026-10-23T00:45:06.683Z"
       }
     ]
   ]
