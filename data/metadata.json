@@ -1,45 +1,82 @@
 {
   "error": false,
-  "packages": 4633629,
-  "last": 141449964,
-  "latest": 141449964,
+  "packages": 4635673,
+  "last": 141616554,
+  "latest": 141616550,
   "runs": {
-    "total": 931,
+    "total": 932,
     "status": {
       "killed": 2,
-      "init": 927,
+      "init": 928,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1752524,
-    "github": 2836519,
+    "unsets": 1752924,
+    "github": 2838156,
     "gitlab": 7235,
     "bitbucket": 1366,
-    "others": 35985
+    "others": 35992
   },
   "stats": {
-    "changes": 19115450,
-    "inserts": 4634861,
-    "updates": 12224847,
-    "deletes": 1998038,
-    "invalid": 257704,
+    "changes": 19146707,
+    "inserts": 4636906,
+    "updates": 12253290,
+    "deletes": 1998045,
+    "invalid": 258466,
     "ignored": 0,
-    "notFound": 0,
+    "notFound": 4,
     "notFoundExpired": 28029
   },
   "batch": {
     "status": "init",
-    "limit": 123781,
-    "since": 141326183,
-    "index": 141449964,
-    "until": 141449964,
-    "started": "2026-11-02T12:11:32.561Z",
-    "finished": "2026-11-02T12:18:47.176Z",
-    "took_ms": 434615,
-    "found": 25985
+    "limit": 166586,
+    "since": 141449964,
+    "index": 141616554,
+    "until": 141616550,
+    "started": "2026-11-03T00:18:44.136Z",
+    "finished": "2026-11-03T00:30:54.821Z",
+    "took_ms": 730685,
+    "found": 31257
   },
-  "notFound": [],
+  "notFound": [
+    [
+      "@goparrot-dashboard/category",
+      {
+        "seqs": [
+          141512728
+        ],
+        "lastSeen": "2026-11-03T00:22:44.620Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/franchise-menu-settings",
+      {
+        "seqs": [
+          141512833
+        ],
+        "lastSeen": "2026-11-03T00:22:45.414Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/i18n",
+      {
+        "seqs": [
+          141512867
+        ],
+        "lastSeen": "2026-11-03T00:22:46.165Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/order",
+      {
+        "seqs": [
+          141512921
+        ],
+        "lastSeen": "2026-11-03T00:22:46.167Z"
+      }
+    ]
+  ],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
