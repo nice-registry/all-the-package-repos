@@ -1,82 +1,45 @@
 {
   "error": false,
-  "packages": 4663721,
-  "last": 143352450,
-  "latest": 143352450,
+  "packages": 4666136,
+  "last": 143487551,
+  "latest": 143487551,
   "runs": {
-    "total": 946,
+    "total": 947,
     "status": {
       "killed": 2,
-      "init": 942,
+      "init": 943,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1759011,
-    "github": 2859963,
+    "unsets": 1759480,
+    "github": 2861898,
     "gitlab": 7252,
     "bitbucket": 1366,
-    "others": 36129
+    "others": 36140
   },
   "stats": {
-    "changes": 19517776,
-    "inserts": 4664967,
-    "updates": 12590782,
-    "deletes": 1998091,
-    "invalid": 263936,
+    "changes": 19546629,
+    "inserts": 4667382,
+    "updates": 12616629,
+    "deletes": 1998094,
+    "invalid": 264524,
     "ignored": 0,
-    "notFound": 4,
-    "notFoundExpired": 28029
+    "notFound": 0,
+    "notFoundExpired": 28033
   },
   "batch": {
     "status": "init",
-    "limit": 159991,
-    "since": 143192459,
-    "index": 143352450,
-    "until": 143352450,
-    "started": "2026-11-10T00:19:09.343Z",
-    "finished": "2026-11-10T00:32:44.452Z",
-    "took_ms": 815109,
-    "found": 32459
+    "limit": 135101,
+    "since": 143352450,
+    "index": 143487551,
+    "until": 143487551,
+    "started": "2026-11-10T12:10:28.335Z",
+    "finished": "2026-11-10T12:21:52.736Z",
+    "took_ms": 684401,
+    "found": 28853
   },
-  "notFound": [
-    [
-      "@goparrot-dashboard/category",
-      {
-        "seqs": [
-          141512728
-        ],
-        "lastSeen": "2026-11-03T00:22:44.620Z"
-      }
-    ],
-    [
-      "@goparrot-dashboard/franchise-menu-settings",
-      {
-        "seqs": [
-          141512833
-        ],
-        "lastSeen": "2026-11-03T00:22:45.414Z"
-      }
-    ],
-    [
-      "@goparrot-dashboard/i18n",
-      {
-        "seqs": [
-          141512867
-        ],
-        "lastSeen": "2026-11-03T00:22:46.165Z"
-      }
-    ],
-    [
-      "@goparrot-dashboard/order",
-      {
-        "seqs": [
-          141512921
-        ],
-        "lastSeen": "2026-11-03T00:22:46.167Z"
-      }
-    ]
-  ],
+  "notFound": [],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
@@ -252337,6 +252300,42 @@
           138977113
         ],
         "lastSeen": "2026-10-23T00:45:06.683Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/category",
+      {
+        "seqs": [
+          141512728
+        ],
+        "lastSeen": "2026-11-03T00:22:44.620Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/franchise-menu-settings",
+      {
+        "seqs": [
+          141512833
+        ],
+        "lastSeen": "2026-11-03T00:22:45.414Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/i18n",
+      {
+        "seqs": [
+          141512867
+        ],
+        "lastSeen": "2026-11-03T00:22:46.165Z"
+      }
+    ],
+    [
+      "@goparrot-dashboard/order",
+      {
+        "seqs": [
+          141512921
+        ],
+        "lastSeen": "2026-11-03T00:22:46.167Z"
       }
     ]
   ]
