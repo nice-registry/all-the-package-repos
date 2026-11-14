@@ -1,45 +1,55 @@
 {
   "error": false,
-  "packages": 4678121,
-  "last": 144345659,
-  "latest": 144345659,
+  "packages": 4680112,
+  "last": 144490606,
+  "latest": 144490606,
   "runs": {
-    "total": 953,
+    "total": 954,
     "status": {
       "killed": 2,
-      "init": 949,
+      "init": 950,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1761812,
-    "github": 2871512,
+    "unsets": 1761487,
+    "github": 2873822,
     "gitlab": 7256,
     "bitbucket": 1366,
-    "others": 36175
+    "others": 36181
   },
   "stats": {
-    "changes": 19728625,
-    "inserts": 4679373,
-    "updates": 12783356,
-    "deletes": 1998115,
-    "invalid": 267781,
+    "changes": 19760356,
+    "inserts": 4681366,
+    "updates": 12812796,
+    "deletes": 1998120,
+    "invalid": 268074,
     "ignored": 0,
-    "notFound": 0,
+    "notFound": 1,
     "notFoundExpired": 28033
   },
   "batch": {
     "status": "init",
-    "limit": 122440,
-    "since": 144223219,
-    "index": 144345659,
-    "until": 144345659,
-    "started": "2026-11-13T12:10:27.048Z",
-    "finished": "2026-11-13T12:21:23.093Z",
-    "took_ms": 656045,
-    "found": 27604
+    "limit": 144947,
+    "since": 144345659,
+    "index": 144490606,
+    "until": 144490606,
+    "started": "2026-11-14T00:18:55.696Z",
+    "finished": "2026-11-14T00:33:27.065Z",
+    "took_ms": 871369,
+    "found": 31731
   },
-  "notFound": [],
+  "notFound": [
+    [
+      "@abitechdev/openchasqui-spec",
+      {
+        "seqs": [
+          144479468
+        ],
+        "lastSeen": "2026-11-14T00:31:54.146Z"
+      }
+    ]
+  ],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
