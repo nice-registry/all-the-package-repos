@@ -1,43 +1,43 @@
 {
   "error": false,
-  "packages": 4686590,
-  "last": 144745619,
-  "latest": 144745619,
+  "packages": 4688569,
+  "last": 144840923,
+  "latest": 144840923,
   "runs": {
-    "total": 957,
+    "total": 958,
     "status": {
       "killed": 2,
-      "init": 953,
+      "init": 954,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1762419,
-    "github": 2879348,
+    "unsets": 1762716,
+    "github": 2881024,
     "gitlab": 7254,
     "bitbucket": 1366,
-    "others": 36203
+    "others": 36209
   },
   "stats": {
-    "changes": 19819403,
-    "inserts": 4687844,
-    "updates": 12864477,
-    "deletes": 1998125,
-    "invalid": 268957,
+    "changes": 19840686,
+    "inserts": 4689823,
+    "updates": 12883461,
+    "deletes": 1998127,
+    "invalid": 269275,
     "ignored": 0,
-    "notFound": 1,
+    "notFound": 3,
     "notFoundExpired": 28033
   },
   "batch": {
     "status": "init",
-    "limit": 83143,
-    "since": 144662476,
-    "index": 144745619,
-    "until": 144745619,
-    "started": "2026-11-15T12:09:56.564Z",
-    "finished": "2026-11-15T12:15:55.363Z",
-    "took_ms": 358799,
-    "found": 19717
+    "limit": 95304,
+    "since": 144745619,
+    "index": 144840923,
+    "until": 144840923,
+    "started": "2026-11-16T00:25:06.271Z",
+    "finished": "2026-11-16T00:29:53.239Z",
+    "took_ms": 286968,
+    "found": 21283
   },
   "notFound": [
     [
@@ -47,6 +47,24 @@
           144479468
         ],
         "lastSeen": "2026-11-14T00:31:54.146Z"
+      }
+    ],
+    [
+      "@team-carol/tokens",
+      {
+        "seqs": [
+          144840359
+        ],
+        "lastSeen": "2026-11-16T00:29:47.900Z"
+      }
+    ],
+    [
+      "@team-carol/styles",
+      {
+        "seqs": [
+          144840474
+        ],
+        "lastSeen": "2026-11-16T00:29:49.173Z"
       }
     ]
   ],
