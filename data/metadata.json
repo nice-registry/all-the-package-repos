@@ -1,43 +1,43 @@
 {
   "error": false,
-  "packages": 4691183,
-  "last": 144975082,
-  "latest": 144975082,
+  "packages": 4693371,
+  "last": 145144030,
+  "latest": 145144030,
   "runs": {
-    "total": 959,
+    "total": 960,
     "status": {
       "killed": 2,
-      "init": 955,
+      "init": 956,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1763128,
-    "github": 2883214,
-    "gitlab": 7256,
+    "unsets": 1763419,
+    "github": 2885119,
+    "gitlab": 7258,
     "bitbucket": 1366,
-    "others": 36219
+    "others": 36209
   },
   "stats": {
-    "changes": 19869489,
-    "inserts": 4692438,
-    "updates": 12909117,
-    "deletes": 1998132,
-    "invalid": 269802,
+    "changes": 19904015,
+    "inserts": 4694627,
+    "updates": 12940964,
+    "deletes": 1998134,
+    "invalid": 270290,
     "ignored": 0,
-    "notFound": 4,
+    "notFound": 3,
     "notFoundExpired": 28033
   },
   "batch": {
     "status": "init",
-    "limit": 134159,
-    "since": 144840923,
-    "index": 144975082,
-    "until": 144975082,
-    "started": "2026-11-16T12:15:25.624Z",
-    "finished": "2026-11-16T12:26:02.331Z",
-    "took_ms": 636707,
-    "found": 28803
+    "limit": 168948,
+    "since": 144975082,
+    "index": 145144030,
+    "until": 145144030,
+    "started": "2026-11-17T00:20:26.624Z",
+    "finished": "2026-11-17T00:32:53.885Z",
+    "took_ms": 747261,
+    "found": 34526
   },
   "notFound": [
     [
@@ -65,15 +65,6 @@
           144840474
         ],
         "lastSeen": "2026-11-16T00:29:49.173Z"
-      }
-    ],
-    [
-      "@lks347/dsh-oauth",
-      {
-        "seqs": [
-          144967432
-        ],
-        "lastSeen": "2026-11-16T12:25:00.137Z"
       }
     ]
   ],
