@@ -1,54 +1,45 @@
 {
   "error": false,
-  "packages": 4712167,
-  "last": 146455408,
-  "latest": 146455408,
+  "packages": 4713341,
+  "last": 146531903,
+  "latest": 146531903,
   "runs": {
-    "total": 968,
+    "total": 969,
     "status": {
       "killed": 2,
-      "init": 964,
+      "init": 965,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1766034,
-    "github": 2901190,
+    "unsets": 1766254,
+    "github": 2902134,
     "gitlab": 7272,
     "bitbucket": 1366,
-    "others": 36305
+    "others": 36315
   },
   "stats": {
-    "changes": 20160317,
-    "inserts": 4713431,
-    "updates": 13173967,
-    "deletes": 1998160,
-    "invalid": 274759,
+    "changes": 20177974,
+    "inserts": 4714606,
+    "updates": 13189996,
+    "deletes": 1998163,
+    "invalid": 275209,
     "ignored": 0,
-    "notFound": 3,
-    "notFoundExpired": 28033
+    "notFound": 2,
+    "notFoundExpired": 28034
   },
   "batch": {
     "status": "init",
-    "limit": 131108,
-    "since": 146324300,
-    "index": 146455408,
-    "until": 146455408,
-    "started": "2026-11-21T00:19:15.224Z",
-    "finished": "2026-11-21T00:27:24.577Z",
-    "took_ms": 489353,
-    "found": 28569
+    "limit": 76495,
+    "since": 146455408,
+    "index": 146531903,
+    "until": 146531903,
+    "started": "2026-11-21T12:09:46.949Z",
+    "finished": "2026-11-21T12:15:36.905Z",
+    "took_ms": 349956,
+    "found": 17657
   },
   "notFound": [
-    [
-      "@abitechdev/openchasqui-spec",
-      {
-        "seqs": [
-          144479468
-        ],
-        "lastSeen": "2026-11-14T00:31:54.146Z"
-      }
-    ],
     [
       "@team-carol/tokens",
       {
@@ -252364,6 +252355,15 @@
           141512921
         ],
         "lastSeen": "2026-11-03T00:22:46.167Z"
+      }
+    ],
+    [
+      "@abitechdev/openchasqui-spec",
+      {
+        "seqs": [
+          144479468
+        ],
+        "lastSeen": "2026-11-14T00:31:54.146Z"
       }
     ]
   ]
