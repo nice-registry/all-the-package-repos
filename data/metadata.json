@@ -1,64 +1,45 @@
 {
   "error": false,
-  "packages": 4718738,
-  "last": 146776237,
-  "latest": 146776235,
+  "packages": 4721560,
+  "last": 146902067,
+  "latest": 146902067,
   "runs": {
-    "total": 972,
+    "total": 973,
     "status": {
       "killed": 2,
-      "init": 968,
+      "init": 969,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1767348,
-    "github": 2906422,
-    "gitlab": 7273,
+    "unsets": 1767734,
+    "github": 2908836,
+    "gitlab": 7274,
     "bitbucket": 1366,
-    "others": 36329
+    "others": 36350
   },
   "stats": {
-    "changes": 20236924,
-    "inserts": 4720005,
-    "updates": 13242700,
-    "deletes": 1998171,
-    "invalid": 276048,
+    "changes": 20264573,
+    "inserts": 4722830,
+    "updates": 13267005,
+    "deletes": 1998177,
+    "invalid": 276561,
     "ignored": 0,
-    "notFound": 2,
-    "notFoundExpired": 28034
+    "notFound": 0,
+    "notFoundExpired": 28036
   },
   "batch": {
     "status": "init",
-    "limit": 84679,
-    "since": 146691556,
-    "index": 146776237,
-    "until": 146776235,
-    "started": "2026-11-23T00:21:28.671Z",
-    "finished": "2026-11-23T00:27:46.204Z",
-    "took_ms": 377533,
-    "found": 21284
+    "limit": 125830,
+    "since": 146776237,
+    "index": 146902067,
+    "until": 146902067,
+    "started": "2026-11-23T12:11:49.750Z",
+    "finished": "2026-11-23T12:20:25.621Z",
+    "took_ms": 515871,
+    "found": 27649
   },
-  "notFound": [
-    [
-      "@team-carol/tokens",
-      {
-        "seqs": [
-          144840359
-        ],
-        "lastSeen": "2026-11-16T00:29:47.900Z"
-      }
-    ],
-    [
-      "@team-carol/styles",
-      {
-        "seqs": [
-          144840474
-        ],
-        "lastSeen": "2026-11-16T00:29:49.173Z"
-      }
-    ]
-  ],
+  "notFound": [],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
@@ -252364,6 +252345,24 @@
           144479468
         ],
         "lastSeen": "2026-11-14T00:31:54.146Z"
+      }
+    ],
+    [
+      "@team-carol/tokens",
+      {
+        "seqs": [
+          144840359
+        ],
+        "lastSeen": "2026-11-16T00:29:47.900Z"
+      }
+    ],
+    [
+      "@team-carol/styles",
+      {
+        "seqs": [
+          144840474
+        ],
+        "lastSeen": "2026-11-16T00:29:49.173Z"
       }
     ]
   ]
