@@ -1,45 +1,55 @@
 {
   "error": false,
-  "packages": 4726570,
-  "last": 147191373,
-  "latest": 147191373,
+  "packages": 4728819,
+  "last": 147353593,
+  "latest": 147353591,
   "runs": {
-    "total": 975,
+    "total": 976,
     "status": {
       "killed": 2,
-      "init": 971,
+      "init": 972,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1768409,
-    "github": 2913133,
-    "gitlab": 7278,
+    "unsets": 1768735,
+    "github": 2915050,
+    "gitlab": 7280,
     "bitbucket": 1365,
-    "others": 36385
+    "others": 36389
   },
   "stats": {
-    "changes": 20327580,
-    "inserts": 4727843,
-    "updates": 13323935,
-    "deletes": 1998184,
-    "invalid": 277618,
+    "changes": 20360419,
+    "inserts": 4730092,
+    "updates": 13354034,
+    "deletes": 1998187,
+    "invalid": 278106,
     "ignored": 0,
-    "notFound": 0,
+    "notFound": 1,
     "notFoundExpired": 28036
   },
   "batch": {
     "status": "init",
-    "limit": 134817,
-    "since": 147056556,
-    "index": 147191373,
-    "until": 147191373,
-    "started": "2026-11-24T12:11:44.433Z",
-    "finished": "2026-11-24T12:23:16.801Z",
-    "took_ms": 692368,
-    "found": 29608
+    "limit": 162218,
+    "since": 147191373,
+    "index": 147353593,
+    "until": 147353591,
+    "started": "2026-11-25T00:20:07.317Z",
+    "finished": "2026-11-25T00:33:10.631Z",
+    "took_ms": 783314,
+    "found": 32839
   },
-  "notFound": [],
+  "notFound": [
+    [
+      "@org-mlw-drill-chaft-cusps-nappe-penks/pkg-mlw-drill-scowl-recks-glyph-snark",
+      {
+        "seqs": [
+          147307208
+        ],
+        "lastSeen": "2026-11-25T00:28:13.806Z"
+      }
+    ]
+  ],
   "notFoundExpired": [
     [
       "@dsr-user-dormy-noops-grout-firns/dsr-package-public-dormy-noops-grout-firns",
