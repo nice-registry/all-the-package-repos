@@ -1,43 +1,43 @@
 {
   "error": false,
-  "packages": 4734669,
-  "last": 147656013,
-  "latest": 147656013,
+  "packages": 4736544,
+  "last": 147792619,
+  "latest": 147792619,
   "runs": {
-    "total": 978,
+    "total": 979,
     "status": {
       "killed": 2,
-      "init": 974,
+      "init": 975,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1769422,
-    "github": 2920171,
+    "unsets": 1769755,
+    "github": 2921686,
     "gitlab": 7280,
     "bitbucket": 1365,
-    "others": 36431
+    "others": 36458
   },
   "stats": {
-    "changes": 20421694,
-    "inserts": 4735942,
-    "updates": 13408657,
-    "deletes": 1998191,
-    "invalid": 278904,
+    "changes": 20449155,
+    "inserts": 4737817,
+    "updates": 13433658,
+    "deletes": 1998196,
+    "invalid": 279484,
     "ignored": 0,
-    "notFound": 1,
+    "notFound": 2,
     "notFoundExpired": 28036
   },
   "batch": {
     "status": "init",
-    "limit": 164212,
-    "since": 147491801,
-    "index": 147656013,
-    "until": 147656013,
-    "started": "2026-11-26T00:19:47.462Z",
-    "finished": "2026-11-26T00:30:20.852Z",
-    "took_ms": 633390,
-    "found": 31016
+    "limit": 136606,
+    "since": 147656013,
+    "index": 147792619,
+    "until": 147792619,
+    "started": "2026-11-26T12:11:56.583Z",
+    "finished": "2026-11-26T12:20:32.967Z",
+    "took_ms": 516384,
+    "found": 27461
   },
   "notFound": [
     [
@@ -47,6 +47,15 @@
           147307208
         ],
         "lastSeen": "2026-11-25T00:28:13.806Z"
+      }
+    ],
+    [
+      "@org-mlw-beers-girly-anana-yukky/pkg-mlw-seric-moots-moons-dusks",
+      {
+        "seqs": [
+          147661328
+        ],
+        "lastSeen": "2026-11-26T12:12:17.268Z"
       }
     ]
   ],
