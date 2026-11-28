@@ -1,43 +1,43 @@
 {
   "error": false,
-  "packages": 4743566,
-  "last": 148195364,
-  "latest": 148195364,
+  "packages": 4745223,
+  "last": 148271899,
+  "latest": 148271899,
   "runs": {
-    "total": 982,
+    "total": 983,
     "status": {
       "killed": 2,
-      "init": 978,
+      "init": 979,
       "cancelled": 1
     }
   },
   "repos": {
-    "unsets": 1770768,
-    "github": 2927691,
+    "unsets": 1771157,
+    "github": 2928952,
     "gitlab": 7278,
     "bitbucket": 1365,
-    "others": 36464
+    "others": 36471
   },
   "stats": {
-    "changes": 20533329,
-    "inserts": 4744840,
-    "updates": 13509084,
-    "deletes": 1998204,
-    "invalid": 281201,
+    "changes": 20551869,
+    "inserts": 4746497,
+    "updates": 13525491,
+    "deletes": 1998205,
+    "invalid": 281676,
     "ignored": 0,
-    "notFound": 2,
+    "notFound": 3,
     "notFoundExpired": 28036
   },
   "batch": {
     "status": "init",
-    "limit": 136870,
-    "since": 148058494,
-    "index": 148195364,
-    "until": 148195364,
-    "started": "2026-11-28T00:18:28.976Z",
-    "finished": "2026-11-28T00:28:24.073Z",
-    "took_ms": 595097,
-    "found": 27770
+    "limit": 76535,
+    "since": 148195364,
+    "index": 148271899,
+    "until": 148271899,
+    "started": "2026-11-28T12:09:42.172Z",
+    "finished": "2026-11-28T12:14:30.665Z",
+    "took_ms": 288493,
+    "found": 18540
   },
   "notFound": [
     [
@@ -56,6 +56,15 @@
           147661328
         ],
         "lastSeen": "2026-11-26T12:12:17.268Z"
+      }
+    ],
+    [
+      "@org-mlw-drill-ictic-plica-dames-mudra/pkg-mlw-drill-plops-ryper-tarns-wands",
+      {
+        "seqs": [
+          148198196
+        ],
+        "lastSeen": "2026-11-28T12:09:57.090Z"
       }
     ]
   ],
